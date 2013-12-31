@@ -45,7 +45,8 @@
   },
   "devDependencies": {
     "coffee-script": "~1.6.2",
-    "docpad-plugin-livereload": "~2.5.4"
+    "docpad-plugin-livereload": "~2.5.4",
+    "docpad-plugin-ghpages": "~2.4.1"
   },
   "subdomain": "docpad",
   "main": "node_modules/docpad/bin/docpad-server",
