@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<!-- Standard Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Site Properties -->
+	<title>Write a Plugin | DocPad | DocPad - Streamlined Web Development</title>
+	<meta name="description" content="Empower your website frontends with layouts, meta-data, pre-processors (markdown, jade, coffeescript, etc.), partials, skeletons, file watching, querying, and an amazing plugin system. Use it either standalone, as a build script, or even as a module in a bigger system. Either way, DocPad will streamline your web development process allowing you to craft full-featured websites quicker than ever before." />
+	<meta name="keywords" content="bevry, bevryme, balupton, benjamin lupton, docpad, node, node.js, javascript, coffeescript, query engine, queryengine, backbone.js, cson" />
+
+	<!-- Icons -->
+	<link rel="shortcut icon" href="/favicon.ico" />
+
+	<!-- DocPad Meta -->
+	<meta name="generator" content="DocPad v6.59.6" />
+
+	<!-- DocPad Styles + Our Own -->
+	<style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/vendor/normalize.css?websiteVersion=0.1.27" /><link  rel="stylesheet" href="/vendor/h5bp.css?websiteVersion=0.1.27" /><link  rel="stylesheet" href="/vendor/highlight.css?websiteVersion=0.1.27" /><link  rel="stylesheet" href="/styles/style.css?websiteVersion=0.1.27" />
+
+	
+</head>
+<body>
+	<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+	<![endif]-->
+
+	<!-- Content -->
+	<div class="container">
+		<div class="topbar">
+  <nav class="topnav">
+    <div class="links">
+      <a class="logo primary" href="/" title="DocPad">
+        DocPad
+      </a>
+      <a class="secondary" href="/docs/intro">
+Intro      </a>
+      <a class="secondary" href="/docs/install">
+Install      </a>
+      <a class="secondary" href="/docs/start">
+Start      </a>
+      <a class="secondary" href="/docs/showcase">
+Showcase      </a>
+      <a class="secondary" href="/docs/plugins">
+Plugins      </a>
+      <a class="secondary" href="/docs">
+Documentation      </a>
+    </div>
+<script>
+(function() {
+var cx = '000711355494423975011:mvl83obfzvq';
+var gcse = document.createElement('script');
+gcse.type = 'text/javascript';
+gcse.async = true;
+gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+	'//www.google.com/cse/cse.js?cx=' + cx;
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(gcse, s);
+})();
+</script>
+<div class="search">
+	<gcse:search></gcse:search>
+</div>  </nav>
+  <nav class="sidebar">
+<nav class="list-menu">
+  <ul class="list-menu-categories" typeof="dc:collection">
+<li class="list-menu-category list-menu-home" typeof="soic:page" about="/">
+  <a class="list-menu-link" href="/">
+    <h3 class="list-menu-title" property="dc:title">
+      HOME
+    </h3>
+  </a>
+</li><li class="list-menu-category inactive" typeof="dc:collection">
+  <a class="list-menu-link" href="/docs/intro">
+    <h2 class="list-menu-title" property="dc:title">
+Getting Started    </h2>
+  </a>
+  <ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/intro">
+  <a class="list-menu-link" href="/docs/intro">
+    <h3 class="list-menu-title" property="dc:title">
+      Intro
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/install">
+  <a class="list-menu-link" href="/docs/install">
+    <h3 class="list-menu-title" property="dc:title">
+      Install
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/overview">
+  <a class="list-menu-link" href="/docs/overview">
+    <h3 class="list-menu-title" property="dc:title">
+      Overview
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/begin">
+  <a class="list-menu-link" href="/docs/begin">
+    <h3 class="list-menu-title" property="dc:title">
+      Beginner Guide
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/deploy">
+  <a class="list-menu-link" href="/docs/deploy">
+    <h3 class="list-menu-title" property="dc:title">
+      Deploy
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/faq">
+  <a class="list-menu-link" href="/docs/faq">
+    <h3 class="list-menu-title" property="dc:title">
+      FAQ
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/troubleshoot">
+  <a class="list-menu-link" href="/docs/troubleshoot">
+    <h3 class="list-menu-title" property="dc:title">
+      Troubleshoot
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/support">
+  <a class="list-menu-link" href="/docs/support">
+    <h3 class="list-menu-title" property="dc:title">
+      Getting Support
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/upgrade">
+  <a class="list-menu-link" href="/docs/upgrade">
+    <h3 class="list-menu-title" property="dc:title">
+      Upgrade Guides
+    </h3>
+  </a>
+</li>
+</ul>
+</li>
+<li class="list-menu-category inactive" typeof="dc:collection">
+  <a class="list-menu-link" href="/docs/contribute">
+    <h2 class="list-menu-title" property="dc:title">
+Community    </h2>
+  </a>
+  <ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/contribute">
+  <a class="list-menu-link" href="/docs/contribute">
+    <h3 class="list-menu-title" property="dc:title">
+      Contributing
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/participate">
+  <a class="list-menu-link" href="/docs/participate">
+    <h3 class="list-menu-title" property="dc:title">
+      Participate
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/plugins">
+  <a class="list-menu-link" href="/docs/plugins">
+    <h3 class="list-menu-title" property="dc:title">
+      Plugins
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/roadmap">
+  <a class="list-menu-link" href="/docs/roadmap">
+    <h3 class="list-menu-title" property="dc:title">
+      Roadmap
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/showcase">
+  <a class="list-menu-link" href="/docs/showcase">
+    <h3 class="list-menu-title" property="dc:title">
+      Showcase
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/skeletons">
+  <a class="list-menu-link" href="/docs/skeletons">
+    <h3 class="list-menu-title" property="dc:title">
+      Skeletons
+    </h3>
+  </a>
+</li>
+</ul>
+</li>
+<li class="list-menu-category inactive" typeof="dc:collection">
+  <a class="list-menu-link" href="/docs/api">
+    <h2 class="list-menu-title" property="dc:title">
+Core    </h2>
+  </a>
+  <ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/api">
+  <a class="list-menu-link" href="/docs/api">
+    <h3 class="list-menu-title" property="dc:title">
+      API
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/cli">
+  <a class="list-menu-link" href="/docs/cli">
+    <h3 class="list-menu-title" property="dc:title">
+      Command Line Interface
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/config">
+  <a class="list-menu-link" href="/docs/config">
+    <h3 class="list-menu-title" property="dc:title">
+      Configuration
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/debug">
+  <a class="list-menu-link" href="/docs/debug">
+    <h3 class="list-menu-title" property="dc:title">
+      Debugging
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/events">
+  <a class="list-menu-link" href="/docs/events">
+    <h3 class="list-menu-title" property="dc:title">
+      Events
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/meta-data">
+  <a class="list-menu-link" href="/docs/meta-data">
+    <h3 class="list-menu-title" property="dc:title">
+      Meta Data
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/sequence">
+  <a class="list-menu-link" href="/docs/sequence">
+    <h3 class="list-menu-title" property="dc:title">
+      Sequence Flows
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/template-data">
+  <a class="list-menu-link" href="/docs/template-data">
+    <h3 class="list-menu-title" property="dc:title">
+      Template Data &amp; Helpers
+    </h3>
+  </a>
+</li>
+</ul>
+</li>
+<li class="list-menu-category active" typeof="dc:collection">
+  <a class="list-menu-link" href="/docs/extend">
+    <h2 class="list-menu-title" property="dc:title">
+Extend    </h2>
+  </a>
+  <ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/extend">
+  <a class="list-menu-link" href="/docs/extend">
+    <h3 class="list-menu-title" property="dc:title">
+      Extending
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item active" typeof="soic:page" about="/docs/plugin-write">
+  <a class="list-menu-link" href="/docs/plugin-write">
+    <h3 class="list-menu-title" property="dc:title">
+      Write a Plugin
+    </h3>
+  </a>
+</li>
+</ul>
+</li>
+  </ul>
+</nav>
+  </nav>
+</div>
+<div class="mainbar">
+<section id="content">
+  <div class="page">
+<article class="block doc">
+  <header class="block-header">
+    <a class="permalink hover-link" href="/docs/plugin-write">
+      <h1>Write a Plugin</h1>
+    </a>
+  </header>
+  <section class="block-content"><h2>Getting Started</h2>
+
+<p>Inside your docpad website directory, create a directory called <code>plugins</code>. Inside the <code>plugins</code> directory create the directory for your plugin (e.g. <code>plugins/yourpluginname</code>), and inside your plugin&#39;s directory create these two files:</p>
+
+<h3><code>src/yourpluginname.plugin.coffee</code></h3>
+
+<p>The simplest version of this file will contain the following:</p>
+
+<pre class="highlight"><code class="coffeescript"><span class="comment"># Export Plugin</span>
+module.<span class="function"><span class="title">exports</span> = <span class="params">(BasePlugin)</span> -&gt;</span>
+    <span class="comment"># Define Plugin</span>
+    <span class="class"><span class="keyword">class</span> <span class="title">YourpluginnamePlugin</span> <span class="keyword">extends</span> <span class="title">BasePlugin</span></span>
+        <span class="comment"># Plugin name</span>
+        <span class="attribute">name</span>: <span class="string">'yourpluginname'</span>
+</code></pre>
+
+<p>What this does is extends our BasePlugin from DocPad, and returns the <code>YourPlugin</code> class. Of course you should change the <code>YourPlugin</code> references to whatever your plugin is actually called.</p>
+
+<p>The <a href="https://github.com/bevry/docpad/blob/master/src/lib/plugin.coffee">BasePlugin</a> is important as it provides some of the tucked away magic for our plugins. But what is even more important, is the plugin events that your plugin will hook into to provide it&#39;s functionality. <a href="/docpad/events">You can discover the plugin events available to you on the Events Page.</a></p>
+
+<p>If you must insist on writing your plugin inside a non-coffeecript dialect, you may use the <code>BasePlugin.extend({})</code> method like so:</p>
+
+<pre class="highlight"><code class="javascript"><span class="comment">// Export Plugin</span>
+module.exports = <span class="function"><span class="keyword">function</span> <span class="params">(BasePlugin)</span> {</span>
+    <span class="comment">// Define Plugin</span>
+    <span class="keyword">return</span> BasePlugin.extend({
+        <span class="comment">// Plugin name</span>
+        name: <span class="string">'yourpluginname'</span>
+    });
+};
+</code></pre>
+
+<h3><code>package.json</code></h3>
+
+<p>This file should look something like this:</p>
+
+<pre class="highlight"><code class="json">{
+    "<span class="attribute">name</span>": <span class="value"><span class="string">"docpad-plugin-yourpluginname"</span></span>,
+    "<span class="attribute">version</span>": <span class="value"><span class="string">"2.0.0"</span></span>,
+    "<span class="attribute">description</span>": <span class="value"><span class="string">"DocPad plugin that adds the ability to render Something to Something Else"</span></span>,
+    "<span class="attribute">homepage</span>": <span class="value"><span class="string">"https://github.com/yourgithubusername/docpad-plugin-yourpluginname"</span></span>,
+    "<span class="attribute">keywords</span>": <span class="value">[
+        <span class="string">"docpad"</span>,
+        <span class="string">"docpad-plugin"</span>,
+        <span class="string">"something"</span>,
+        <span class="string">"somethingelse"</span>
+    ]</span>,
+    "<span class="attribute">author</span>": <span class="value"><span class="string">"Copyright holders name &lt;copyright holder's email&gt; (copyright holder's website url)"</span></span>,
+    "<span class="attribute">maintainers</span>": <span class="value">[
+        <span class="string">"Your name &lt;your email&gt; (your github url)"</span>
+    ]</span>,
+    "<span class="attribute">contributors</span>": <span class="value">[
+        <span class="string">"Your name &lt;your email&gt; (your github url)"</span>
+    ]</span>,
+    "<span class="attribute">bugs</span>": <span class="value">{
+        "<span class="attribute">url</span>": <span class="value"><span class="string">"https://github.com/yourgithubusername/docpad-plugin-yourpluginname/issues"</span>
+    </span>}</span>,
+    "<span class="attribute">repository</span>" : <span class="value">{
+        "<span class="attribute">type</span>": <span class="value"><span class="string">"git"</span></span>,
+        "<span class="attribute">url</span>": <span class="value"><span class="string">"https://github.com/yourgithubusername/docpad-plugin-yourpluginname.git"</span>
+    </span>}</span>,
+    "<span class="attribute">engines</span>" : <span class="value">{
+        "<span class="attribute">node</span>": <span class="value"><span class="string">"&gt;=0.8"</span>
+    </span>}</span>,
+    "<span class="attribute">peerDependencies</span>": <span class="value">{
+        "<span class="attribute">docpad</span>": <span class="value"><span class="string">"6"</span>
+    </span>}</span>,
+    "<span class="attribute">main</span>": <span class="value"><span class="string">"./src/yourpluginname.plugin.coffee"</span>
+</span>}
+</code></pre>
+
+<p>An important thing to note is that our plugin started with the version <code>2.0.0</code>. This is because v2 plugins are compatible for with DocPad v6, whereas v1 plugins are compatible with DocPad v5. <a href="https://github.com/bevry/docpad/issues/691">This is currently a necessary convention that you must follow.</a></p>
+
+<h2>Types of plugins</h2>
+
+<h3>Renderers</h3>
+
+<p>Renderers are used to convert one particular type of text format, to another type, or rather something to something else.</p>
+
+<p>DocPad will perform these conversions from one format to another by triggering the <code>render</code> event. A plugin can hook into this event by adding the <code>render</code> function inside it.</p>
+
+<ul>
+<li><a href="/plugin/yourpluginname/blob/master/src/yourpluginname.plugin.coffee">Here is the plugin file of an example plugin that performs the synchronous conversion of transorming the content of <code>txt</code> files that have the extra <code>uc</code> or <code>uppercase</code> extension to upper case.</a></li>
+<li><a href="/plugin/coffeekup/blob/master/src/coffeekup.plugin.coffee">Here is the plugin file of the coffeekup plugin that accepts configuration and performs and asynchronous conversion.</a></li>
+</ul>
+
+<p>An important thing to note about the rendering process is that DocPad knows when and how to call the render event based on the documents extensions. For instance, the document <code>document.html.md.eco</code> will have two render events fire. The first render event will contain the <code>inExtension</code> as <code>eco</code>, and the <code>outExtension</code> as <code>md</code>. The second render event will contain the <code>inExtension</code> as <code>md</code>, and the <code>outExtension</code> as <code>html</code>. This is why generally in our plugins we want to check the values of <code>inExtension</code> and <code>outExtension</code> to make sure our plugin is performing the correct render.</p>
+
+<h3>Other types</h3>
+
+<p>Plugins of other types are generated in the same way as Renderers, they simply aim to achieve different results. While Renderers primarily use the <code>render</code> event to trigger their behaviour other plugin types use a variety of events such as <code>writeBefore</code> and <code>parseAfter</code> to alter the creation of documents and add additional functionality. <a href="/docpad/events">Click here for more information on event types</a></p>
+
+<h2>Reusable plugins</h2>
+
+<p>If you are just adding some basic functionality that is specific to a site then everything we&#39;ve described thus far is probably enough. However if you&#39;re doing something thats more generic, or could be useful to other people, then why not create your plugin so its reusable? This has many advantages, you can distribute your plugin on NPM, you can use it across multiple projects, and you can setup unit tests to ensure your plugin works correctly.</p>
+
+<p>Here&#39;s the extra files that we will need to add to our plugin:</p>
+
+<pre class="highlight"><code class="avrasm"><span class="preprocessor">.gitignore</span>
+<span class="preprocessor">.npmignore</span>
+Cakefile
+LICENSE<span class="preprocessor">.md</span>
+README<span class="preprocessor">.md</span>
+</code></pre>
+
+<p>You can find the contents of these files on our <a href="/plugin/yourpluginname">example plugin repository</a>.</p>
+
+<p>The <code>Cakefile</code> however is worth mentioning, as it makes it to compile our plugin (<code>cake compile</code> to compile once, <code>cake dev</code> to compile on change) so we don&#39;t have to compile it at run-time each time. If you decide to use the cake file to pre-compile our plugin, you&#39;ll want to update your <code>main</code> property in your plugin&#39;s <code>package.json</code> to point to the compiled file like so:</p>
+
+<pre class="highlight"><code class="javascript">{
+    <span class="comment">// ...</span>
+    <span class="string">"main"</span>: <span class="string">"./out/yourpluginname.plugin.js"</span>
+    <span class="comment">// ...</span>
+}
+</code></pre>
+
+<h2>Adding tests</h2>
+
+<p>We can also add tests for our plugin to ensure it is working correctly. DocPad makes this process pretty darn easy. To do so, we&#39;ll need to add these extra files:</p>
+
+<p>Here&#39;s the extra files that we will need to add to our plugin:</p>
+
+<pre class="highlight"><code class="r">src/
+    pluginname.test.coffee
+    pluginname.tester.coffee (optional)
+test/
+    out-expected/
+        <span class="keyword">...</span>
+    src/
+        documents/
+            <span class="keyword">...</span>
+    package.json (optional)
+</code></pre>
+
+<h4><code>src/yourpluginname.test.coffee</code></h4>
+
+<p>This file simply calls into DocPad and tell it to test our plugin, you will need to modify the <code>pluginName</code> property to match your plugin:</p>
+
+<pre class="highlight"><code class="coffeescript"><span class="comment"># Test our plugin using DocPad's Testers</span>
+<span class="built_in">require</span>(<span class="string">'docpad'</span>).<span class="built_in">require</span>(<span class="string">'testers'</span>).test({<span class="attribute">pluginPath</span>: __dirname+<span class="string">'/..'</span>})
+</code></pre>
+
+<h4><code>src/yourpluginname.tester.coffee</code></h4>
+
+<p>This file is optional but is essential if you want to tell DocPad to load additional plugins as well as yours, or if you need to do advanced configuration of the test environment. The file exports a class that will be used to test your plugin. For now there&#39;s just the one tester type to extend from, <code>RendererTester</code> which by default runs your plugin against a folder of documents and compares the output to the contents of the <code>out-expected</code> folder. This is all you&#39;ll need for most plugins as we&#39;re only really concerned about the input and output of our plugins.</p>
+
+<p>The <a href="h/plugin/text">Text Plugin</a> is a great example of this, you can find its <a href="/plugin/text/blob/master/src/text.tester.coffee">tester file here</a>.</p>
+
+<p>For more complex plugins you might want to take a look at the <a href="https://github.com/bevry/docpad/blob/master/src/lib/testers.coffee">testers.coffee source</a> for more details and other potential testers to extend from.</p>
+
+<h4><code>test/package.json</code></h4>
+
+<p>This file is optional but is essential if you want your test site required other plugins than just your one.</p>
+
+<p>The <a href="/plugin/text">Text Plugin</a> is a great example of this, you can find its <a href="/plugin/text/blob/master/test/package.json">test site&#39;s package.json file here</a>.</p>
+
+<h4><code>package.json</code></h4>
+
+<p>You&#39;ll want to modify the <code>package.json</code> for your plugin to support the test process, simply add the <code>devDependencies</code> and <code>scripts</code> objects to the configuration as shown below:</p>
+
+<pre class="highlight"><code class="javascript">{
+    <span class="comment">// ...</span>
+    <span class="string">"devDependencies"</span>: {
+        <span class="string">"coffee-script"</span>: <span class="string">"~1.6.2"</span>
+    },
+    <span class="string">"scripts"</span>: {
+        <span class="string">"test"</span>: <span class="string">"node ./test/yourpluginname.test.js"</span>
+    }
+    <span class="comment">// ...</span>
+}
+</code></pre>
+
+<p>These tell NPM how to test the plugin and add the coffee script dependency for development purposes.</p>
+
+<h3>Writing the tests</h3>
+
+<p>DocPad&#39;s <code>RendererTester</code> will setup an instance of DocPad using the configuration specified in your tester above, it will then generate a site using the documents in the <code>test/src/documents</code> folder and compare the results with the files in the <code>test/out-expected</code> folder. This way you can quickly and easily test how documents in a site are handled by your plugin. For more complex tests you will have to examing the <a href="https://github.com/bevry/docpad/blob/master/src/lib/testers.coffee">testers.coffee source</a>.</p>
+
+<h3>Running the tests</h3>
+
+<p>Before we can run our unit tests we&#39;ll need to get DocPad and your plugin setup correctly. First you will need to clone a copy of the DocPad repository as you&#39;ll need the original source to run the tests. You&#39;ll then want to set it up and compile it. We&#39;re also going to link this copy of DocPad into your NPM module cache so that whenever you use DocPad it actually points to this copy.</p>
+
+<pre class="highlight"><code class="bash">git clone https://github.com/bevry/docpad.git
+<span class="built_in">cd</span> docpad
+npm install
+npm link
+cake compile
+</code></pre>
+
+<p>This sets up your copy of DocPad and makes it so that NPM will use this copy instead of the one in the NPM repository. Next you&#39;ll need to do a similar setup for your plugin.</p>
+
+<pre class="highlight"><code class="bash"><span class="built_in">cd</span> docpad-plugin-yourpluginname
+npm install
+npm link docpad
+cake compile
+</code></pre>
+
+<p>This will install all the dependencies for your plugin, and link the DocPad instance in your plugin with the one we just cloned from GitHub.</p>
+
+<p>Now we&#39;re ready to run the tests!</p>
+
+<pre class="highlight"><code class="bash">cake test
+</code></pre>
+
+<p>Hopefully you should now see output similar to the following:</p>
+
+<pre class="highlight"><code class="bash">&gt; docpad-plugin-yourpluginname@<span class="number">2.0</span>.<span class="number">0</span> test /Users/balupton/Projects/docpad-extras/plugins/yourpluginname
+&gt; node ./out/yourpluginname.test.js
+
+yourpluginname
+yourpluginname ➞  create
+yourpluginname ➞  create ✔   
+yourpluginname ➞  load plugin yourpluginname
+yourpluginname ➞  load plugin yourpluginname ✔   
+yourpluginname ➞  generate
+yourpluginname ➞  generate ➞  action
+yourpluginname ➞  generate ➞  action ✔   
+yourpluginname ➞  generate ➞  results
+yourpluginname ➞  generate ➞  results ✔   
+yourpluginname ➞  generate ✔  
+yourpluginname ➞  server
+yourpluginname ➞  server ✔   
+yourpluginname ➞  finish up
+yourpluginname ➞  finish up ✔   
+yourpluginname ✔  
+
+<span class="number">6</span>/<span class="number">6</span> tests ran successfully, everything passed
+OK
+</code></pre>
+
+<p>Writing good unit tests is hard, but just try to cover all the possible inputs and expected outputs for your plugin and you will be making a good start.</p>
+</section>
+  <footer class="block-footer">
+    <nav class="prev-next">
+      <a class="prev" href="/docs/extend">
+        <span class="icon">
+        </span>
+        <span class="title">
+          Extending
+        </span>
+      </a>
+      <a class="up" href="/docs/">
+        <span class="icon">
+        </span>
+        <span class="title">
+          Documentation
+        </span>
+      </a>
+    </nav>
+  </footer>
+</article>
+<aside class="block-edit">
+  <a href="https://github.com/docpad/documentation/edit/master/extend/plugin-write.html.md">Edit and improve this page!</a>
+</aside>
+  </div>
+</section>
+</div>
+<footer class="bottombar">
+  <div class="about">
+    DocPad is a <a href="http://bevry.me" title="Bevry - Node.js, Backbone.js & JavaScript Consultancy in Sydney, Australia">Bevry</a> creation.
+  </div>
+  <div class="links">
+    <a href="/">
+      DocPad
+    </a>
+    <a href="https://github.com/bevry/docpad">
+      GitHub
+    </a>
+    <a href="/support">
+      Support
+    </a>
+  </div>
+</footer>
+<a class="webchat" href="http://webchat.freenode.net/?channels=docpad" target="_blank">
+  IRC Chat
+</a>
+
+	</div>
+
+	<!-- DocPad Scripts + Our Own -->
+	<script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><!-- Begin Inspectlet Embed Code -->
+<script id="inspectletjs">
+	window.__insp = window.__insp || [];
+	__insp.push(['wid', 746529266]);
+	(function() {
+		function __ldinsp(){var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://www.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); }
+		if (window.attachEvent){
+			window.attachEvent('onload', __ldinsp);
+		}else{
+			window.addEventListener('load', __ldinsp, false);
+		}
+	})();
+</script>
+<!-- End Inspectlet Embed Code --><script defer="defer"  src="/vendor/jquery.js?websiteVersion=0.1.27"></script><script defer="defer"  src="/vendor/jquery-scrollto.js?websiteVersion=0.1.27"></script><script defer="defer"  src="/vendor/modernizr.js?websiteVersion=0.1.27"></script><script defer="defer"  src="/vendor/history.js?websiteVersion=0.1.27"></script><script defer="defer"  src="/vendor/historyjsit.js?websiteVersion=0.1.27"></script><script defer="defer"  src="/scripts/bevry.js?websiteVersion=0.1.27"></script><script defer="defer"  src="/scripts/script.js?websiteVersion=0.1.27"></script>
+</body>
+</html>

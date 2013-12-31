@@ -1,0 +1,1 @@
+module.exports = require('requirefresh').requireFresh(__dirname+'/app/out/docpad');

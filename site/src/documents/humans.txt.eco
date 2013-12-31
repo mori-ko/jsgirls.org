@@ -1,0 +1,20 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+
+# DOCPAD CORE TEAM
+
+Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)
+
+
+# DOCPAD CONTRIBUTORS, ALL <%- @getContributors().length %> OF THEM
+
+<%- @getContributors().map((i)->i.text).join('\n') %>
+
+
+# WEBSITE TECHNOLOGY
+
+HTML5, CSS3
+DocPad, jQuery, Modernizr, History.js It!
+H5BP, Normalize.css, Twitter Bootstrap
+CoffeeScript, CoffeeKup, Eco

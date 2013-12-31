@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<!-- Standard Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Site Properties -->
+	<title>Contributing | DocPad | DocPad - Streamlined Web Development</title>
+	<meta name="description" content="Empower your website frontends with layouts, meta-data, pre-processors (markdown, jade, coffeescript, etc.), partials, skeletons, file watching, querying, and an amazing plugin system. Use it either standalone, as a build script, or even as a module in a bigger system. Either way, DocPad will streamline your web development process allowing you to craft full-featured websites quicker than ever before." />
+	<meta name="keywords" content="bevry, bevryme, balupton, benjamin lupton, docpad, node, node.js, javascript, coffeescript, query engine, queryengine, backbone.js, cson" />
+
+	<!-- Icons -->
+	<link rel="shortcut icon" href="/favicon.ico" />
+
+	<!-- DocPad Meta -->
+	<meta name="generator" content="DocPad v6.59.6" />
+
+	<!-- DocPad Styles + Our Own -->
+	<style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/vendor/normalize.css?websiteVersion=0.1.27" /><link  rel="stylesheet" href="/vendor/h5bp.css?websiteVersion=0.1.27" /><link  rel="stylesheet" href="/vendor/highlight.css?websiteVersion=0.1.27" /><link  rel="stylesheet" href="/styles/style.css?websiteVersion=0.1.27" />
+
+	
+</head>
+<body>
+	<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+	<![endif]-->
+
+	<!-- Content -->
+	<div class="container">
+		<div class="topbar">
+  <nav class="topnav">
+    <div class="links">
+      <a class="logo primary" href="/" title="DocPad">
+        DocPad
+      </a>
+      <a class="secondary" href="/docs/intro">
+Intro      </a>
+      <a class="secondary" href="/docs/install">
+Install      </a>
+      <a class="secondary" href="/docs/start">
+Start      </a>
+      <a class="secondary" href="/docs/showcase">
+Showcase      </a>
+      <a class="secondary" href="/docs/plugins">
+Plugins      </a>
+      <a class="secondary" href="/docs">
+Documentation      </a>
+    </div>
+<script>
+(function() {
+var cx = '000711355494423975011:mvl83obfzvq';
+var gcse = document.createElement('script');
+gcse.type = 'text/javascript';
+gcse.async = true;
+gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+	'//www.google.com/cse/cse.js?cx=' + cx;
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(gcse, s);
+})();
+</script>
+<div class="search">
+	<gcse:search></gcse:search>
+</div>  </nav>
+  <nav class="sidebar">
+<nav class="list-menu">
+  <ul class="list-menu-categories" typeof="dc:collection">
+<li class="list-menu-category list-menu-home" typeof="soic:page" about="/">
+  <a class="list-menu-link" href="/">
+    <h3 class="list-menu-title" property="dc:title">
+      HOME
+    </h3>
+  </a>
+</li><li class="list-menu-category inactive" typeof="dc:collection">
+  <a class="list-menu-link" href="/docs/intro">
+    <h2 class="list-menu-title" property="dc:title">
+Getting Started    </h2>
+  </a>
+  <ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/intro">
+  <a class="list-menu-link" href="/docs/intro">
+    <h3 class="list-menu-title" property="dc:title">
+      Intro
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/install">
+  <a class="list-menu-link" href="/docs/install">
+    <h3 class="list-menu-title" property="dc:title">
+      Install
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/overview">
+  <a class="list-menu-link" href="/docs/overview">
+    <h3 class="list-menu-title" property="dc:title">
+      Overview
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/begin">
+  <a class="list-menu-link" href="/docs/begin">
+    <h3 class="list-menu-title" property="dc:title">
+      Beginner Guide
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/deploy">
+  <a class="list-menu-link" href="/docs/deploy">
+    <h3 class="list-menu-title" property="dc:title">
+      Deploy
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/faq">
+  <a class="list-menu-link" href="/docs/faq">
+    <h3 class="list-menu-title" property="dc:title">
+      FAQ
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/troubleshoot">
+  <a class="list-menu-link" href="/docs/troubleshoot">
+    <h3 class="list-menu-title" property="dc:title">
+      Troubleshoot
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/support">
+  <a class="list-menu-link" href="/docs/support">
+    <h3 class="list-menu-title" property="dc:title">
+      Getting Support
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/upgrade">
+  <a class="list-menu-link" href="/docs/upgrade">
+    <h3 class="list-menu-title" property="dc:title">
+      Upgrade Guides
+    </h3>
+  </a>
+</li>
+</ul>
+</li>
+<li class="list-menu-category active" typeof="dc:collection">
+  <a class="list-menu-link" href="/docs/contribute">
+    <h2 class="list-menu-title" property="dc:title">
+Community    </h2>
+  </a>
+  <ul class="list-menu-items"><li class="list-menu-item active" typeof="soic:page" about="/docs/contribute">
+  <a class="list-menu-link" href="/docs/contribute">
+    <h3 class="list-menu-title" property="dc:title">
+      Contributing
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/participate">
+  <a class="list-menu-link" href="/docs/participate">
+    <h3 class="list-menu-title" property="dc:title">
+      Participate
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/plugins">
+  <a class="list-menu-link" href="/docs/plugins">
+    <h3 class="list-menu-title" property="dc:title">
+      Plugins
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/roadmap">
+  <a class="list-menu-link" href="/docs/roadmap">
+    <h3 class="list-menu-title" property="dc:title">
+      Roadmap
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/showcase">
+  <a class="list-menu-link" href="/docs/showcase">
+    <h3 class="list-menu-title" property="dc:title">
+      Showcase
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/skeletons">
+  <a class="list-menu-link" href="/docs/skeletons">
+    <h3 class="list-menu-title" property="dc:title">
+      Skeletons
+    </h3>
+  </a>
+</li>
+</ul>
+</li>
+<li class="list-menu-category inactive" typeof="dc:collection">
+  <a class="list-menu-link" href="/docs/api">
+    <h2 class="list-menu-title" property="dc:title">
+Core    </h2>
+  </a>
+  <ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/api">
+  <a class="list-menu-link" href="/docs/api">
+    <h3 class="list-menu-title" property="dc:title">
+      API
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/cli">
+  <a class="list-menu-link" href="/docs/cli">
+    <h3 class="list-menu-title" property="dc:title">
+      Command Line Interface
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/config">
+  <a class="list-menu-link" href="/docs/config">
+    <h3 class="list-menu-title" property="dc:title">
+      Configuration
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/debug">
+  <a class="list-menu-link" href="/docs/debug">
+    <h3 class="list-menu-title" property="dc:title">
+      Debugging
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/events">
+  <a class="list-menu-link" href="/docs/events">
+    <h3 class="list-menu-title" property="dc:title">
+      Events
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/meta-data">
+  <a class="list-menu-link" href="/docs/meta-data">
+    <h3 class="list-menu-title" property="dc:title">
+      Meta Data
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/sequence">
+  <a class="list-menu-link" href="/docs/sequence">
+    <h3 class="list-menu-title" property="dc:title">
+      Sequence Flows
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/template-data">
+  <a class="list-menu-link" href="/docs/template-data">
+    <h3 class="list-menu-title" property="dc:title">
+      Template Data &amp; Helpers
+    </h3>
+  </a>
+</li>
+</ul>
+</li>
+<li class="list-menu-category inactive" typeof="dc:collection">
+  <a class="list-menu-link" href="/docs/extend">
+    <h2 class="list-menu-title" property="dc:title">
+Extend    </h2>
+  </a>
+  <ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/extend">
+  <a class="list-menu-link" href="/docs/extend">
+    <h3 class="list-menu-title" property="dc:title">
+      Extending
+    </h3>
+  </a>
+</li>
+<li class="list-menu-item inactive" typeof="soic:page" about="/docs/plugin-write">
+  <a class="list-menu-link" href="/docs/plugin-write">
+    <h3 class="list-menu-title" property="dc:title">
+      Write a Plugin
+    </h3>
+  </a>
+</li>
+</ul>
+</li>
+  </ul>
+</nav>
+  </nav>
+</div>
+<div class="mainbar">
+<section id="content">
+  <div class="page">
+<article class="block doc">
+  <header class="block-header">
+    <a class="permalink hover-link" href="/docs/contribute">
+      <h1>Contributing</h1>
+    </a>
+  </header>
+  <section class="block-content"><h2>Donations</h2>
+
+<p><a href="/donate">With your help, we&#39;ll be able to work on DocPad full time! Isn&#39;t that awesome? Donate now to let that happen!</a></p>
+
+<h2>Publicize</h2>
+
+<p>Help spread the word of DocPad:</p>
+
+<ul>
+<li>Star our <a href="https://github.com/bevry/docpad">GitHub Repository</a> by clicking the &ldquo;Star&rdquo; button on the top right</li>
+<li>Star our <a href="https://npmjs.org/package/docpad">NPM Package</a> by running <code>npm star docpad</code> in your terminal</li>
+<li><a href="/gittip-community">Join our DocPad Gittip Community</a></li>
+<li><a href="/google+">Join our DocPad Google+ Community</a></li>
+<li>Talk about us on Social Media; Twitter, Blogging, etc.</li>
+<li>Write about your experiences of DocPad on your blog</li>
+<li>Do a short less than a minute video testimonial of DocPad on Youtube!</li>
+<li>and just continuing to be awesome</li>
+</ul>
+
+<h2>Skeletons</h2>
+
+<p>To add a new skeleton to the skeleton listing:</p>
+
+<ol>
+<li><a href="https://github.com/bevry/docpad-extras/edit/docpad-6.x/exchange.json">Add your new skeleton to our <code>exchange.json</code> file</a></li>
+<li>Submit the pull request for it (the page for this should appear automatically once you click &ldquo;Commit Changes&rdquo; from the previous link)</li>
+</ol>
+
+<h2>Documentation</h2>
+
+<p>To update our documentation:</p>
+
+<ol>
+<li>Our documentation is located at the <a href="https://github.com/docpad/documentation"><code>docpad/documentation</code> repository</a></li>
+<li>We have <a href="https://github.com/docpad/documentation/blob/master/CONTRIBUTING.md">strict documentation criteria</a> that all documentation changes must abide by, be sure to read it</li>
+<li>You can edit a file by opening that file in the repository browser, and then clicking the &ldquo;Edit&rdquo; button</li>
+<li>Once done, click save changes or whatever the button says and this will then take you to a &ldquo;Submit Pull Request&rdquo; page</li>
+<li>Fill in the details and click submit</li>
+</ol>
+
+<h2>Coding Standards</h2>
+
+<p>Follow the <a href="http://bevry.me/bevry/coding-standards">Bevry Coding Standards</a> when writing your changes</p>
+
+<h2>Setup</h2>
+
+<p>To get started with developing and contributing code, you must first setup your project for development.</p>
+
+<h3>Setup the DocPad Core for Development</h3>
+
+<ol>
+<li>Install CoffeeScript globally: <code>npm install -g coffee-script</code></li>
+<li>Fork the repository of the DocPad Core: <a href="https://github.com/bevry/docpad">https://github.com/bevry/docpad</a></li>
+<li>Clone your fork to your machine then cd into it</li>
+<li>Run <code>npm install</code> to install any missing dependencies</li>
+<li>Run <code>cake compile</code> to compile the project (or use <code>cake watch</code> to compile everytime a change is made)</li>
+<li>Run <code>cake test</code> to test the project</li>
+<li>Run <code>npm link</code> to make this development instance of the projects available to other projects (via <code>npm link docpad</code>)</li>
+</ol>
+
+<h3>Setup a DocPad Plugin for Development</h3>
+
+<ol>
+<li>Ensure you have DocPad setup for development, by running the DocPad Core instructions above</li>
+<li>Fork the repository of the DocPad Plugin you wish to edit</li>
+<li>Clone your fork to your machine then cd into it</li>
+<li>Run <code>npm link docpad</code> to link our local development instance of DocPad that we setup earlier to our DocPad Plugin</li>
+<li>Run <code>cake install</code> to install any missing dependencies</li>
+<li>Run <code>cake compile</code> to compile the project (or use <code>cake watch</code> to compile everytime a change is made)</li>
+<li>Run <code>cake test</code> to test the project</li>
+<li>Run <code>npm link</code> to make this development instance of the project available to other projects (via npm link docpad-plugin-</li>
+<li>Once you&#39;re all good, proceed to filing a pull request of publishing your plugin</li>
+</ol>
+
+<h2>Publishing</h2>
+
+<h3>Preparation</h3>
+
+<ol>
+<li>Make sure your changes are on their own branch that is branched off from master
+
+<ol>
+<li>You can do this by: <code>git checkout master; git checkout -b your-new-branch</code></li>
+<li>And push the changes up by: <code>git push origin your-new-branch</code></li>
+</ol></li>
+<li>Make sure all tests are passing: <code>cake test</code>
+
+<ol>
+<li>If possible, add tests for your change, if you don&#39;t know how, mention this in your pull request</li>
+</ol></li>
+<li>If the project has a prepublish step, run it: <code>cake prepublish</code> (if it doesn&#39;t have this step, that command will fail, no worries)</li>
+</ol>
+
+<h3>Testing the DocPad Core against Plugins</h3>
+
+<p>Before you submit changes to the DocPad Core you&#39;ll want to make sure they don&#39;t break any of our officially supported plugins:</p>
+
+<ol>
+<li>Clone the <a href="https://github.com/bevry/docpad-extras"><code>docpad-extras</code> repository</a> and cd into it: <code>cd ~; git clone https://github.com/bevry/docpad-extras.git; cd docpad-extras</code></li>
+<li>Make your development docpad instance available to the plugin runner: <code>npm link docpad</code></li>
+<li>Install the dependencies: <code>npm install</code></li>
+<li>Clone the plugins: <code>./app clone</code></li>
+<li>Test the plugins: <code>./app test</code></li>
+</ol>
+
+<h3>Pull Request</h3>
+
+<p>To send your changes for the project owner to merge in:</p>
+
+<ol>
+<li>Submit your pull request
+
+<ol>
+<li>When submitting, if the original project has a <code>dev</code> or <code>integrate</code> branch, use that as the target branch for your pull request instead of the default <code>master</code></li>
+<li>By submitting a pull request, you agree that your submission can be used freely and without restraint by those whom your submitting the pull request to</li>
+</ol></li>
+</ol>
+
+<h3>Publish</h3>
+
+<p>To publish your changes as the project owner:</p>
+
+<ol>
+<li>Switch to the master branch: <code>git checkout master</code></li>
+<li>Merge in the changes of the feature branch (if applicable)</li>
+<li><p>Increment the version number in the <code>package.json</code> file according to the <a href="http://semver.org/">semver</a> standard, that is:</p>
+
+<ol>
+<li>If everything will break, increment the major version</li>
+<li>If something may break, increment the minor version</li>
+<li>If nothing will break, increment the revision version</li>
+</ol></li>
+<li><p>Add an entry to the changelog following the format of the previous entries, an example of this is:</p>
+
+<pre class="highlight"><code class="markdown"><span class="bullet">- </span>v6.29.0 April 1, 2013
+<span class="code">    - Progress on [issue #474](https://github.com/bevry/docpad/issues/474)</span>
+<span class="code">    - DocPad will now set permissions based on the process's ability</span>
+<span class="code">        - Thanks to [Avi Deitcher](https://github.com/deitch), [Stephan Lough](https://github.com/stephanlough) for [issue #165](https://github.com/bevry/docpad/issues/165)</span>
+<span class="code">    - Updated dependencies</span>
+</code></pre></li>
+<li><p>Commit the changes with the commit title set to something like <code>v6.29.0. Bugfix. Improvement.</code> and commit description set to the changelog entry</p></li>
+<li><p>Publish the module to npm, create a git tag for it, push your master changes and new tags up to origin: <code>cake publish</code></p>
+
+<ol>
+<li>When prompted for your git tag annotation (your text editor will open up automatically), use the changelog entry that we wrote in step 2, save the prompted file, and close the file</li>
+</ol></li>
+<li><p>Party!</p></li>
+</ol>
+</section>
+  <footer class="block-footer">
+    <nav class="prev-next">
+      <a class="prev" href="/docs/upgrade">
+        <span class="icon">
+        </span>
+        <span class="title">
+          Upgrade Guides
+        </span>
+      </a>
+      <a class="up" href="/docs/">
+        <span class="icon">
+        </span>
+        <span class="title">
+          Documentation
+        </span>
+      </a>
+      <a class="next" href="/docs/participate">
+        <span class="icon">
+        </span>
+        <span class="title">
+          Participate
+        </span>
+      </a>
+    </nav>
+  </footer>
+</article>
+<aside class="block-edit">
+  <a href="https://github.com/docpad/documentation/edit/master/community/contribute.html.md">Edit and improve this page!</a>
+</aside>
+  </div>
+</section>
+</div>
+<footer class="bottombar">
+  <div class="about">
+    DocPad is a <a href="http://bevry.me" title="Bevry - Node.js, Backbone.js & JavaScript Consultancy in Sydney, Australia">Bevry</a> creation.
+  </div>
+  <div class="links">
+    <a href="/">
+      DocPad
+    </a>
+    <a href="https://github.com/bevry/docpad">
+      GitHub
+    </a>
+    <a href="/support">
+      Support
+    </a>
+  </div>
+</footer>
+<a class="webchat" href="http://webchat.freenode.net/?channels=docpad" target="_blank">
+  IRC Chat
+</a>
+
+	</div>
+
+	<!-- DocPad Scripts + Our Own -->
+	<script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><!-- Begin Inspectlet Embed Code -->
+<script id="inspectletjs">
+	window.__insp = window.__insp || [];
+	__insp.push(['wid', 746529266]);
+	(function() {
+		function __ldinsp(){var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://www.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); }
+		if (window.attachEvent){
+			window.attachEvent('onload', __ldinsp);
+		}else{
+			window.addEventListener('load', __ldinsp, false);
+		}
+	})();
+</script>
+<!-- End Inspectlet Embed Code --><script defer="defer"  src="/vendor/jquery.js?websiteVersion=0.1.27"></script><script defer="defer"  src="/vendor/jquery-scrollto.js?websiteVersion=0.1.27"></script><script defer="defer"  src="/vendor/modernizr.js?websiteVersion=0.1.27"></script><script defer="defer"  src="/vendor/history.js?websiteVersion=0.1.27"></script><script defer="defer"  src="/vendor/historyjsit.js?websiteVersion=0.1.27"></script><script defer="defer"  src="/scripts/bevry.js?websiteVersion=0.1.27"></script><script defer="defer"  src="/scripts/script.js?websiteVersion=0.1.27"></script>
+</body>
+</html>
