@@ -1,0 +1,9 @@
+<!doctype html>
+<html>
+  <%- @partial('head') %>
+  <body>
+    <%- @content %>
+    <%- @partial('footer') %>
+    <script src='/js/ga.js'></script>
+  </body>
+</html>

@@ -1,6 +1,10 @@
 docpadConfig = {
   rootPath: process.cwd()
   packagePath: 'package.json'
+  templateData:
+    site:
+      url: 'http://jsgirls.org'
+      title: 'JS Girls'
   plugins:
     ghpages:
       deployRemote: 'origin'
@@ -11,7 +15,6 @@ docpadConfig = {
       stylusOptions:
         compress: true
         'include css': true
-
   environments:
     development:
       stylusOptions:
