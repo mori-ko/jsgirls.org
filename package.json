@@ -1,6 +1,6 @@
 {
   "name": "jsgirls.github.io",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Hello, We are JS Girls!",
   "engines": {
     "node": "0.10",
@@ -11,7 +11,9 @@
     "docpad-plugin-ghpages": "~2.4.3",
     "docpad-plugin-jade": "~2.6.2",
     "docpad-plugin-marked": "~2.2.0",
-    "docpad-plugin-stylus": "~2.5.0"
+    "docpad-plugin-stylus": "~2.5.0",
+    "docpad-plugin-eco": "~2.0.3",
+    "docpad-plugin-partials": "~2.8.1"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
