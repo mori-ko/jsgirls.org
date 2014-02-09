@@ -2,6 +2,9 @@ docpadConfig = {
   rootPath: process.cwd()
   packagePath: 'package.json'
   plugins:
+    ghpages:
+      deployRemote: 'origin'
+      deployBranch: 'master'
     stylus:
       stylusLibraries:
         nib: false
