@@ -2,10 +2,7 @@
 <html>
   <%- @partial('head') %>
   <body>
-    <%- @partial('header') %>
-    <div class='container'>
-      <%- @content %>
-    </div>
+    <%- @content %>
     <%- @partial('footer') %>
     <script src='/js/ga.js'></script>
   </body>
