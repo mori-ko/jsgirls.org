@@ -1,1 +1,2 @@
-footer 2014, <%= @site.title %>. <a href=''>Contact us</a> or follow us on <a href='http://twitter.com/girlsjs'>Twitter</a> or Facebook
+footer.container.
+  2014, <%= @site.title %>. Contact us or follow us on <a href='http://twitter.com/girlsjs'>Twitter</a> or Facebook
