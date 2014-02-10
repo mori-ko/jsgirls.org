@@ -1,0 +1,34 @@
+---
+title: "Hello, We are JS Girls!"
+layout: "index"
+isPage: true
+---
+
+.container
+  .top-container
+    img(src='/img/logo.png')
+    p.top-container__paragraph Hello, We are JS Girls!
+  .top-summary.clearfix
+    img(src='/img/logo.png', width='200px', height='200px').top-summary__image
+    p.top-summary__paragraph.
+      Ajaxという言葉の登場以来、JavaScriptは今日のWebにとっては欠かせない言語となっています。
+      今ではフロントエンドのみならずバックエンドでもJavaScriptは使われるようになりました。
+      この言語に慣れ親しみ、自分でモノを作る人が増えればWebはもっとよくなります。
+      JS Girlsはより多くの女性がJavaScriptを学ぶためのキッカケとなるコミュニティです。
+      JS Girlsではそれぞれの地域でそれぞれのスタイルでイベントを開催することができます。
+
+  div
+    h1
+      a(href='/events') Upcoming Events
+    .divider
+    ul
+    <% for page in @getCollection("events").toJSON(): %>
+      li(class='event-summary')
+        .event-summary__thumbnail
+          img(src='/img/logo.png', width='200px', height='200px')
+        .event-summary__paragraph
+          date <%= page.date %>
+          h2
+            a(href='<%= page.url %>') <%= page.title %>
+          p <%= page.summary %>
+    <% end %>

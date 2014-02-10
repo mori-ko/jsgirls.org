@@ -1,0 +1,15 @@
+---
+title: "Event"
+layout: "default"
+isPage: true
+---
+
+.container
+  div
+    h1.
+      Upcoming Events
+    ul
+    <% for page in @getCollection("events").toJSON(): %>
+      li(class='<%= if page.id is @document.id then 'active' else 'inactive' %>')
+        a(href='<%= page.url %>') <%= page.title %>
+    <% end %>
