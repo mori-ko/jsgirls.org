@@ -10,7 +10,7 @@ docpadConfig = {
       @getCollection('html').findAllLive({isEvent: true})
   plugins:
     ghpages:
-      deployRemote: 'origin'
+      deployRemote: 'www'
       deployBranch: 'master'
     cleanurls:
       collectionName: 'events'
