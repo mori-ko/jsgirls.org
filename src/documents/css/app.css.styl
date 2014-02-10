@@ -1,11 +1,59 @@
 @import 'reset.css'
+@import 'helper.css'
+@import 'base.css'
 
 emphasis-yellow = #f0db4f
 
-body {
-  color: #000;
-  background: #fff;
-  font-size: 20px;
-  font-weight: normal;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.divider {
+  display: block;
+  content: '';
+  height: 5px;
+  background: emphasis-yellow;
+}
+
+.global-header {
+  background: emphasis-yellow;
+}
+.global-footer {}
+  
+.top-container {
+  text-align: center;
+  background: emphasis-yellow;
+}
+.top-container__paragraph {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 3;
+}
+.top-summary {
+  display: table;
+}
+.top-summary__image {
+  display: table-cell;
+  vertical-align: top;
+  padding: 10px 0;
+}
+.top-summary__paragraph {
+  display: table-cell;
+  vertical-align: top;
+  padding: 20px;
+}
+
+.event-summary {
+  display: table;
+}
+.event-summary__thumbnail {
+  display: table-cell;
+  vertical-align: top;
+  padding: 10px 0;
+}
+.event-summary__paragraph {
+  display: table-cell;
+  vertical-align: top;
+  padding: 20px;
 }
