@@ -5,10 +5,15 @@ docpadConfig = {
     site:
       url: 'http://jsgirls.org'
       title: 'JS Girls'
+  collections:
+    events: ->
+      @getCollection('html').findAllLive({isEvent: true})
   plugins:
     ghpages:
       deployRemote: 'origin'
       deployBranch: 'master'
+    cleanurls:
+      collectionName: 'events'
     stylus:
       stylusLibraries:
         nib: false
@@ -16,6 +21,10 @@ docpadConfig = {
         compress: true
         'include css': true
   environments:
+    static:
+      plugins:
+        cleanurls:
+          enabled: false
     development:
       stylusOptions:
         compress: false
