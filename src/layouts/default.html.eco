@@ -2,9 +2,6 @@
 <html>
   <%- @partial('head') %>
   <body>
-    <%- @partial('header') %>
     <%- @content %>
-    <%- @partial('footer') %>
-    <script src='/js/ga.js'></script>
   </body>
 </html>
