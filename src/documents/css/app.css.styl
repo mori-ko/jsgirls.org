@@ -19,6 +19,7 @@ html
 h1,h2,h3,h4,h5,h6,p,ul,dl
   margin 0
   margin-bottom 10px
+  padding 0
 
 img
   vertical-align top
@@ -34,6 +35,11 @@ img
   border-bottom 5px solid $js-yellow
   font-size 2.2rem
   font-family: $js-type;
+  a
+    text-decoration none
+    color inherit
+    &:hover
+      color: $js-pink
 
 .beta
   margin-bottom 10px
@@ -46,6 +52,9 @@ img
   font-weight bold
 
 // Layout
+.the-hero
+  background-color $js-yellow
+  
 .the-header
   background-color $js-yellow
   // background-image url('/img/logo-min.png')
@@ -77,6 +86,13 @@ img
     display: inline
 
 // Component
+.tagline
+  font-size 4rem
+  font-family $js-type
+
+.intro
+  font-size: 1.2rem
+
 .site-name
   line-height 1
   font-size 3rem
@@ -94,6 +110,10 @@ img
 
 .section
   margin-bottom 20px
+
+.event-list
+  > li
+    margin-bottom 20px
 
 .media
   overflow hidden // Clearfix
@@ -127,4 +147,5 @@ img
 
 .frame
   border 1px solid $js-gray
+  background-color $js-gray
 
