@@ -1,7 +1,13 @@
 <!doctype html>
 <html>
-  <%- @partial('head') %>
-  <body>
-    <%- @content %>
-  </body>
+<%- @partial('head') %>
+<body>
+<%- @partial('header') %>
+<div class="the-main">
+  <div class="l-container">
+  <%- @content %>
+  </div>
+</div>
+<%- @partial('footer') %>
+</body>
 </html>

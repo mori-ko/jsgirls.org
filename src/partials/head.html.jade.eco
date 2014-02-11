@@ -4,4 +4,5 @@ head
   meta(name='description', content='Hello, We are JS Girls!')
   title <%= if @document.title then "#{@document.title} | #{@site.title}" else @site.title %>
   link(href='/favicon.ico', rel='icon')
+  link(href='//fonts.googleapis.com/css?family=Yeseva+One', rel='stylesheet')
   link(href='/css/app.css', rel='stylesheet')
