@@ -1,0 +1,92 @@
+---
+title: "JS Girls Tokyo #1"
+date: "2014/03/08"
+place: "Tokyo, Japan"
+summary: "おっすおらぽこたん！れっつえんじょいぽこたん！おっすおらぽこたん！れっつえんじょいぽこたん！おっすおらぽこたん！れっつえんじょいぽこたん！おっすおらぽこたん！れっつえんじょいぽこたん！"
+layout: "event"
+isEvent: true
+---
+
+.section
+  .kite-g
+    .kite-g__c.kite-g__c--6
+      img.frame(src='data:image/gif;base64,R0lGODlhAQABAIAAAP//////zCH5BAEHAAAALAAAAAABAAEAAAICRAEAOw==', width='100%', height='320')
+    .kite-g__c.kite-g__c--6
+      h2.beta <%= @document.title %>
+      p <%= @document.date %>
+      p <%= @document.summary %>
+
+.section
+  .kite-g
+    .kite-g__c.kite-g__c--6
+       h2 参加条件
+       p イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！
+    .kite-g__c.kite-g__c--6
+       h2 必要なもの
+       p イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！
+
+  .kite-g
+    .kite-g__c.kite-g__c--6
+      h3.beta Schedule
+      table.table
+        thead.table__head
+          tr
+            th.table__title 時間
+            th 内容
+        tbody
+          tr
+            th.table__title 9:30
+            td.table__cell 開場
+          tr
+            th.table__title 10:00
+            td.table__cell はじめてのJavaScript（山田 敬美）
+          tr
+            th.table__title 11:00
+            td.table__cell ハンズオン（泉水 翔吾）
+          tr
+            th.table__title 12:30
+            td.table__cell ランチ
+          tr
+            th.table__title 13:30
+            td.table__cell もくもく開発!
+          tr
+            th.table__title 19:00
+            td.table__cell 懇親会・発表
+          tr
+            th.table__title 21:00
+            td.table__cell 解散
+    .kite-g__c.kite-g__c--6
+      h2.beta Media
+      .section
+        .media
+          .media__image
+            img.frame(src='http://frontrend.github.io/images/speakers/tani.jpg', width='100px', height='100px')
+          .media__body
+            h3 ぽこたん
+            p おっすおらぽこたん！れっつえんじょいぽこたん！おっすおらぽこたん！れっつえんじょいぽこたん！おっすおらぽこたん！れっつえんじょいぽこたん！
+      .section
+        .media
+          .media__image
+            img.frame(src='http://frontrend.github.io/images/speakers/sensui.jpg', width='100px', height='100px')
+          .media__body
+            h3 ぽこたん
+            p おっすおらぽこたん！れっつえんじょいぽこたん！おっすおらぽこたん！れっつえんじょいぽこたん！おっすおらぽこたん！れっつえんじょいぽこたん！
+
+  .kite-g
+    .kite-g__c.kite-g__c--12
+      h2.beta Location
+    .kite-g__c.kite-g__c--6
+      img.frame(src='data:image/gif;base64,R0lGODlhAQABAIAAAP//////zCH5BAEHAAAALAAAAAABAAEAAAICRAEAOw==', width='100%', height='160')
+    .kite-g__c.kite-g__c--6
+      h2 参加条件
+      p イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！
+  
+  .kite-g
+    .kite-g__c.kite-g__c--12
+      h2.beta Partner
+    .kite-g__c.kite-g__c--4
+      img.frame(src='data:image/gif;base64,R0lGODlhAQABAIAAAP//////zCH5BAEHAAAALAAAAAABAAEAAAICRAEAOw==', width='100%', height='160')
+    .kite-g__c.kite-g__c--4
+      img.frame(src='data:image/gif;base64,R0lGODlhAQABAIAAAP//////zCH5BAEHAAAALAAAAAABAAEAAAICRAEAOw==', width='100%', height='160')
+    .kite-g__c.kite-g__c--4
+      img.frame(src='data:image/gif;base64,R0lGODlhAQABAIAAAP//////zCH5BAEHAAAALAAAAAABAAEAAAICRAEAOw==', width='100%', height='160')
