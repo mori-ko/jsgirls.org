@@ -2,7 +2,7 @@
 <html>
   <%- @partial('head') %>
   <body>
-    <%- @partial('header-index') %>
+    <%- @partial('hero') %>
     <div class="the-main">
       <div class="l-container">
       <%- @content %>
