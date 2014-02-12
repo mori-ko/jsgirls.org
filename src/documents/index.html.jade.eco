@@ -16,7 +16,7 @@ div.section
         JS Girlsはより多くの女性がJavaScriptを学ぶためのキッカケとなるコミュニティです。
         JS Girlsではそれぞれの地域でそれぞれのスタイルでイベントを開催することができます。
 
-//-　div.section
+div.section
   div.kite-g
     div.kite-g__c.kite-g__c--12
       h2.alpha 

@@ -1,15 +1,23 @@
 ---
 title: "Event"
-layout: "event"
+layout: "default"
 isPage: true
 ---
 
-.container
-  div
-    h1.
-      Upcoming Events
-    ul
-    <% for page in @getCollection("events").toJSON(): %>
-      li(class='<%= if page.id is @document.id then 'active' else 'inactive' %>')
-        a(href='<%= page.url %>') <%= page.title %>
-    <% end %>
+div.section
+  div.kite-g
+    div.kite-g__c.kite-g__c--12
+      h2.alpha
+        a(href='/events') Upcoming Events
+    
+  ul.section.event-list
+  <% for page in @getCollection("events").toJSON(): %>
+    li.kite-g
+      div.kite-g__c.kite-g__c--4
+        img.frame(src='data:image/gif;base64,R0lGODlhAQABAIAAAP//////zCH5BAEHAAAALAAAAAABAAEAAAICRAEAOw==', width='100%', height='160')
+      div.kite-g__c.kite-g__c--8
+        p <%= page.date %>
+        h2.beta
+          a(href='<%= page.url %>') <%= page.title %>
+        p <%= page.summary %>
+  <% end %>
