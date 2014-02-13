@@ -10,7 +10,7 @@ isEvent: true
 .section
   .kite-g
     .kite-g__c.kite-g__c--6
-      img.frame(src='data:image/gif;base64,R0lGODlhAQABAIAAAP//////zCH5BAEHAAAALAAAAAABAAEAAAICRAEAOw==', width='100%', height='320')
+      img.frame(src='/img/event/tokyo-201403.jpg', width='100%')
     .kite-g__c.kite-g__c--6
       h2.beta <%= @document.title %>
       p <%= @document.date %>
@@ -63,17 +63,19 @@ isEvent: true
             img.frame(src='/img/avatar/tacamy.jpg', width='100px', height='100px')
           .media__body
             h3 山田 敬美 (株式会社ピクセルグリッド)
-            p Web制作会社にて自社サービスのHTML/CSSコーダーを数年間経験後、専門学校にてプログラミングの基礎を1年間学ぶ。
-              2014年に株式会社ピクセルグリッドの新卒フロントエンド・エンジニアとしてWebの世界に返り咲く。
+            p
+              | Web制作会社にて自社サービスのHTML/CSSコーダーを数年間経験後、専門学校にてプログラミングの基礎を1年間学ぶ。
+              | 2014年に株式会社ピクセルグリッドの新卒フロントエンド・エンジニアとしてWebの世界に返り咲く。
       .section
         .media
           .media__image
             img.frame(src='/img/avatar/1000ch.jpg', width='100px', height='100px')
           .media__body
             h3 泉水 翔吾 (株式会社サイバーエージェント)
-            p プログラマー出身のフロントエンドディベロッパー。
-              JavaScript等のフロントエンド技術を中心に、日々ブラウザの気持ちを考えている一方で、
-              プライベートではPythonもRubyもやる雑食系。 個人ブログ<a href='http://1000ch.net'>1000ch.net</a>で、技術情報を発信中。
+            p
+              | プログラマー出身のフロントエンドディベロッパー。
+              | JavaScript等のフロントエンド技術を中心に、日々ブラウザの気持ちを考えている一方で、
+              | プライベートではPythonもRubyもやる雑食系。 個人ブログ<a href='http://1000ch.net'>1000ch.net</a>で、技術情報を発信中。
 
   .kite-g
     .kite-g__c.kite-g__c--12
