@@ -6,3 +6,6 @@ head
   link(href='/favicon.ico', rel='icon')
   link(href='//fonts.googleapis.com/css?family=Yeseva+One', rel='stylesheet')
   link(href='/css/app.css', rel='stylesheet')
+  script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyACsseRIipyUj0mejJm1ALN_SHFse8_RaA&sensor=true')
+  script(src='/js/namespace.js')
+  script(src='/js/map.js')
