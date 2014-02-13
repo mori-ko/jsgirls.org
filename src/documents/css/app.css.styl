@@ -25,6 +25,10 @@ img
   vertical-align top
   max-width 100%
 
+hr,
+.hr 
+  border-bottom 5px solid $js-yellow
+
 // Typography
 .type
   font-family: $js-type;
@@ -45,6 +49,14 @@ img
   margin-bottom 10px
   font-size 1.6rem
   font-family: $js-type;
+  a
+    text-decoration none
+    color inherit
+    &:hover
+      color: $js-pink
+.beta--headline
+  padding-bottom 10px
+  border-bottom 1px solid $js-gray
 
 .omega
   margin-bottom 10px
@@ -109,7 +121,7 @@ img
   margin-bottom 8px
 
 .section
-  margin-bottom 20px
+  margin-bottom 30px
 
 .event-list
   > li

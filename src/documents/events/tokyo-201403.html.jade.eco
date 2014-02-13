@@ -12,7 +12,7 @@ isEvent: true
     .kite-g__c.kite-g__c--6
       img.frame(src='/img/event/tokyo-201403.jpg', width='100%')
     .kite-g__c.kite-g__c--6
-      h2.beta <%= @document.title %>
+      h2.alpha <%= @document.title %>
       p <%= @document.date %>
       p <%= @document.summary %>
 
@@ -25,9 +25,10 @@ isEvent: true
        h2 必要なもの
        p イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！
 
+.section
   .kite-g
     .kite-g__c.kite-g__c--6
-      h3.beta Schedule
+      h3.beta スケジュール
       table.table
         thead.table__head
           tr
@@ -56,32 +57,35 @@ isEvent: true
             th.table__title 21:00
             td.table__cell 解散
     .kite-g__c.kite-g__c--6
-      h2.beta Mentor
+      h2.beta 講師
       .section
-        .media
+        .media.profile
           .media__image
             img.frame(src='/img/avatar/tacamy.jpg', width='100px', height='100px')
           .media__body
-            h3 山田 敬美 (株式会社ピクセルグリッド)
+            h3 山田 敬美
+            p (株式会社ピクセルグリッド)
             p
               | Web制作会社にて自社サービスのHTML/CSSコーダーを数年間経験後、専門学校にてプログラミングの基礎を1年間学ぶ。
               | 2014年に株式会社ピクセルグリッドの新卒フロントエンド・エンジニアとしてWebの世界に返り咲く。
       .section
-        .media
+        .media.profile
           .media__image
             img.frame(src='/img/avatar/1000ch.jpg', width='100px', height='100px')
           .media__body
-            h3 泉水 翔吾 (株式会社サイバーエージェント)
+            h3 泉水 翔吾
+            p (株式会社サイバーエージェント)
             p
               | プログラマー出身のフロントエンドディベロッパー。
               | JavaScript等のフロントエンド技術を中心に、日々ブラウザの気持ちを考えている一方で、
               | プライベートではPythonもRubyもやる雑食系。 個人ブログ<a href='http://1000ch.net'>1000ch.net</a>で、技術情報を発信中。
 
+.section
   .kite-g
     .kite-g__c.kite-g__c--12
-      h2.beta Location
+      h2.beta 開催場所
     .kite-g__c.kite-g__c--6
-      div.map-canvas#js-map-canvas
+      div.map-canvas.frame#js-map-canvas
     .kite-g__c.kite-g__c--6
       h2 グーグル株式会社
       p 〒106-6126
@@ -98,18 +102,19 @@ isEvent: true
         br
         | 東京メトロ 千代田線「乃木坂」5出口 徒歩10分
   
+.section
   .kite-g
     .kite-g__c.kite-g__c--12
-      h2.beta Partner
+      h2.beta 協力
     .kite-g__c.kite-g__c--4
       a(href='http://www.google.co.jp', target='_blank')
-        img.frame(src='/img/partner/google.jpg', width='100%')
+        img(src='/img/partner/google.jpg', width='100%')
     .kite-g__c.kite-g__c--4
       a(href='http://www.cyberagent.co.jp', target='_blank')
-        img.frame(src='/img/partner/cyberagent.jpg', width='100%')
+        img(src='/img/partner/cyberagent.jpg', width='100%')
     .kite-g__c.kite-g__c--4
       a(href='http://www.pxgrid.com/', target='_blank')
-        img.frame(src='/img/partner/pixelgrid.jpg', width='100%')
+        img(src='/img/partner/pixelgrid.jpg', width='100%')
 
 script.
   var map = new jsgirls.Map('#js-map-canvas', {
