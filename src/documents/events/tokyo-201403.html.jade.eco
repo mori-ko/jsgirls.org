@@ -102,6 +102,12 @@ isEvent: true
         br
         | 東京メトロ 千代田線「乃木坂」5出口 徒歩10分
   
+
+.section
+  .kite-g.kite-g--center
+    .kite-g__c.kite-g__c--center.kite-g__c--8
+      a.button.button-primary.button-full 申し込み
+      
 .section
   .kite-g
     .kite-g__c.kite-g__c--12
