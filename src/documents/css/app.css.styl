@@ -7,7 +7,7 @@ $js-black = #000000;
 $js-gray = #D8D8D8;
 $js-yellow = #EFDA5B;
 $js-pink = #DB80BF;
-$js-sky = #3FCDDB;
+$js-blue = #3FCDDB;
 $js-type = 'Yeseva One', cursive;
 
 // Base
@@ -156,6 +156,37 @@ hr,
   text-align center
 .table__cell--right
   text-align right
+
+.button
+  // TODO: Separated font-size setting
+  display inline-block
+  border-radius 3px
+  border 1px solid $js-yellow
+  padding 0.5em 1em
+  background-color: $js-yellow
+  font-weight bold
+  &:hover
+    background-color mix($js-yellow,#FFF,80%)
+  &.is-disabled
+    border 1px solid $js-gray !important
+    background-color $js-gray !important
+    color #000 !important
+.button-primary
+  border-color $js-pink
+  background-color: $js-pink
+  font-size 2rem
+  &:hover
+    background-color mix($js-pink,#FFF,80%)
+.button-secondary
+  border-color $js-blue
+  background-color: $js-blue
+  &:hover
+    background-color mix($js-blue,#FFF,80%)
+.button-full
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  width 100%
 
 .frame
   border 1px solid $js-gray
