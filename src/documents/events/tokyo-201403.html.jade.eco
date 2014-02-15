@@ -137,9 +137,11 @@ image: "/img/event/tokyo-201403.jpg"
         img(src='/img/partner/pixelgrid.jpg', width='100%')
 
 script.
-  var map = new jsgirls.Map('#js-map-canvas', {
-    lat: 35.6606782, 
-    lng: 139.72862716,
-    zoom: 15,
-    title: 'Google Japan'
+  window.addEventListener('load', function () {
+    var map = new jsgirls.Map('#js-map-canvas', {
+      lat: 35.6606782, 
+      lng: 139.72862716,
+      zoom: 15,
+      title: 'Google Japan'
+    });
   });
