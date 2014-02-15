@@ -8,26 +8,26 @@ isEvent: true
 ---
 
 .section
-  .g
-    .g__c.g__c--6
+  .grid
+    .grid__cell.grid__cell--6
       img.frame(src='/img/event/tokyo-201403.jpg', width='100%')
-    .g__c.g__c--6
+    .grid__cell.grid__cell--6
       h2.alpha <%= @document.title %>
       p <%= @document.date %>
       p <%= @document.summary %>
 
 .section
-  .g
-    .g__c.g__c--6
+  .grid
+    .grid__cell.grid__cell--6
        h2 参加条件
        p イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！
-    .g__c.g__c--6
+    .grid__cell.grid__cell--6
        h2 必要なもの
        p イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！
 
 .section
-  .g
-    .g__c.g__c--6
+  .grid
+    .grid__cell.grid__cell--6
       h3.beta スケジュール
       table.table
         thead.table__head
@@ -37,26 +37,26 @@ isEvent: true
         tbody
           tr
             th.table__title 9:30
-            td.table__cell 開場
+            td.table__cellell 開場
           tr
             th.table__title 10:00
-            td.table__cell はじめてのJavaScript（山田 敬美）
+            td.table__cellell はじめてのJavaScript（山田 敬美）
           tr
             th.table__title 11:00
-            td.table__cell ハンズオン（泉水 翔吾）
+            td.table__cellell ハンズオン（泉水 翔吾）
           tr
             th.table__title 12:30
-            td.table__cell ランチ
+            td.table__cellell ランチ
           tr
             th.table__title 13:30
-            td.table__cell もくもく開発!
+            td.table__cellell もくもく開発!
           tr
             th.table__title 19:00
-            td.table__cell 懇親会・発表
+            td.table__cellell 懇親会・発表
           tr
             th.table__title 21:00
-            td.table__cell 解散
-    .g__c.g__c--6
+            td.table__cellell 解散
+    .grid__cell.grid__cell--6
       h2.beta 講師
       .section
         .media.profile
@@ -81,12 +81,12 @@ isEvent: true
               | プライベートではPythonもRubyもやる雑食系。 個人ブログ<a href='http://1000ch.net'>1000ch.net</a>で、技術情報を発信中。
 
 .section
-  .g
-    .g__c.g__c--12
+  .grid
+    .grid__cell.grid__cell--12
       h2.beta 開催場所
-    .g__c.g__c--6
+    .grid__cell.grid__cell--6
       div.map-canvas.frame#js-map-canvas
-    .g__c.g__c--6
+    .grid__cell.grid__cell--6
       h2.omega グーグル株式会社
       p 〒106-6126
       p
@@ -104,21 +104,21 @@ isEvent: true
   
 
 .section
-  .g.g--center
-    .g__c.g__c--center.g__c--8
+  .grid.grid--center
+    .grid__cell.grid__cell--center.grid__cell--8
       a.button.button-primary.button-full 申し込み
       
 .section
-  .g
-    .g__c.g__c--12
+  .grid
+    .grid__cell.grid__cell--12
       h2.beta 協力
-    .g__c.g__c--4
-      a(href='http://www.google.co.jp', target='_blank')
+    .grid__cell.grid__cell--4
+      a(href='http://www.gridoogle.co.jp', target='_blank')
         img(src='/img/partner/google.jpg', width='100%')
-    .g__c.g__c--4
+    .grid__cell.grid__cell--4
       a(href='http://www.cyberagent.co.jp', target='_blank')
         img(src='/img/partner/cyberagent.jpg', width='100%')
-    .g__c.g__c--4
+    .grid__cell.grid__cell--4
       a(href='http://www.pxgrid.com/', target='_blank')
         img(src='/img/partner/pixelgrid.jpg', width='100%')
 

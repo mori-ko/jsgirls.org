@@ -1,5 +1,5 @@
 footer.the-footer
   div.l-container
-    div.g
-      p.copyright.g__c.g__c--center.g__c--12.
+    div.grid
+      p.copyright.grid__cell.grid__cell--center.grid__cell--12.
         2014, <%= @site.title %>. Contact us or follow us on <a href='http://twitter.com/girlsjs'>Twitter</a>.

@@ -5,17 +5,17 @@ isPage: true
 ---
 
 div.section
-  div.g
-    div.g__c.g__c--12
+  div.grid
+    div.grid__cell.grid__cell--12
       h2.alpha
         a(href='/events') Upcoming Events
     
   ul.section.event-list
   <% for page in @getCollection("events").toJSON(): %>
-    li.g
-      div.g__c.g__c--4
+    li.grid
+      div.grid__cell.grid__cell--4
         img.frame(src='data:image/gif;base64,R0lGODlhAQABAIAAAP//////zCH5BAEHAAAALAAAAAABAAEAAAICRAEAOw==', width='100%', height='160')
-      div.g__c.g__c--8
+      div.grid__cell.grid__cell--8
         p <%= page.date %>
         h2.beta
           a(href='<%= page.url %>') <%= page.title %>

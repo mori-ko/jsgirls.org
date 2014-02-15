@@ -6,7 +6,7 @@
  * 3. Remove inline element's whitespace.
  * 4. Webkit: fixes text-rendering: optimizeLegibility
  */
-.g {
+.grid {
   display: table;
   table-layout: fixed;
   border-collapse: collapse;
@@ -20,7 +20,7 @@
 }
 
 /* Based on the Nicolas method.
-.g {
+.grid {
   display: block;
   width: auto;
   margin: 0 -10px;
@@ -29,29 +29,29 @@
 
 /* Opera 12.x hack */
 .opera-only:-o-prefocus,
-.g {
+.grid {
     word-spacing:-0.43em; /* [3] */
 }
 
-.g--center {
+.grid--center {
   text-align: center;
 }
-.g--right {
+.grid--right {
   text-align: right;
 }
-.g--justify {
+.grid--justify {
   text-align: justify;
   text-justify: distribute-all-lines; 
 }
-.g--full {
+.grid--full {
   margin-left: 0;
 }
-.g--full .g__c {
+.grid--full .grid__cell {
   padding-left: 0;
   padding-right: 0;
 }
 
-.g__c {
+.grid__cell {
   display:inline-block; 
   *display: inline;
   *zoom: 1;
@@ -65,16 +65,16 @@
   text-rendering: auto; /* [3] */
   // font-family: sans-serif; /* [3] */
 }
-.g__c--center {
+.grid__cell--center {
   text-align: center;
 }
-.g__c--right {
+.grid__cell--right {
   text-align: right;
 }
-.g__c--middle {
+.grid__cell--middle {
   vertical-align: middle;
 }
-.g__c--bottom {
+.grid__cell--bottom {
   vertical-align: bottom;
 }
 /**
@@ -86,23 +86,23 @@ $kiteGutter = 20px;
 $kiteColumn = 60px;
 $kiteColumns = 12;
 
-.g__c {
+.grid__cell {
   padding-left: ($kiteGutter / 2);
   padding-right: ($kiteGutter / 2);
 }
 
-.g__c--full { width: 100% }
-.g__c--half { width: 50% }
+.grid__cell--full { width: 100% }
+.grid__cell--half { width: 50% }
 
 for column in (1..12)
-  .g__c--{column}
+  .grid__cell--{column}
     $thisGutter = $kiteGutter * column
     $thisColumn = $kiteColumn * column
     width: unit((($thisColumn + $thisGutter) / $kiteContainer) * 100, '%')
 
 @media only screen and (max-width: 640px)
-  .g__c
+  .grid__cell
     margin-bottom 10px
   for column in (1..12)
-    .g__c--{column}
+    .grid__cell--{column}
       width: 100%
