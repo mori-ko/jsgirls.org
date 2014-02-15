@@ -6,8 +6,9 @@
 $js-black = #000000;
 $js-gray = #D8D8D8;
 $js-yellow = #EFDA5B;
-$js-pink = #DB80BF;
-$js-blue = #3FCDDB;
+$js-pink = #FF61AD;
+$js-blue = #61D9FF;
+$js-orange = #FF914D;
 $js-type = 'Yeseva One', cursive;
 
 // Base
@@ -20,6 +21,10 @@ h1,h2,h3,h4,h5,h6,p,ul,dl
   margin 0
   margin-bottom 10px
   padding 0
+
+strong
+  color: $js-orange
+  font-weight bold
 
 img
   vertical-align top
@@ -161,12 +166,12 @@ hr,
   // TODO: Separated font-size setting
   display inline-block
   border-radius 3px
-  border 1px solid $js-yellow
+  border 1px solid $js-orange
   padding 0.5em 1em
-  background-color: $js-yellow
+  background-color: $js-orange
   font-weight bold
   &:hover
-    background-color mix($js-yellow,#FFF,80%)
+    background-color mix($js-orange,#FFF,80%)
   &.is-disabled
     border 1px solid $js-gray !important
     background-color $js-gray !important
@@ -195,3 +200,14 @@ hr,
 .map-canvas
   width 100%
   height 320px
+
+// Helper
+.mbs {
+  margin-bottom 10px
+}
+.mbm {
+  margin-bottom 20px
+}
+.mbl {
+  margin-bottom 30px
+}
