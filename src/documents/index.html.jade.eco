@@ -1,14 +1,14 @@
 ---
 title: "Hello, We are JS Girls!"
-layout: "index"
+layout: "landing"
 isPage: true
 ---
 
-div.section
-  div.g
-    div.g__c.g__c--4
+.section
+  .g
+    .g__c.g__c--4
       img(src='/img/sai.png')
-    div.g__c.g__c--8
+    .g__c.g__c--8
       p.intro.
         Ajaxという言葉の登場以来、JavaScriptは今日のWebにとっては欠かせない言語となっています。
         今ではフロントエンドのみならずバックエンドでもJavaScriptは使われるようになりました。
@@ -16,19 +16,19 @@ div.section
         JS Girlsはより多くの女性がJavaScriptを学ぶためのキッカケとなるコミュニティです。
         JS Girlsではそれぞれの地域でそれぞれのスタイルでイベントを開催することができます。
 
-div.section
-  div.g
-    div.g__c.g__c--12
+.section
+  .g
+    .g__c.g__c--12
       h2.alpha 
         a(href='/events') Upcoming Events
 
   ul.section.event-list
   <% for page in @getCollection("events").toJSON(): %>
     li.g
-      div.g__c.g__c--4
-        img.frame(src='data:image/gif;base64,R0lGODlhAQABAIAAAP//////zCH5BAEHAAAALAAAAAABAAEAAAICRAEAOw==', width='100%', height='160')
-      div.g__c.g__c--8
-        p <%= page.date %>
+      .g__c.g__c--4
+        img.frame(src='<%= page.image %>', width='100%', height='160')
+      .g__c.g__c--8
+        p <%= @moment(page.date).format('YYYY/MM/DD') %>
         h2.beta
           a(href='<%= page.url %>') <%= page.title %>
         p <%= page.summary %>
