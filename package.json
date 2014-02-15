@@ -25,5 +25,17 @@
     "docpad-plugin-partials": "~2.8.1",
     "docpad-plugin-cleanurls": "~2.6.2",
     "docpad-plugin-moment": "~2.0.2"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-cli": "~0.1.13",
+    "grunt-contrib-uglify": "~0.3.2",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-csscomb": "~2.0.1",
+    "grunt-csso": "~0.5.3",
+    "safeps": "~2.2.11",
+    "grunt-jsvalidate": "~0.2.2",
+    "grunt-contrib-csslint": "~0.2.0",
+    "grunt-contrib-jshint": "~0.8.0"
   }
 }

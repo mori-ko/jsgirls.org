@@ -5,7 +5,4 @@ head
   title <%= if @document.title then "#{@document.title} | #{@site.title}" else @site.title %>
   link(href='/favicon.ico', rel='icon')
   link(href='//fonts.googleapis.com/css?family=Yeseva+One', rel='stylesheet')
-  link(href='/css/app.css', rel='stylesheet')
-  script(src='https://maps.googleapis.com/maps/api/js?sensor=true')
-  script(src='/js/namespace.js')
-  script(src='/js/map.js')
+  link(href='/css/app.min.css', rel='stylesheet')

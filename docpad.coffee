@@ -28,6 +28,18 @@ docpadConfig = {
     development:
       stylusOptions:
         compress: false
+  events:
+    writeAfter: (options, next) ->
+      safeps = require('safeps')
+      path = require('path')
+      docpad = @docpad
+      rootPath = docpad.getConfig().rootPath
+      gruntPath = path.join(rootPath, 'node_modules', '.bin', 'grunt')
+
+      command = [gruntPath, 'concat', 'csscomb', 'csso', 'uglify']
+      safeps.spawn(command, {cwd: rootPath, output: true}, next)
+
+      @
 }
 
 module.exports = docpadConfig
