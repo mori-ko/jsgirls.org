@@ -6,7 +6,7 @@
  * 3. Remove inline element's whitespace.
  * 4. Webkit: fixes text-rendering: optimizeLegibility
  */
-.kite-g {
+.g {
   display: table;
   table-layout: fixed;
   border-collapse: collapse;
@@ -15,13 +15,12 @@
   margin:0; /* [2] */
   padding:0; /* [2] */
   letter-spacing: -0.30em; /* [3] */
-  font-family: FreeSans, Arimo, "Droid Sans", Helvetica, Arial, sans-serif; /* [3] */
+  // font-family: FreeSans, Arimo, "Droid Sans", Helvetica, Arial, sans-serif; /* [3] */
   text-rendering: optimizespeed; /* [4] */
-  text-align: left;
 }
 
 /* Based on the Nicolas method.
-.kite-g {
+.g {
   display: block;
   width: auto;
   margin: 0 -10px;
@@ -30,29 +29,29 @@
 
 /* Opera 12.x hack */
 .opera-only:-o-prefocus,
-.kite-g {
+.g {
     word-spacing:-0.43em; /* [3] */
 }
 
-.kite-g--center {
+.g--center {
   text-align: center;
 }
-.kite-g--right {
+.g--right {
   text-align: right;
 }
-.kite-g--justify {
+.g--justify {
   text-align: justify;
   text-justify: distribute-all-lines; 
 }
-.kite-g--full {
+.g--full {
   margin-left: 0;
 }
-.kite-g--full .kite-g__c {
+.g--full .g__c {
   padding-left: 0;
   padding-right: 0;
 }
 
-.kite-g__c {
+.g__c {
   display:inline-block; 
   *display: inline;
   *zoom: 1;
@@ -64,19 +63,18 @@
   letter-spacing:normal; /* [3] */
   word-spacing:normal; /* [3] */
   text-rendering: auto; /* [3] */
-  font-family: sans-serif; /* [3] */
-  text-align: left;
+  // font-family: sans-serif; /* [3] */
 }
-.kite-g__c--center {
+.g__c--center {
   text-align: center;
 }
-.kite-g__c--right {
+.g__c--right {
   text-align: right;
 }
-.kite-g__c--middle {
+.g__c--middle {
   vertical-align: middle;
 }
-.kite-g__c--bottom {
+.g__c--bottom {
   vertical-align: bottom;
 }
 /**
@@ -88,16 +86,23 @@ $kiteGutter = 20px;
 $kiteColumn = 60px;
 $kiteColumns = 12;
 
-.kite-g__c {
+.g__c {
   padding-left: ($kiteGutter / 2);
   padding-right: ($kiteGutter / 2);
 }
 
-.kite-g__c--full { width: 100% }
-.kite-g__c--half { width: 50% }
+.g__c--full { width: 100% }
+.g__c--half { width: 50% }
 
 for column in (1..12)
-  .kite-g__c--{column}
+  .g__c--{column}
     $thisGutter = $kiteGutter * column
     $thisColumn = $kiteColumn * column
     width: unit((($thisColumn + $thisGutter) / $kiteContainer) * 100, '%')
+
+@media only screen and (max-width: 640px)
+  .g__c
+    margin-bottom 10px
+  for column in (1..12)
+    .g__c--{column}
+      width: 100%

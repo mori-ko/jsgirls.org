@@ -3,24 +3,29 @@
 @import "vendor/kite.styl";
 
 // Color
-$js-black = #000000;
-$js-gray = #D8D8D8;
-$js-yellow = #EFDA5B;
-$js-pink = #FF61AD;
-$js-blue = #61D9FF;
-$js-orange = #FF914D;
-$js-type = 'Yeseva One', cursive;
+$js-black = #000000
+$js-gray = #D8D8D8
+$js-yellow = #EFDA5B
+$js-pink = #FF61AD
+$js-blue = #61D9FF
+$js-orange = #FF914D
+$js-type = 'Hiragino Kaku Gothic ProN', Helvetica, sans-serif
+$js-type-yeseva = 'Yeseva One', $js-type
 
 // Base
 html
   -webkit-text-size-adjust 100%
   background-color $js-gray
+  font-family $js-type
   color: $js-black
+  @media only screen and (max-width: 640px)
+    font-size 14px
 
 h1,h2,h3,h4,h5,h6,p,ul,dl
   margin 0
   margin-bottom 10px
   padding 0
+  line-height 1.5
 
 strong
   color: $js-orange
@@ -73,6 +78,7 @@ hr,
   background-color $js-yellow
   
 .the-header
+  position relative
   background-color $js-yellow
   // background-image url('/img/logo-min.png')
   // background-position right bottom
@@ -82,6 +88,15 @@ hr,
     color inherit
     &:hover
       color: $js-pink
+  @media only screen and (max-width: 640px)
+    text-align center
+    .site-name
+      display block
+      padding-top 10px
+    .site-banner
+      display none
+    .site-nav
+      margin-bottom 0
 
 .the-main
   padding-top 20px
@@ -90,6 +105,8 @@ hr,
 
 .the-footer
   line-height 88px
+  a
+    color inherit
 
 .l-container
   margin-left auto
@@ -106,6 +123,15 @@ hr,
 .tagline
   font-size 4rem
   font-family $js-type
+  @media only screen and (max-width: 640px)
+    font-size 2rem
+    > span
+      display block
+
+.logo
+  @media only screen and (max-width: 640px)
+    max-width: 150px
+    max-height: 150px
 
 .intro
   font-size: 1.2rem
@@ -123,7 +149,9 @@ hr,
     margin-right 1em
 
 .site-banner
-  margin-bottom 8px
+  position absolute
+  right 10px
+  bottom 10px
 
 .section
   margin-bottom 30px
@@ -200,6 +228,9 @@ hr,
 .map-canvas
   width 100%
   height 320px
+
+.copyright
+  padding 1rem 0
 
 // Helper
 .mbs {
