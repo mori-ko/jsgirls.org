@@ -9,6 +9,6 @@
       </div>
     </div>
     <%- @partial('footer') %>
-    <script src='/js/ga.js'></script>
+    <%- @partial('script') %>
   </body>
 </html>
