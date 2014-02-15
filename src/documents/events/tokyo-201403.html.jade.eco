@@ -5,15 +5,16 @@ place: "Tokyo, Japan"
 summary: "おっすおらぽこたん！れっつえんじょいぽこたん！おっすおらぽこたん！れっつえんじょいぽこたん！おっすおらぽこたん！れっつえんじょいぽこたん！おっすおらぽこたん！れっつえんじょいぽこたん！"
 layout: "event"
 isEvent: true
+image: "/img/event/tokyo-201403.jpg"
 ---
 
 .section
   .grid
     .grid__cell.grid__cell--6
-      img.frame(src='/img/event/tokyo-201403.jpg', width='100%')
+      img.frame(src='<%= @document.image %>', width='100%')
     .grid__cell.grid__cell--6
       h2.alpha <%= @document.title %>
-      p <%= @document.date %>
+      p <%= @moment(@document.date).format('YYYY/MM/DD') %>
       p <%= @document.summary %>
 
 .section
