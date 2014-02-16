@@ -25,57 +25,58 @@ image: "/img/event/tokyo-201403.jpg"
 .section
   .grid
     .grid__cell.grid__cell--6
-      h2.beta <%= @moment(@document.date).format('YYYY/MM/DD(ddd)') %>
-      dl.timetable
-        dt.timetable__time.
-          9:30
-        dd.timetable__content
-          p.strong
-            開場
-          p
-            少し早い時間からはじまります。会場のあるビルの2Fには<a href="http://www.roppongihills.com/shops_restaurants/restaurants/cafe/209220004.html">スターバックスコーヒー</a>があるので、少し早めにきて朝食をとるのも良いかもしれません。
-        dt.timetable__time.
-          10:00
-        dd.timetable__content
-          p.strong
-            講義：はじめてのJavaScript
-          p.
-            <a href="http://twitter.com/tacamy">山田 敬美（@tacamy）</a>によるJavaScript初心者向けの講座です。彼女自身、マークアップエンジニアから、JavaScriptエンジニアへとステップアップした一人です。
-        dt.timetable__time.
-          11:00
-        dd.timetable__content
-          p.strong
-            ハンズオン：Google Chrome拡張機能をつくる
-          p
-            ランチの前に、<a href="http://twitter.com/1000ch">泉水 翔吾（@1000ch）</a>からの午後のハンズオンについての説明です。今回のお題であるGoogle Chrome拡張機能をつくるために必要な知識などを教えてくれます。 
-        dt.timetable__time.
-          12:30
-        dd.timetable__content
-          p.strong
-            ランチ
-          p
-            ランチは会場で用意しています。みんなでわいわいランチも楽しみましょう。
-        dt.timetable__time.
-          13:30
-        dd.timetable__content
-          p.strong
-            もくもく開発!
-          p
-            お腹が満たされたら、さっそく開発をはじめましょう。困ったときには会場にいるメンターがサポートしてくれるので、気軽に質問・相談してみてください。
-        dt.timetable__time.
-          19:00
-        dd.timetable__content
-          p.strong
-            懇親会・発表
-          p
-            長い時間の開発も終わり、懇親会で参加者やメンターと交流しましょう。また成果物をみんなの前で発表できる方は、ぜひ発表してみてください。発表、アウトプットがより成長につながります。
-        dt.timetable__time.
-          21:00
-        dd.timetable__content
-          p.strong
-            解散
-          p
-            一日かけて開発をおこなったイベントも終わり、おつかれさまでした。よければ参加の感想をTwitterやブログで報告してもらえると嬉しいです。
+      .section.aside
+        h2.beta <%= @moment(@document.date).format('YYYY/MM/DD(ddd)') %>
+        dl.timetable
+          dt.timetable__time.
+            9:30
+          dd.timetable__content
+            p.strong
+              開場
+            p
+              少し早い時間からはじまります。会場のあるビルの2Fには<a href="http://www.roppongihills.com/shops_restaurants/restaurants/cafe/209220004.html">スターバックスコーヒー</a>があるので、少し早めにきて朝食をとるのも良いかもしれません。
+          dt.timetable__time.
+            10:00
+          dd.timetable__content
+            p.strong
+              講義：はじめてのJavaScript
+            p.
+              <a href="http://twitter.com/tacamy">山田 敬美（@tacamy）</a>によるJavaScript初心者向けの講座です。彼女自身、マークアップエンジニアから、JavaScriptエンジニアへとステップアップした一人です。
+          dt.timetable__time.
+            11:00
+          dd.timetable__content
+            p.strong
+              ハンズオン：Google Chrome拡張機能をつくる
+            p
+              ランチの前に、<a href="http://twitter.com/1000ch">泉水 翔吾（@1000ch）</a>からの午後のハンズオンについての説明です。今回のお題であるGoogle Chrome拡張機能をつくるために必要な知識などを教えてくれます。 
+          dt.timetable__time.
+            12:30
+          dd.timetable__content
+            p.strong
+              ランチ
+            p
+              ランチは会場で用意しています。みんなでわいわいランチも楽しみましょう。
+          dt.timetable__time.
+            13:30
+          dd.timetable__content
+            p.strong
+              もくもく開発!
+            p
+              お腹が満たされたら、さっそく開発をはじめましょう。困ったときには会場にいるメンターがサポートしてくれるので、気軽に質問・相談してみてください。
+          dt.timetable__time.
+            19:00
+          dd.timetable__content
+            p.strong
+              懇親会・発表
+            p
+              長い時間の開発も終わり、懇親会で参加者やメンターと交流しましょう。また成果物をみんなの前で発表できる方は、ぜひ発表してみてください。発表、アウトプットがより成長につながります。
+          dt.timetable__time.
+            21:00
+          dd.timetable__content
+            p.strong
+              解散
+            p
+              一日かけて開発をおこなったイベントも終わり、おつかれさまでした。よければ参加の感想をTwitterやブログで報告してもらえると嬉しいです。
 
     .grid__cell.grid__cell--6
       .section
