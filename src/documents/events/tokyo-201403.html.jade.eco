@@ -73,25 +73,27 @@ image: "/img/event/tokyo-201403.jpg"
 
     .grid__cell.grid__cell--6
       h2 参加条件
-      p
-        イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！イベントの概要っすぽこたん！
-
-        .section
-          .grid
-            .grid__cell.grid__cell--6
-              .media.profile
-                .media__image
-                  img.frame(src='/img/avatar/tacamy.jpg', width='80px', height='80px')
-                .media__body
-                  h3.omega 山田 敬美
-                  p (株式会社ピクセルグリッド)
-            .grid__cell.grid__cell--6
-              .media.profile
-                .media__image
-                  img.frame(src='/img/avatar/1000ch.jpg', width='80px', height='80px')
-                .media__body
-                  h3.omega 泉水 翔吾
-                  p (株式会社サイバーエージェント)
+      ul
+        li JSを書きたいと思っている人
+        li なんでもいいのでJSを一回書いたことのある人
+        li PC持参出来る方
+      h2 講師
+      .section
+        .grid
+          .grid__cell.grid__cell--6
+            .media.profile
+              .media__image
+                img.frame(src='/img/avatar/tacamy.jpg', width='80px', height='80px')
+              .media__body
+                h3.omega 山田 敬美
+                p (株式会社ピクセルグリッド)
+          .grid__cell.grid__cell--6
+            .media.profile
+              .media__image
+                img.frame(src='/img/avatar/1000ch.jpg', width='80px', height='80px')
+              .media__body
+                h3.omega 泉水 翔吾
+                p (株式会社サイバーエージェント)
 
 
 .section
