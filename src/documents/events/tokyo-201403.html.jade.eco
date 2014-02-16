@@ -2,7 +2,7 @@
 title: "JS Girls Tokyo #1"
 date: "2014/03/08"
 place: "Tokyo, Japan"
-summary: "おっすおらぽこたん！れっつえんじょいぽこたん！おっすおらぽこたん！れっつえんじょいぽこたん！おっすおらぽこたん！れっつえんじょいぽこたん！おっすおらぽこたん！れっつえんじょいぽこたん！"
+summary: "Google Chrome拡張機能をつくってJavaScriptを学ぼう！"
 layout: "event"
 isEvent: true
 image: "/img/event/tokyo-201403.jpg"
@@ -120,7 +120,7 @@ image: "/img/event/tokyo-201403.jpg"
 .section
   .grid.grid--center
     .grid__cell.grid__cell--center.grid__cell--8
-      a.button.button-primary.button-full 申し込み
+      a.button.button--primary.button-full 申し込み
       
 .section
   .grid

@@ -9,12 +9,15 @@ isPage: true
     .grid__cell.grid__cell--4
       img(src='/img/sai.png')
     .grid__cell.grid__cell--8
-      p.intro.
-        Ajaxという言葉の登場以来、JavaScriptは今日のWebにとっては欠かせない言語となっています。
-        今ではフロントエンドのみならずバックエンドでもJavaScriptは使われるようになりました。
-        この言語に慣れ親しみ、自分でモノを作る人が増えればWebはもっとよくなります。
-        JS Girlsはより多くの女性がJavaScriptを学ぶためのキッカケとなるコミュニティです。
-        JS Girlsではそれぞれの地域でそれぞれのスタイルでイベントを開催することができます。
+      h2.beta.
+        JavaScriptを学ぶためのコミュニティ
+      div.intro
+        p.
+          Ajaxという言葉の登場以来、<b>JavaScriptは今日のWebにとっては欠かせない言語</b>となっています。今ではフロントエンドのみならずバックエンドでもJavaScriptは使われるようになりました。
+        p
+          この言語に慣れ親しみ、自分でモノを作る人が増えればWebはもっとよくなります。<br>JS Girlsは<b>より多くの女性がJavaScriptを学ぶためのキッカケとなるコミュニティ</b>です。
+        p 
+          各地で開催されるJS Girlsのイベントに参加してJavaScriptを一緒に学びましょう！
 
 .section
   .grid
@@ -34,3 +37,16 @@ isPage: true
         p <%= page.summary %>
   <% end %>
 
+.section
+  .grid
+    .grid__cell.grid__cell--12
+      div.aside
+        .grid
+          .grid__cell.grid__cell--middle.grid__cell--9
+            h2.beta.
+              あなたの地域でJS Girlsを開催しませんか？
+            p.
+              JS Girlsは好きな地域で、好きなスタイルで開催することができます。
+          .grid__cell.grid__cell--middle.grid__cell--3
+            div
+              a.button.button--secondary.button--full(href='/about/') くわしく知りたい

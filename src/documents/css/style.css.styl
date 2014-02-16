@@ -1,19 +1,23 @@
 // Color
-$js-black = #000000
-$js-gray = #D8D8D8
-$js-yellow = #EFDA5B
-$js-pink = #FF61AD
-$js-blue = #61D9FF
-$js-orange = #FF914D
-$js-type = 'Hiragino Kaku Gothic ProN', Helvetica, sans-serif
-$js-type-yeseva = 'Yeseva One', $js-type
+$black = #000000
+$lightBlack = lighten($black,30%)
+$gray = #D8D8D8
+$lightGray = lighten($gray,30%)
+$yellow = #EFDA5B
+$paleYellow = lighten($yellow,30%)
+$pink = #FF61AD
+// $blue = #61D9FF
+$blue = #4986B9
+$orange = #FF914D
+$type = 'Hiragino Kaku Gothic ProN', Helvetica, sans-serif
+$type-yeseva = 'Yeseva One', $type
 
 // Base
 html
   -webkit-text-size-adjust 100%
-  background-color $js-gray
-  font-family $js-type
-  color: $js-black
+  background-color $black
+  font-family $type
+  color: $lightBlack
   @media only screen and (max-width: 640px)
     font-size 14px
 
@@ -23,61 +27,75 @@ h1,h2,h3,h4,h5,h6,p,ul,dl
   padding 0
   line-height 1.5
 
+b,
+.bold
+  font-weight bold
+  color $black
+
 strong,
 .strong
-  color: $js-orange
+  color: $orange
   font-weight bold
 
 img
   vertical-align top
-  max-width 100%
+  @media only screen and (max-width: 640px)
+    max-width 100%
 
 hr,
 .hr
-  border-bottom 5px solid $js-yellow
+  border-bottom 5px solid $yellow
+
+a
+  color: $blue
 
 // Typography
 .type
-  font-family: $js-type-yeseva;
+  font-family: $type-yeseva;
 
 .alpha
   margin-bottom 20px
   padding-bottom 10px
-  border-bottom 5px solid $js-yellow
+  border-bottom 5px solid $yellow
   font-size 2.2rem
-  font-family: $js-type-yeseva;
+  font-family: $type-yeseva;
+  color $black
   a
     text-decoration none
     color inherit
     &:hover
-      color: $js-pink
+      color: $blue
 
 .beta
   margin-bottom 10px
   font-size 1.6rem
-  font-family: $js-type-yeseva;
+  font-family: $type-yeseva;
+  color $black
   a
     text-decoration none
     color inherit
     &:hover
-      color: $js-pink
+      color: $blue
 .beta--headline
   padding-bottom 10px
-  border-bottom 1px solid $js-gray
+  border-bottom 1px solid $gray
 
 .omega
   margin-bottom 10px
   font-size 1.2rem
   font-weight bold
+  color $black
 
 // Layout
 .the-hero
-  background-color $js-yellow
+  border-bottom 10px solid $paleYellow
+  background-color $yellow
 
 .the-header
   position relative
+  border-bottom 5px solid $paleYellow
   padding-top 2rem
-  background-color $js-yellow
+  background-color $yellow
   // background-image url('/img/logo-min.png')
   // background-position right bottom
   // background-repeat no-repeat
@@ -85,7 +103,7 @@ hr,
     text-decoration none
     color inherit
     &:hover
-      color: $js-pink
+      color: $blue
   @media only screen and (max-width: 640px)
     text-align center
     .site-name
@@ -103,6 +121,7 @@ hr,
 
 .the-footer
   line-height 88px
+  color #FFF
   a
     color inherit
 
@@ -120,7 +139,7 @@ hr,
 // Component
 .tagline
   font-size 4rem
-  font-family $js-type-yeseva
+  font-family $type-yeseva
   @media only screen and (max-width: 640px)
     font-size 2rem
     > span
@@ -132,12 +151,16 @@ hr,
     max-height: 150px
 
 .intro
-  font-size: 1.2rem
+  // font-size: 1.2rem
+
+.aside
+  padding 10px
+  background-color $lightGray
 
 .site-name
   line-height 1
   font-size 3rem
-  font-family $js-type-yeseva
+  font-family $type-yeseva
 
 .site-nav
   line-height 3rem
@@ -178,9 +201,9 @@ hr,
   th,td
     padding 0.5em 1em
 .table__head
-  border-bottom: 1px solid $js-gray
+  border-bottom: 1px solid $gray
 .table__title
-  border-right: 1px solid $js-gray
+  border-right: 1px solid $gray
   font-weight bold
   text-align right
 .table__cellell--center
@@ -201,36 +224,41 @@ hr,
   // TODO: Separated font-size setting
   display inline-block
   border-radius 3px
-  border 1px solid $js-orange
+  border 1px solid $yellow
   padding 0.5em 1em
-  background-color: $js-orange
+  background-color $yellow
   font-weight bold
+  text-decoration none
+  color $black
   &:hover
-    background-color mix($js-orange,#FFF,80%)
+    background-color mix($yellow,#FFF,80%)
   &.is-disabled
-    border 1px solid $js-gray !important
-    background-color $js-gray !important
-    color #000 !important
-.button-primary
-  border-color $js-pink
-  background-color: $js-pink
+    border 1px solid $gray !important
+    background-color $gray !important
+    color $black !important
+.button--primary
+  border-color $pink
+  background-color $pink
   font-size 2rem
+  color #FFF
   &:hover
-    background-color mix($js-pink,#FFF,80%)
-.button-secondary
-  border-color $js-blue
-  background-color: $js-blue
+    background-color mix($pink,#FFF,80%)
+.button--secondary
+  border-color $orange
+  background-color $orange
+  color #FFF
   &:hover
-    background-color mix($js-blue,#FFF,80%)
-.button-full
-  -webkit-box-sizing:border-box;
-  -moz-box-sizing:border-box;
-  box-sizing:border-box;
+    background-color mix($orange,#FFF,80%)
+.button--full
+  -webkit-box-sizing border-box
+  -moz-box-sizing border-box
+  box-sizing border-box
   width 100%
+  text-align center
 
 .frame
-  border 1px solid $js-gray
-  background-color $js-gray
+  border 1px solid $gray
+  background-color $gray
 
 .map-canvas
   width 100%
