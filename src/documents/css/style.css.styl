@@ -140,6 +140,7 @@ a
 .tagline
   font-size 4rem
   font-family $type-yeseva
+  color: $black
   @media only screen and (max-width: 640px)
     font-size 2rem
     > span
@@ -195,6 +196,23 @@ a
 .media__body
   overflow hidden
 
+.flag
+  display table
+.flag__image
+  display table-cell
+  padding-right 10px
+  > img
+    display block
+.flag__image--rev
+  padding-left 10px
+  padding-right auto
+.flag__body
+  display table-cell
+.flag__body--middle
+  vertical-align middle
+.flag__body--bottom
+  vertical-align bottom
+
 .table
   border-collapse collapse
   width 100%
@@ -216,9 +234,13 @@ a
 .timetable__time
   clear left
   float left
-  width: 25%
+  width 16%
+  @media only screen and (max-width: 640px)
+    width 100%
 .timetable__content
-  margin-left 28%
+  margin-left 20%
+  @media only screen and (max-width: 640px)
+    width 100%
 
 .button
   // TODO: Separated font-size setting
