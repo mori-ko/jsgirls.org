@@ -15,7 +15,7 @@ image: "/img/event/tokyo-201403.jpg"
     .grid__cell.grid__cell--6
       h2.alpha <%= @document.title %>
       p.
-        「JavaScriptをかけるようになりたい」「JavaScriptで何かをつくってみたい！」
+        「JavaScriptをかけるようになりたい!」<br>「JavaScriptで何かをつくってみたい！」
       p.
         JavaScriptのキホンを学ぶところから、簡単なプログラムをつくるところまでをこの一日でやります。午後のハンズオンでは、Google Chromeの拡張機能をつくるハンズオンワークショップをおこないます。
 
@@ -52,7 +52,7 @@ image: "/img/event/tokyo-201403.jpg"
           p.strong
             ランチ
           p
-            ランチ...
+            ランチは会場で用意しています。みんなでわいわいランチも楽しみましょう。
         dt.timetable__time.
           13:30
         dd.timetable__content
@@ -76,30 +76,79 @@ image: "/img/event/tokyo-201403.jpg"
             一日かけて開発をおこなったイベントも終わり、おつかれさまでした。よければ参加の感想をTwitterやブログで報告してもらえると嬉しいです。
 
     .grid__cell.grid__cell--6
-      h2 参加条件
-      ul.list
-        li JSを書きたいと思っている人
-        li なんでもいいのでJSを一回書いたことのある人
-        li PC持参出来る方
-      h2.beta メンター
       .section
-        .grid
-          .grid__cell.grid__cell--6
-            .flag.profile
-              .flag__image
-                img.frame(src='/img/avatar/tacamy.jpg', width='80px', height='80px')
-              .flag__body.flag__body--middle
-                h3.omega 山田 敬美
-                p
-                  a(href="http://twitter.com/tacamy") @tacamy
-          .grid__cell.grid__cell--6
-            .flag.profile
-              .flag__image
-                img.frame(src='/img/avatar/1000ch.jpg', width='80px', height='80px')
-              .flag__body.flag__body--middle
-                h3.omega 泉水 翔吾
-                p
-                  a(href="http://twitter.com/1000ch") @1000ch
+        h2.beta どんな人が参加できるの？
+        ul.list
+          li JavaScriptをもっと書けるようになりたい人
+          li どんな経験でも良いので、一度でもJavaScriptを書いたことがある人
+          li PCを持参できる人（会場では用意していません）
+      .section
+        h2.beta よくある質問
+        dl.faq
+          dt.faq__q 参加費はかかりますか？
+          dd.faq__a 参加費は無料です。その他ランチ費用や懇親会費も無料です。
+          dt.faq__q 無線LANや電源はありますか？
+          dd.faq__a はい、いずれも用意されています。ただし電源に関しては数に限りがあるので、共有して使ってください
+      .section
+        h2.beta メンター,チューター
+        .mentor
+          ul.mentor__list
+            li
+              .flag
+                .flag__image.mentor__avatar
+                  img.frame(src='/img/avatar/tacamy.jpg', width='68px', height='68px')
+                .flag__body.flag__body--middle
+                  h3.delta 山田 敬美
+                  p
+                    a(href="http://twitter.com/tacamy") @tacamy
+            li
+              .flag
+                .flag__image.mentor__avatar
+                  img.frame(src='/img/avatar/1000ch.jpg', width='68px', height='68px')
+                .flag__body.flag__body--middle
+                  h3.delta 泉水 翔吾
+                  p
+                    a(href="http://twitter.com/1000ch") @1000ch
+            li
+              .flag
+                .flag__image.mentor__avatar
+                  img.frame(src='https://pbs.twimg.com/profile_images/1731613975/ore_bigger.jpg', width='68px', height='68px')
+                .flag__body.flag__body--middle
+                  h3.delta 石本 光司
+                  p
+                    a(href="http://twitter.com/t32k") @t32k
+            li
+              .flag
+                .flag__image.mentor__avatar
+                  img.frame(src='https://pbs.twimg.com/profile_images/1597477762/fb_bigger.jpg', width='68px', height='68px')
+                .flag__body.flag__body--middle
+                  h3.delta 谷 拓樹
+                  p
+                    a(href="http://twitter.com/hiloki") @hiloki
+            li
+              .flag
+                .flag__image.mentor__avatar
+                  img.frame(src='https://pbs.twimg.com/profile_images/1766306663/image_bigger', width='68px', height='68px')
+                .flag__body.flag__body--middle
+                  h3.delta 水野 隼登
+                  p
+                    a(href="http://twitter.com/pocotan001") @pocotan001
+            li
+              .flag
+                .flag__image.mentor__avatar
+                  img.frame(src='/img/avatar/hiraki.jpg', width='68px', height='68px')
+                .flag__body.flag__body--middle
+                  h3.delta 平木 聡
+                  p
+                    a(href="http://layzie.hatenablog.com/about") id:Layzie
+            li
+              .flag
+                .flag__image.mentor__avatar
+                  img.frame(src='https://pbs.twimg.com/profile_images/3623047152/6bd1e39bb566a7c72a1f8699dd07e5b6_bigger.png', width='68px', height='68px')
+                .flag__body.flag__body--middle
+                  h3.delta 高梨 ギンペイ
+                  p
+                    a(href="http://twitter.com/ginpei_jp") @ginpei_jp
 
 .section
   .grid
@@ -108,9 +157,11 @@ image: "/img/event/tokyo-201403.jpg"
     .grid__cell.grid__cell--6
       div.map-canvas.frame#js-map-canvas
     .grid__cell.grid__cell--6
-      h2.omega グーグル株式会社
-      p
-        東京都港区六本木 6-10-1 六本木ヒルズ森タワー 私書箱 22
+      h2.gamma グーグル株式会社
+      p.
+        東京都港区六本木 6-10-1 六本木ヒルズ森タワー2F<br>
+        <small>2Fで受付をし、入場パスをもらって会場のフロアまで上がってください。</small>
+      h2.gamma アクセス
       ul
         li 東京メトロ 日比谷線「六本木駅」1C出口 徒歩0分（コンコースにて直結）
         li 都営地下鉄 大江戸線「六本木駅」3出口 徒歩4分
