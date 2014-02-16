@@ -5,6 +5,7 @@ $gray = #D8D8D8
 $lightGray = lighten($gray,30%)
 $yellow = #EFDA5B
 $paleYellow = lighten($yellow,30%)
+$goldYellow = darken($yellow,30%)
 $pink = #FF61AD
 // $blue = #61D9FF
 $blue = #4986B9
@@ -82,6 +83,9 @@ a
 .beta--headline
   padding-bottom 10px
   border-bottom 1px solid $gray
+.beta--highlight
+  color $goldYellow
+  font-weight normal
 
 .gamma
   margin-bottom 10px
@@ -164,6 +168,7 @@ a
   // font-size: 1.2rem
 
 .aside
+  border-radius 5px
   padding 10px
   background-color $lightGray
 

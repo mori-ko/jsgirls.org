@@ -11,13 +11,13 @@ image: "/img/event/tokyo-201403.jpg"
 .section
   .grid
     .grid__cell.grid__cell--6
-      img.frame(src='<%= @document.image %>', width='100%')
+      img(src='<%= @document.image %>', width='100%')
     .grid__cell.grid__cell--6
       h2.alpha <%= @document.title %>
       p.
         「JavaScriptをかけるようになりたい!」<br>「JavaScriptで何かをつくってみたい！」
       p.
-        JavaScriptのキホンを学ぶところから、簡単なプログラムをつくるところまでをこの一日でやります。午後のハンズオンでは、Google Chromeの拡張機能をつくるハンズオンワークショップをおこないます。
+        JavaScriptのキホンを学ぶところから、簡単なプログラムをつくるところまでをこの一日でやります。午前はキホンを、午後のハンズオンではGoogle Chromeの拡張機能をつくるハンズオンワークショップをおこないます。
 
 
 .section
@@ -77,20 +77,20 @@ image: "/img/event/tokyo-201403.jpg"
 
     .grid__cell.grid__cell--6
       .section
-        h2.beta どんな人が参加できるの？
+        h2.beta.beta--highlight どんな人が参加できるの？
         ul.list
           li JavaScriptをもっと書けるようになりたい人
           li どんな経験でも良いので、一度でもJavaScriptを書いたことがある人
           li PCを持参できる人（会場では用意していません）
       .section
-        h2.beta よくある質問
+        h2.beta.beta--highlight よくある質問
         dl.faq
           dt.faq__q 参加費はかかりますか？
           dd.faq__a 参加費は無料です。その他ランチ費用や懇親会費も無料です。
           dt.faq__q 無線LANや電源はありますか？
           dd.faq__a はい、いずれも用意されています。ただし電源に関しては数に限りがあるので、共有して使ってください
       .section
-        h2.beta メンター,チューター
+        h2.beta.beta--highlight  メンター、チューター
         .mentor
           ul.mentor__list
             li
