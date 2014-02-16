@@ -8,6 +8,8 @@ isEvent: true
 image: "/img/event/tokyo-201403.jpg"
 ---
 
+- var spacer = 'data:image/gif;base64,R0lGODlhAQABAIAAAP//////zCH5BAEHAAAALAAAAAABAAEAAAICRAEAOw=='
+
 .section
   .grid
     .grid__cell.grid__cell--6
@@ -96,7 +98,7 @@ image: "/img/event/tokyo-201403.jpg"
             li
               .flag
                 .flag__image.mentor__avatar
-                  img.frame(src='/img/avatar/tacamy.jpg', width='68px', height='68px')
+                  img.frame(src='#{spacer}', data-gravatar-email='takami.yamada@gmail.com', width='68px', height='68px')
                 .flag__body.flag__body--middle
                   h3.delta 山田 敬美
                   p
@@ -104,7 +106,7 @@ image: "/img/event/tokyo-201403.jpg"
             li
               .flag
                 .flag__image.mentor__avatar
-                  img.frame(src='/img/avatar/1000ch.jpg', width='68px', height='68px')
+                  img.frame(src='#{spacer}', data-gravatar-email='shogo.sensui@gmail.com', width='68px', height='68px')
                 .flag__body.flag__body--middle
                   h3.delta 泉水 翔吾
                   p
@@ -112,7 +114,7 @@ image: "/img/event/tokyo-201403.jpg"
             li
               .flag
                 .flag__image.mentor__avatar
-                  img.frame(src='https://pbs.twimg.com/profile_images/1731613975/ore_bigger.jpg', width='68px', height='68px')
+                  img.frame(src='#{spacer}', data-gravatar-email='ijok.ijok@gmail.com' width='68px', height='68px')
                 .flag__body.flag__body--middle
                   h3.delta 石本 光司
                   p
@@ -120,7 +122,7 @@ image: "/img/event/tokyo-201403.jpg"
             li
               .flag
                 .flag__image.mentor__avatar
-                  img.frame(src='https://pbs.twimg.com/profile_images/1597477762/fb_bigger.jpg', width='68px', height='68px')
+                  img.frame(src='#{spacer}', data-gravatar-email='contact@inkdesign.jp', width='68px', height='68px')
                 .flag__body.flag__body--middle
                   h3.delta 谷 拓樹
                   p
@@ -128,7 +130,7 @@ image: "/img/event/tokyo-201403.jpg"
             li
               .flag
                 .flag__image.mentor__avatar
-                  img.frame(src='https://pbs.twimg.com/profile_images/1766306663/image_bigger', width='68px', height='68px')
+                  img.frame(src='#{spacer}', data-gravatar-email='pocotan001@gmail.com', width='68px', height='68px')
                 .flag__body.flag__body--middle
                   h3.delta 水野 隼登
                   p
@@ -136,7 +138,7 @@ image: "/img/event/tokyo-201403.jpg"
             li
               .flag
                 .flag__image.mentor__avatar
-                  img.frame(src='/img/avatar/hiraki.jpg', width='68px', height='68px')
+                  img.frame(src='#{spacer}', data-gravatar-email='saruko313@gmail.com', width='68px', height='68px')
                 .flag__body.flag__body--middle
                   h3.delta 平木 聡
                   p
@@ -144,7 +146,7 @@ image: "/img/event/tokyo-201403.jpg"
             li
               .flag
                 .flag__image.mentor__avatar
-                  img.frame(src='https://pbs.twimg.com/profile_images/3623047152/6bd1e39bb566a7c72a1f8699dd07e5b6_bigger.png', width='68px', height='68px')
+                  img.frame(src='#{spacer}', data-gravatar-email='ginpei@gmail.com' width='68px', height='68px')
                 .flag__body.flag__body--middle
                   h3.delta 高梨 ギンペイ
                   p
@@ -196,4 +198,5 @@ script.
       zoom: 15,
       title: 'Google Japan'
     });
+    var avatar = new jsgirls.Avatar();
   });
