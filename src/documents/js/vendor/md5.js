@@ -1,3 +1,5 @@
+// borrowed from http://www.myersdaily.org/joseph/javascript/md5.js
+
 function md5cycle(x, k) {
   var a = x[0], b = x[1], c = x[2], d = x[3];
 
@@ -98,22 +100,24 @@ function ii(a, b, c, d, x, s, t) {
 }
 
 function md51(s) {
-  txt = '';
   var n = s.length,
       state = [1732584193, -271733879, -1732584194, 271733878], i;
-  for (i=64; i<=s.length; i+=64) {
-    md5cycle(state, md5blk(s.substring(i-64, i)));
+  for (i = 64;i <= s.length;i += 64) {
+    md5cycle(state, md5blk(s.substring(i - 64, i)));
   }
-  s = s.substring(i-64);
+  s = s.substring(i - 64);
   var tail = [0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0];
-  for (i=0; i<s.length; i++)
-    tail[i>>2] |= s.charCodeAt(i) << ((i%4) << 3);
-  tail[i>>2] |= 0x80 << ((i%4) << 3);
+  for (i = 0;i < s.length;i++) {
+    tail[i>>2] |= s.charCodeAt(i) << ((i % 4) << 3);
+  }
+  tail[i>>2] |= 0x80 << ((i % 4) << 3);
   if (i > 55) {
     md5cycle(state, tail);
-    for (i=0; i<16; i++) tail[i] = 0;
+    for (i = 0;i < 16;i++) {
+      tail[i] = 0;
+    }
   }
-  tail[14] = n*8;
+  tail[14] = n * 8;
   md5cycle(state, tail);
   return state;
 }
@@ -134,30 +138,30 @@ function md51(s) {
  * 8-bit unsigned value arrays.
  */
 function md5blk(s) { /* I figured global was faster.   */
-  var md5blks = [], i; /* Andy King said do it this way. */
-  for (i=0; i<64; i+=4) {
+  var md5blks = []; /* Andy King said do it this way. */
+  for (var i = 0;i < 64;i += 4) {
     md5blks[i>>2] = s.charCodeAt(i)
-        + (s.charCodeAt(i+1) << 8)
-        + (s.charCodeAt(i+2) << 16)
-        + (s.charCodeAt(i+3) << 24);
+        + (s.charCodeAt(i + 1) << 8)
+        + (s.charCodeAt(i + 2) << 16)
+        + (s.charCodeAt(i + 3) << 24);
   }
   return md5blks;
 }
 
 var hex_chr = '0123456789abcdef'.split('');
 
-function rhex(n)
-{
-  var s='', j=0;
-  for(; j<4; j++)
-    s += hex_chr[(n >> (j * 8 + 4)) & 0x0F]
-        + hex_chr[(n >> (j * 8)) & 0x0F];
+function rhex(n) {
+  var s = '';
+  for (var j = 0;j < 4;j++) {
+    s += hex_chr[(n >> (j * 8 + 4)) & 0x0F] + hex_chr[(n >> (j * 8)) & 0x0F];
+  }
   return s;
 }
 
 function hex(x) {
-  for (var i=0; i<x.length; i++)
+  for (var i = 0, l = x.length;i < l;i++) {
     x[i] = rhex(x[i]);
+  }
   return x.join('');
 }
 
