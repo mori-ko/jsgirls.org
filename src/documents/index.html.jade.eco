@@ -35,6 +35,7 @@ isPage: true
         h2.beta
           a(href='<%= page.url %>') <%= page.title %>
         p <%= page.summary %>
+    <% break %>
   <% end %>
 
 .section
