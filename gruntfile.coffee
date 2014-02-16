@@ -10,10 +10,17 @@ module.exports = (grunt) ->
           'out/css/style.css'
         ]
         dest: 'out/css/app.css'
+      vendor:
+        src: [
+          'out/js/vendor/ga.js',
+          'out/js/vendor/md5.js'
+        ]
+        dest: 'out/js/vendor/vendor.js'
       js:
         src: [
           'out/js/namespace.js',
-          'out/js/map.js'
+          'out/js/map.js',
+          'out/js/avatar.js'
         ]
         dest: 'out/js/app.js'
     csscomb:
@@ -25,6 +32,9 @@ module.exports = (grunt) ->
         files:
           'out/css/app.min.css': 'out/css/app.css'
     uglify:
+      vendor:
+        files:
+          'out/js/vendor/vendor.min.js': 'out/js/vendor/vendor.js'
       js:
         files:
           'out/js/app.min.js': 'out/js/app.js'
