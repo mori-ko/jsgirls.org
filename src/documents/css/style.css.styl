@@ -92,12 +92,22 @@ a
   font-size 1.2rem
   font-weight bold
   color $black
+  a
+    text-decoration none
+    color inherit
+    &:hover
+      color: $blue
 
 .delta
   margin-bottom 10px
   font-size 1rem
   font-weight bold
   color $black
+  a
+    text-decoration none
+    color inherit
+    &:hover
+      color: $blue
 
 // Layout
 .the-hero
@@ -109,9 +119,7 @@ a
   border-bottom 5px solid $paleYellow
   padding-top 2rem
   background-color $yellow
-  // background-image url('/img/logo-min.png')
-  // background-position right bottom
-  // background-repeat no-repeat
+  color: $black
   a
     text-decoration none
     color inherit
@@ -128,6 +136,8 @@ a
       margin-bottom 0
 
 .the-main
+  position: relative;
+  z-index: 1
   padding-top 20px
   padding-bottom 20px
   background-color #fff
@@ -192,9 +202,36 @@ a
 .section
   margin-bottom 30px
 
-.event-list
-  > li
-    margin-bottom 20px
+.upcoming
+  position: relative
+  margin-bottom 20px
+.upcoming__thumbnail
+  overflow hidden
+  height 130px
+.upcoming__title
+  padding 10px
+  font-family $type-yeseva
+.upcoming__date
+  position absolute
+  top 10px
+  right -10px
+  padding 0.2em 0.5em
+  background-color $yellow
+  font-family $type-yeseva
+  color $black
+  &:after
+    display block
+    content ""
+    position absolute
+    right -10px
+    bottom -10px
+    border 10px solid $goldYellow
+    border-top-color transparent
+    border-bottom-color transparent
+    border-right-color transparent
+    width 0
+    height 0
+    z-index -1
 
 .media
   overflow hidden // Clearfix
