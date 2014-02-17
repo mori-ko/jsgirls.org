@@ -7,7 +7,15 @@ docpadConfig = {
       title: 'JS Girls'
   collections:
     events: ->
-      @getCollection('html').findAllLive({isEvent: true})
+      @getCollection('html').findAllLive({isEvent: true}, [{date:-1}])
+    upcomingEvents: ->
+      @getCollection('html').findAllLive({isEvent: true}, [{date:-1}]).setFilter('coming', (model, value) ->
+        return Date.now() < new Date(model.meta.attributes.date).getTime()
+      )
+    pastEvents: ->
+      @getCollection('html').findAllLive({isEvent: true}, [{date:-1}]).setFilter('coming', (model, value) ->
+        return Date.now() >= new Date(model.meta.attributes.date).getTime()
+      )
   plugins:
     ghpages:
       deployRemote: 'www'

@@ -11,13 +11,31 @@ div.section
         Upcoming Events
     
   ul.grid.upcomings
-  <% for page in @getCollection("events").toJSON(): %>
+  <% for page in @getCollection("upcomingEvents").toJSON(): %>
     li.grid__cell.grid__cell--4
       div.upcoming
         a(href='<%= page.url %>')
           div.frame.upcoming__thumbnail
             img(src='<%= page.image %>',width='100%')
         h2.upcoming__title.gamma
-            a(href='<%= page.url %>') <%= page.title %>
+          a(href='<%= page.url %>') <%= page.title %>
+        p.upcoming__date <%= @moment(page.date).format('YYYY/MM/DD') %>
+  <% end %>
+
+div.section
+  div.grid
+    div.grid__cell.grid__cell--12
+      h2.alpha
+        Past Events
+
+  ul.grid.upcomings
+  <% for page in @getCollection("pastEvents").toJSON(): %>
+    li.grid__cell.grid__cell--4
+      div.upcoming
+        a(href='<%= page.url %>')
+          div.frame.upcoming__thumbnail
+            img(src='<%= page.image %>',width='100%')
+        h2.upcoming__title.gamma
+          a(href='<%= page.url %>') <%= page.title %>
         p.upcoming__date <%= @moment(page.date).format('YYYY/MM/DD') %>
   <% end %>
