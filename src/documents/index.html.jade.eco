@@ -38,7 +38,7 @@ isPage: true
     <% break %>
   <% end %>
 
-.section
+//- .section
   .grid
     .grid__cell.grid__cell--12
       div.aside

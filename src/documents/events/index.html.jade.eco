@@ -8,14 +8,15 @@ div.section
   div.grid
     div.grid__cell.grid__cell--12
       h2.alpha
-        a(href='/events') Upcoming Events
+        Upcoming Events
     
   ul.grid.upcomings
   <% for page in @getCollection("events").toJSON(): %>
     li.grid__cell.grid__cell--4
       div.upcoming
-        div.frame.upcoming__thumbnail
-          img(src='<%= page.image %>',width='100%')
+        a(href='<%= page.url %>')
+          div.frame.upcoming__thumbnail
+            img(src='<%= page.image %>',width='100%')
         h2.upcoming__title.gamma
             a(href='<%= page.url %>') <%= page.title %>
         p.upcoming__date <%= @moment(page.date).format('YYYY/MM/DD') %>
