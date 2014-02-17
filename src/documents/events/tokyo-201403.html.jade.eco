@@ -115,6 +115,30 @@ image: "/img/event/tokyo-201403.jpg"
             li
               .flag
                 .flag__image.mentor__avatar
+                  img.frame(src='#{spacer}', data-gravatar-email='agektmr@gmail.com' width='68px', height='68px')
+                .flag__body.flag__body--middle
+                  h3.delta 北村 英志
+                  p
+                    a(href="http://twitter.com/agektmr") @agektmr
+            li
+              .flag
+                .flag__image.mentor__avatar
+                  img.frame(src='#{spacer}', data-gravatar-email='k.hokamura@gmail.com' width='68px', height='68px')
+                .flag__body.flag__body--middle
+                  h3.delta 外村 和仁
+                  p
+                    a(href="http://twitter.com/hokaccha") @hokaccha
+            li
+              .flag
+                .flag__image.mentor__avatar
+                  img.frame(src='#{spacer}', data-gravatar-email='nakajima.jmg@gmail.com' width='68px', height='68px')
+                .flag__body.flag__body--middle
+                  h3.delta 中島 直博
+                  p
+                    a(href="http://twitter.com/nakajmg") @nakajmg
+            li
+              .flag
+                .flag__image.mentor__avatar
                   img.frame(src='#{spacer}', data-gravatar-email='ijok.ijok@gmail.com' width='68px', height='68px')
                 .flag__body.flag__body--middle
                   h3.delta 石本 光司
@@ -200,7 +224,7 @@ image: "/img/event/tokyo-201403.jpg"
         img(src='/img/partner/pixelgrid.jpg', width='100%')
 
 script.
-  window.addEventListener('load', function () {
+  document.addEventListener('DOMContentLoaded', function () {
     var map = new jsgirls.Map('#js-map-canvas', {
       lat: 35.6606782, 
       lng: 139.72862716,
