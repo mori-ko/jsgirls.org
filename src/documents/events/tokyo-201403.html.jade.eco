@@ -20,7 +20,8 @@ image: "/img/event/tokyo-201403.jpg"
         「JavaScriptをかけるようになりたい!」<br>「JavaScriptで何かをつくってみたい！」
       p.
         JavaScriptのキホンを学ぶところから、簡単なプログラムをつくるところまでをこの一日でやります。午前はキホンを、午後のハンズオンではGoogle Chromeの拡張機能をつくるハンズオンワークショップをおこないます。
-
+      p.text-right
+        a.button(href='#') イベントに参加する
 
 .section
   .grid
@@ -184,7 +185,6 @@ image: "/img/event/tokyo-201403.jpg"
                   h3.delta 加藤 賢一
                   p
                     a(href="http://twitter.com/ktknest") @ktknest
-
 .section
   .grid
     .grid__cell.grid__cell--12
@@ -206,9 +206,9 @@ image: "/img/event/tokyo-201403.jpg"
 
 .section
   .grid.grid--center
-    .grid__cell.grid__cell--center.grid__cell--8
-      a.button.button--primary.button--full 申し込み
-      
+    .grid__cell.grid__cell--6
+      p
+        a.button.button--primary.button--full イベントに参加する      
 .section
   .grid
     .grid__cell.grid__cell--12
