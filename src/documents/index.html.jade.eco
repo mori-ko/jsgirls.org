@@ -51,3 +51,12 @@ isPage: true
           .grid__cell.grid__cell--middle.grid__cell--3
             div
               a.button.button--secondary.button--full(href='/about/') くわしく知りたい
+
+.section
+  .grid
+    .grid__cell.grid__cell--12
+      div.aside
+        div(id='fb-root')
+        div(class='fb-like-box',
+            data-href='https://www.facebook.com/jsgirls', data-width='300', data-height='180',
+            data-show-faces='true', data-header='false', data-stream='false', data-show-border='false')
