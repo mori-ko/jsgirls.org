@@ -152,6 +152,14 @@ image: "/img/event/tokyo-201403.jpg"
                   h3.delta 高梨 ギンペイ
                   p
                     a(href="http://twitter.com/ginpei_jp") @ginpei_jp
+            li
+              .flag
+                .flag__image.mentor__avatar
+                  img.frame(src='#{spacer}', data-gravatar-email='katou.kennichi@gmail.com' width='68px', height='68px')
+                .flag__body.flag__body--middle
+                  h3.delta 加藤 賢一
+                  p
+                    a(href="http://twitter.com/ktknest") @ktknest
 
 .section
   .grid
