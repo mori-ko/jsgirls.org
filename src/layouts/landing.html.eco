@@ -5,7 +5,7 @@
     <%- @partial('hero') %>
     <div class="the-main">
       <div class="l-container">
-      <%- @content %>
+        <%- @content %>
       </div>
     </div>
     <%- @partial('footer') %>
