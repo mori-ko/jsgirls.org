@@ -1,0 +1,142 @@
+---
+title: "JS Girls Kanazawa #1"
+date: "2011/06/18"
+place: "Kanazawa, Japan"
+summary: "もくもくJavaScript開発!"
+layout: "event"
+isEvent: true
+image: "/img/event/kanazawa-201106.jpg"
+---
+
+- var spacer = 'data:image/gif;base64,R0lGODlhAQABAIAAAP//////zCH5BAEHAAAALAAAAAABAAEAAAICRAEAOw=='
+
+.section
+  .grid
+    .grid__cell.grid__cell--6
+      img(src='<%= @document.image %>', width='100%')
+    .grid__cell.grid__cell--6
+      h2.alpha <%= @document.title %>
+      h3.beta
+        モダンな彼女のScript
+      p.
+        kanazawa.jsより女子部”JS Girls”が発足！第1回勉強会は6/18（土）に開催！
+      p.
+        主に金沢市・石川県・北陸地方近辺の JavaScript デザイナー・プログラマで活動する kanazawa.js の女子部。勢いのあるコミュニティは必ず女子部があると気づき、女子の女子による女子のための勉強会を設立。女子JSer増加を促進するためにゆるふわな感じで勉強会開いていきます。
+
+
+.section
+  .grid
+    .grid__cell.grid__cell--6
+      .section.aside
+        h2.beta <%= @moment(@document.date).format('YYYY/MM/DD(ddd)') %>
+        dl.timetable
+          dt.timetable__time.
+            13:30
+          dd.timetable__content
+            p.strong
+              開場
+            p.
+              30分前から開場しています。
+          dt.timetable__time.
+            14:00
+          dd.timetable__content
+            p.strong
+              もくもく開発♪
+            p
+              各自、日頃考えていた実装を開発してみましょう。わからないことがあったら他の仲間に聞いてみましょう。
+          dt.timetable__time.
+            18:00
+          dd.timetable__content
+            p.strong
+              懇親会
+            p
+              一日かけて開発をおこなったイベントも終わり、おつかれさまでした。
+
+    .grid__cell.grid__cell--6
+      .section
+        h2.beta.beta--highlight どんな人が参加できるの？
+        ul.list
+          li JavaScriptをもっと書けるようになりたい人
+          li どんな経験でも良いので、一度でもJavaScriptを書いたことがある人
+          li PCを持参できる人（会場では用意していません）
+      .section
+        h2.beta.beta--highlight よくある質問
+        dl.faq
+          dt.faq__q 男子なんですが...
+          dd.faq__a 困ります＞＜
+          dt.faq__q JavaScript全然分かりませんが参加してもいいですか？
+          dd.faq__a 学ぶ意欲さえあればどなたでも参加できます。
+          dt.faq__q 無線LANや電源はありますか？
+          dd.faq__a はい、いずれも用意されています。ただし電源に関しては数に限りがあるので、共有して使ってください
+      .section
+        h2.beta.beta--highlight  チーム
+        .mentor
+          ul.mentor__list
+            li
+              .flag
+                .flag__image.mentor__avatar
+                  img.frame(src='https://pbs.twimg.com/profile_images/426899467711692800/IA8iTxha_bigger.jpeg', width='68px', height='68px')
+                .flag__body.flag__body--middle
+                  h3.delta えりんこ
+                  p
+                    a(href="http://twitter.com/er1nk0") @er1nk0
+            li
+              .flag
+                .flag__image.mentor__avatar
+                  img.frame(src='https://pbs.twimg.com/profile_images/3772674134/3695b6170ee4719e590e5ad04b587325_bigger.jpeg', width='68px', height='68px')
+                .flag__body.flag__body--middle
+                  h3.delta taki
+                  p
+                    a(href="http://twitter.com/taki666") @taki666
+            li
+              .flag
+                .flag__image.mentor__avatar
+                  img.frame(src='https://pbs.twimg.com/profile_images/835452182/2010.03.19_2_bigger.jpg', width='68px', height='68px')
+                .flag__body.flag__body--middle
+                  h3.delta Yuki Takashima
+                  p
+                    a(href="http://twitter.com/t_io") @t_io
+            li
+              .flag
+                .flag__image.mentor__avatar
+                  img.frame(src='https://pbs.twimg.com/profile_images/418017005820604416/m7M5zwhI_bigger.png', width='68px', height='68px')
+                .flag__body.flag__body--middle
+                  h3.delta テポ
+                  p
+                    a(href="http://twitter.com/er1nk0") @mxs0516
+
+.section
+  .grid
+    .grid__cell.grid__cell--12
+      h2.beta 開催場所
+    .grid__cell.grid__cell--6
+      div.map-canvas.frame#js-map-canvas
+    .grid__cell.grid__cell--6
+      h2.gamma ITビジネスプラザ武蔵
+      p.
+        石川県金沢市武蔵町14番31号 ITビジネスプラザ武蔵 4F<br>
+      h2.gamma アクセス
+      ul
+        li JR金沢駅から
+        li 　徒歩10分
+        li 　バスで2区間（武蔵ヶ辻）下車
+        li 　タクシーで3分
+
+.section
+  .grid
+    .grid__cell.grid__cell--12
+      h2.beta 協力
+    .grid__cell.grid__cell--4
+      a(href='http://www.gridoogle.co.jp', target='_blank')
+        img(src='/img/partner/dmmlab.jpg', width='100%')
+
+script.
+  document.addEventListener('DOMContentLoaded', function () {
+    var map = new jsgirls.Map('#js-map-canvas', {
+      lat: 36.572151, 
+      lng: 136.655050,
+      zoom: 17,
+      title: 'Google Japan'
+    });
+    var avatar = new jsgirls.Avatar();
+  });
