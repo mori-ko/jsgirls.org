@@ -8,7 +8,6 @@ div.section
   div.grid
     div.grid__cell.grid__cell--12
       h2.alpha Upcoming Events
-    
   ul.grid.upcomings
   <% for page in @getCollection("upcomingEvents").toJSON(): %>
     li.grid__cell.grid__cell--4

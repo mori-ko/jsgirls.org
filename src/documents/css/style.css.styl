@@ -207,10 +207,15 @@ a
   margin-bottom 20px
 .upcoming__thumbnail
   overflow hidden
-  height 130px
+  max-height 130px
 .upcoming__title
   padding 10px
   font-family $type-yeseva
+.upcoming__title--home
+  margin-bottom 0
+  padding-bottom 0
+.upcoming__summary
+  padding 10px
 .upcoming__date
   position absolute
   top 10px
@@ -369,6 +374,15 @@ a
 .map-canvas
   width 100%
   height 320px
+
+.social-box
+  .fb_iframe_widget,
+  .fb_iframe_widget iframe[style],
+  .fb_iframe_widget span
+      width 100% !important
+  .twitter-timeline
+      width 100% !important
+      height 300px !important
 
 .copyright
   padding 1rem 0
