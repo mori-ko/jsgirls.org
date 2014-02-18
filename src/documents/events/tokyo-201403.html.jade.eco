@@ -1,4 +1,3 @@
-
 ---
 title: "JS Girls Tokyo #1"
 date: "2014/03/08"
@@ -6,7 +5,7 @@ place: "Tokyo, Japan"
 summary: "Google Chrome拡張機能をつくってJavaScriptを学ぼう！"
 layout: "event"
 isEvent: true
-image: "/img/event/tokyo-201403.jpg"
+image: "/img/event/tokyo-201403.png"
 ---
 
 - var spacer = 'data:image/gif;base64,R0lGODlhAQABAIAAAP//////zCH5BAEHAAAALAAAAAABAAEAAAICRAEAOw=='
@@ -95,7 +94,7 @@ image: "/img/event/tokyo-201403.jpg"
           dt.faq__q 無線LANや電源はありますか？
           dd.faq__a はい、いずれも用意されています。ただし電源に関しては数に限りがあるので、共有して使ってください
       .section
-        h2.beta.beta--highlight  メンター、チューター
+        h2.beta.beta--highlight メンター、チューター
         .mentor
           ul.mentor__list
             li
