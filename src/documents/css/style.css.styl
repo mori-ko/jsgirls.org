@@ -41,10 +41,13 @@ strong,
   color: $orange
   font-weight bold
 
-img
+img,
+.img
   vertical-align top
   @media only screen and (max-width: 640px)
     max-width 100%
+.img--fluid
+  max-width: 100%
 
 hr,
 .hr
@@ -223,6 +226,8 @@ a
 .upcoming__title--home
   margin-bottom 0
   padding-bottom 0
+  @media only screen and (max-width: 640px)
+    padding-top 0
 .upcoming__summary
   padding 10px
 .upcoming__date
@@ -362,17 +367,27 @@ a
       width: 1em
       font-weight bold
 
-.mentor
-.mentor__list
+.mentors
   overflow hidden
   > li
     float left
     margin-bottom 20px
     width: 50%
+.mentor
+  @media only screen and (max-width: 640px)
+    width: 100%;
+    text-align: center;
 .mentor__avatar
+  @media only screen and (max-width: 640px)
+    display block
+    margin-bottom 10px
+    padding 0
   img
     border-radius 100%
-
+.mentor__body
+  @media only screen and (max-width: 640px)
+    display block
+  
 .frame
   border 3px solid $gray
   background-color #FFF

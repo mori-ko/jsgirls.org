@@ -108,107 +108,106 @@ image: "/img/event/tokyo-201403.png"
 
       .section
         h2.beta.beta--highlight メンター、チューター
-        .mentor
-          ul.mentor__list
-            li
-              .flag
-                .flag__image.mentor__avatar
-                  a(href="http://twitter.com/tacamy")
-                    img.frame(src='#{spacer}', data-gravatar-email='takami.yamada@gmail.com', width='68', height='68')
-                .flag__body.flag__body--middle
-                  h3.delta 山田 敬美
-                  p
-                    a(href="http://twitter.com/tacamy") @tacamy
-            li
-              .flag
-                .flag__image.mentor__avatar
-                  a(href="http://twitter.com/1000ch")
-                    img.frame(src='#{spacer}', data-gravatar-email='shogo.sensui@gmail.com', width='68', height='68')
-                .flag__body.flag__body--middle
-                  h3.delta 泉水 翔吾
-                  p
-                    a(href="http://twitter.com/1000ch") @1000ch
-            li
-              .flag
-                .flag__image.mentor__avatar
-                  a(href="http://twitter.com/agektmr")
-                    img.frame(src='#{spacer}', data-gravatar-email='agektmr@gmail.com' width='68', height='68')
-                .flag__body.flag__body--middle
-                  h3.delta 北村 英志
-                  p
-                    a(href="http://twitter.com/agektmr") @agektmr
-            li
-              .flag
-                .flag__image.mentor__avatar
-                  a(href="http://twitter.com/hokaccha")
-                    img.frame(src='#{spacer}', data-gravatar-email='k.hokamura@gmail.com' width='68', height='68')
-                .flag__body.flag__body--middle
-                  h3.delta 外村 和仁
-                  p
-                    a(href="http://twitter.com/hokaccha") @hokaccha
-            li
-              .flag
-                .flag__image.mentor__avatar
-                  a(href="http://twitter.com/nakajmg")
-                    img.frame(src='#{spacer}', data-gravatar-email='nakajima.jmg@gmail.com' width='68', height='68')
-                .flag__body.flag__body--middle
-                  h3.delta 中島 直博
-                  p
-                    a(href="http://twitter.com/nakajmg") @nakajmg
-            li
-              .flag
-                .flag__image.mentor__avatar
-                  a(href="http://twitter.com/t32k")
-                    img.frame(src='#{spacer}', data-gravatar-email='ijok.ijok@gmail.com' width='68', height='68')
-                .flag__body.flag__body--middle
-                  h3.delta 石本 光司
-                  p
-                    a(href="http://twitter.com/t32k") @t32k
-            li
-              .flag
-                .flag__image.mentor__avatar
-                  a(href="http://twitter.com/hiloki")
-                    img.frame(src='#{spacer}', data-gravatar-email='contact@inkdesign.jp', width='68', height='68')
-                .flag__body.flag__body--middle
-                  h3.delta 谷 拓樹
-                  p
-                    a(href="http://twitter.com/hiloki") @hiloki
-            li
-              .flag
-                .flag__image.mentor__avatar
-                  a(href="http://twitter.com/pocotan001")
-                    img.frame(src='#{spacer}', data-gravatar-email='pocotan001@gmail.com', width='68', height='68')
-                .flag__body.flag__body--middle
-                  h3.delta 水野 隼登
-                  p
-                    a(href="http://twitter.com/pocotan001") @pocotan001
-            li
-              .flag
-                .flag__image.mentor__avatar
-                  a(href="http://layzie.hatenablog.com/about")
-                    img.frame(src='#{spacer}', data-gravatar-email='saruko313@gmail.com', width='68', height='68')
-                .flag__body.flag__body--middle
-                  h3.delta 平木 聡
-                  p
-                    a(href="http://layzie.hatenablog.com/about") id:Layzie
-            li
-              .flag
-                .flag__image.mentor__avatar
-                  a(href="http://twitter.com/ginpei_jp")
-                    img.frame(src='#{spacer}', data-gravatar-email='ginpei@gmail.com' width='68', height='68')
-                .flag__body.flag__body--middle
-                  h3.delta 高梨 ギンペイ
-                  p
-                    a(href="http://twitter.com/ginpei_jp") @ginpei_jp
-            li
-              .flag
-                .flag__image.mentor__avatar
-                  a(href="http://twitter.com/ktknest")
-                    img.frame(src='#{spacer}', data-gravatar-email='katou.kennichi@gmail.com' width='68', height='68')
-                .flag__body.flag__body--middle
-                  h3.delta 加藤 賢一
-                  p
-                    a(href="http://twitter.com/ktknest") @ktknest
+        ul.mentors
+          li
+            .flag.mentor
+              .flag__image.mentor__avatar
+                a(href="http://twitter.com/tacamy")
+                  img.frame(src='#{spacer}', data-gravatar-email='takami.yamada@gmail.com', width='68', height='68')
+              .flag__body.flag__body--middle.mentor__body
+                h3.delta 山田 敬美
+                p
+                  a(href="http://twitter.com/tacamy") @tacamy
+          li
+            .flag.mentor
+              .flag__image.mentor__avatar
+                a(href="http://twitter.com/1000ch")
+                  img.frame(src='#{spacer}', data-gravatar-email='shogo.sensui@gmail.com', width='68', height='68')
+              .flag__body.flag__body--middle.mentor__body
+                h3.delta 泉水 翔吾
+                p
+                  a(href="http://twitter.com/1000ch") @1000ch
+          li
+            .flag.mentor
+              .flag__image.mentor__avatar
+                a(href="http://twitter.com/agektmr")
+                  img.frame(src='#{spacer}', data-gravatar-email='agektmr@gmail.com' width='68', height='68')
+              .flag__body.flag__body--middle.mentor__body
+                h3.delta 北村 英志
+                p
+                  a(href="http://twitter.com/agektmr") @agektmr
+          li
+            .flag.mentor
+              .flag__image.mentor__avatar
+                a(href="http://twitter.com/hokaccha")
+                  img.frame(src='#{spacer}', data-gravatar-email='k.hokamura@gmail.com' width='68', height='68')
+              .flag__body.flag__body--middle.mentor__body
+                h3.delta 外村 和仁
+                p
+                  a(href="http://twitter.com/hokaccha") @hokaccha
+          li
+            .flag.mentor
+              .flag__image.mentor__avatar
+                a(href="http://twitter.com/nakajmg")
+                  img.frame(src='#{spacer}', data-gravatar-email='nakajima.jmg@gmail.com' width='68', height='68')
+              .flag__body.flag__body--middle.mentor__body
+                h3.delta 中島 直博
+                p
+                  a(href="http://twitter.com/nakajmg") @nakajmg
+          li
+            .flag.mentor
+              .flag__image.mentor__avatar
+                a(href="http://twitter.com/t32k")
+                  img.frame(src='#{spacer}', data-gravatar-email='ijok.ijok@gmail.com' width='68', height='68')
+              .flag__body.flag__body--middle.mentor__body
+                h3.delta 石本 光司
+                p
+                  a(href="http://twitter.com/t32k") @t32k
+          li
+            .flag.mentor
+              .flag__image.mentor__avatar
+                a(href="http://twitter.com/hiloki")
+                  img.frame(src='#{spacer}', data-gravatar-email='contact@inkdesign.jp', width='68', height='68')
+              .flag__body.flag__body--middle.mentor__body
+                h3.delta 谷 拓樹
+                p
+                  a(href="http://twitter.com/hiloki") @hiloki
+          li
+            .flag.mentor
+              .flag__image.mentor__avatar
+                a(href="http://twitter.com/pocotan001")
+                  img.frame(src='#{spacer}', data-gravatar-email='pocotan001@gmail.com', width='68', height='68')
+              .flag__body.flag__body--middle.mentor__body
+                h3.delta 水野 隼登
+                p
+                  a(href="http://twitter.com/pocotan001") @pocotan001
+          li
+            .flag.mentor
+              .flag__image.mentor__avatar
+                a(href="http://layzie.hatenablog.com/about")
+                  img.frame(src='#{spacer}', data-gravatar-email='saruko313@gmail.com', width='68', height='68')
+              .flag__body.flag__body--middle.mentor__body
+                h3.delta 平木 聡
+                p
+                  a(href="http://layzie.hatenablog.com/about") id:Layzie
+          li
+            .flag.mentor
+              .flag__image.mentor__avatar
+                a(href="http://twitter.com/ginpei_jp")
+                  img.frame(src='#{spacer}', data-gravatar-email='ginpei@gmail.com' width='68', height='68')
+              .flag__body.flag__body--middle.mentor__body
+                h3.delta 高梨 ギンペイ
+                p
+                  a(href="http://twitter.com/ginpei_jp") @ginpei_jp
+          li
+            .flag.mentor
+              .flag__image.mentor__avatar
+                a(href="http://twitter.com/ktknest")
+                  img.frame(src='#{spacer}', data-gravatar-email='katou.kennichi@gmail.com' width='68', height='68')
+              .flag__body.flag__body--middle.mentor__body
+                h3.delta 加藤 賢一
+                p
+                  a(href="http://twitter.com/ktknest") @ktknest
 .section
   .grid
     .grid__cell.grid__cell--12
