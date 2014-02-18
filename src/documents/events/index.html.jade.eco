@@ -7,8 +7,7 @@ isPage: true
 div.section
   div.grid
     div.grid__cell.grid__cell--12
-      h2.alpha
-        Upcoming Events
+      h2.alpha Upcoming Events
     
   ul.grid.upcomings
   <% for page in @getCollection("upcomingEvents").toJSON(): %>
@@ -25,8 +24,7 @@ div.section
 div.section
   div.grid
     div.grid__cell.grid__cell--12
-      h2.alpha
-        Past Events
+      h2.alpha Past Events
 
   ul.grid.upcomings
   <% for page in @getCollection("pastEvents").toJSON(): %>
