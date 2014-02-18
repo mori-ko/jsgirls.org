@@ -93,6 +93,19 @@ image: "/img/event/tokyo-201403.png"
           dd.faq__a 参加費は無料です。その他ランチ費用や懇親会費も無料です。
           dt.faq__q 無線LANや電源はありますか？
           dd.faq__a はい、いずれも用意されています。ただし電源に関しては数に限りがあるので、共有して使ってください
+          dt.faq__q 予習はした方がいいですか？
+          dd.faq__a
+            p 次の書籍やサイトを見て予習しておくと良いかもしれません。
+            ul.list
+              li
+                a(href='http://www.amazon.co.jp/dp/4774153761/') ノンプログラマのためのJavaScriptはじめの一歩
+              li
+                a(href='http://www.amazon.co.jp/dp/4844334220/') 開発者のためのChromeガイドブック
+              li
+                a(href='http://developer.chrome.com/extensions/index.html') What are extensions?
+              li
+                a(href='http://dev.screw-axis.com/doc/chrome_extensions/') Chrome Extensions API リファレンス
+
       .section
         h2.beta.beta--highlight メンター、チューター
         .mentor
