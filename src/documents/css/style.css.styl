@@ -117,6 +117,7 @@ a
 .the-header
   position relative
   border-bottom 5px solid $paleYellow
+  max-height 62px
   padding-top 2rem
   background-color $yellow
   color: $black
@@ -127,6 +128,7 @@ a
       color: $blue
   @media only screen and (max-width: 640px)
     text-align center
+    max-height none
     .site-name
       display block
       padding-top 10px
@@ -192,7 +194,14 @@ a
   font-size: 1.2rem
   font-weight bold
   > li
-    margin-right 1em
+    margin-right 5px
+    & + li:before
+      display inline
+      content "＊"
+      margin-right 10px
+      width: 1em
+      font-weight bold
+      font-size 0.8em
 
 .site-banner
   position absolute
