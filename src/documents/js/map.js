@@ -1,4 +1,4 @@
-jsgirls.Map = function (selector, options) {
+jsgirls.Map = function (selector) {
   this.map = null;
 
   // get map div
@@ -8,15 +8,17 @@ jsgirls.Map = function (selector, options) {
   }
   
   // get latitude and longitude
-  var lat = options.lat || 35.6606782;
-  var lng = options.lng || 139.72862716;
-  var latlng = new google.maps.LatLng(lat, lng);
-  
+  var lat = mapCanvas.getAttribute('data-lat') || 35.6604239;
+  var lng = mapCanvas.getAttribute('data-lng') || 139.7292429;
+  var zoom = mapCanvas.getAttribute('data-zoom') || 15;
+  var title = mapCanvas.getAttribute('data-title') || '';
+  var latlng = new google.maps.LatLng(lat - 0, lng - 0);
+
   // initialize map
   this.map = new google.maps.Map(mapCanvas, {
     center: latlng,
-    zoom: options.zoom || 12,
-    mapTypeControl: true,
+    zoom: (zoom - 0) || 12,
+    mapTypeControl: false,
     overviewMapControl: true,
     panControl: true,
     rotateControl: false,
@@ -27,7 +29,7 @@ jsgirls.Map = function (selector, options) {
   // put pin and set it
   var marker = new google.maps.Marker({
     position: latlng,
-    title: options.title || 'Google Japan'
+    title: title
   });
   marker.setMap(this.map);
 };
