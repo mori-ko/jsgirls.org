@@ -70,40 +70,43 @@ image: "/img/event/kanazawa-201106.jpg"
           dd.faq__a はい、いずれも用意されています。ただし電源に関しては数に限りがあるので、共有して使ってください
       .section
         h2.beta.beta--highlight  チーム
-        .mentor
-          ul.mentor__list
-            li
-              .flag
-                .flag__image.mentor__avatar
+        ul.mentors
+          li
+            .flag.mentor
+              .flag__image.mentor__avatar
+                a(href="http://twitter.com/er1nk0")
                   img.frame(src='https://pbs.twimg.com/profile_images/426899467711692800/IA8iTxha_bigger.jpeg', width='68px', height='68px')
-                .flag__body.flag__body--middle
-                  h3.delta えりんこ
-                  p
-                    a(href="http://twitter.com/er1nk0") @er1nk0
-            li
-              .flag
-                .flag__image.mentor__avatar
+              .flag__body.flag__body--middle
+                h3.delta えりんこ
+                p
+                  a(href="http://twitter.com/er1nk0") @er1nk0
+          li
+            .flag
+              .flag__image.mentor__avatar
+                a(href="http://twitter.com/taki666")
                   img.frame(src='https://pbs.twimg.com/profile_images/3772674134/3695b6170ee4719e590e5ad04b587325_bigger.jpeg', width='68px', height='68px')
-                .flag__body.flag__body--middle
-                  h3.delta taki
-                  p
-                    a(href="http://twitter.com/taki666") @taki666
-            li
-              .flag
-                .flag__image.mentor__avatar
+              .flag__body.flag__body--middle.mentor__body
+                h3.delta taki
+                p
+                  a(href="http://twitter.com/taki666") @taki666
+          li
+            .flag
+              .flag__image.mentor__avatar
+                a(href="http://twitter.com/t_io")
                   img.frame(src='https://pbs.twimg.com/profile_images/835452182/2010.03.19_2_bigger.jpg', width='68px', height='68px')
-                .flag__body.flag__body--middle
-                  h3.delta Yuki Takashima
-                  p
-                    a(href="http://twitter.com/t_io") @t_io
-            li
-              .flag
-                .flag__image.mentor__avatar
+              .flag__body.flag__body--middle
+                h3.delta Yuki Takashima
+                p
+                  a(href="http://twitter.com/t_io") @t_io
+          li
+            .flag
+              .flag__image.mentor__avatar
+                a(href="http://twitter.com/er1nk0")
                   img.frame(src='https://pbs.twimg.com/profile_images/418017005820604416/m7M5zwhI_bigger.png', width='68px', height='68px')
-                .flag__body.flag__body--middle
-                  h3.delta テポ
-                  p
-                    a(href="http://twitter.com/er1nk0") @mxs0516
+              .flag__body.flag__body--middle
+                h3.delta テポ
+                p
+                  a(href="http://twitter.com/er1nk0") @mxs0516
 
 .section
   .grid
