@@ -113,7 +113,7 @@ image: "/img/event/kanazawa-201106.jpg"
     .grid__cell.grid__cell--12
       h2.beta 開催場所
     .grid__cell.grid__cell--6
-      div.map-canvas.frame#js-map-canvas
+      div.map-canvas.frame#js-map-canvas(data-lat='36.572151', data-lng='136.655050', data-zoom='17', data-title='ITビジネスプラザ武蔵')
     .grid__cell.grid__cell--6
       h2.gamma ITビジネスプラザ武蔵
       p.
@@ -135,11 +135,6 @@ image: "/img/event/kanazawa-201106.jpg"
 
 script.
   document.addEventListener('DOMContentLoaded', function () {
-    var map = new jsgirls.Map('#js-map-canvas', {
-      lat: 36.572151, 
-      lng: 136.655050,
-      zoom: 17,
-      title: 'Google Japan'
-    });
+    var map = new jsgirls.Map('#js-map-canvas');
     var avatar = new jsgirls.Avatar();
   });

@@ -213,7 +213,7 @@ image: "/img/event/tokyo-201403.png"
     .grid__cell.grid__cell--12
       h2.beta 開催場所
     .grid__cell.grid__cell--6
-      div.map-canvas.frame#js-map-canvas
+      div.map-canvas.frame#js-map-canvas(data-lat='35.6604239', data-lng='139.7292429', data-zoom='17', data-title='六本木ヒルズ森タワー')
     .grid__cell.grid__cell--6
       h2.gamma グーグル株式会社
       p.
@@ -248,11 +248,6 @@ image: "/img/event/tokyo-201403.png"
 
 script.
   document.addEventListener('DOMContentLoaded', function () {
-    var map = new jsgirls.Map('#js-map-canvas', {
-      lat: 35.6606782, 
-      lng: 139.72862716,
-      zoom: 15,
-      title: 'Google Japan'
-    });
+    var map = new jsgirls.Map('#js-map-canvas');
     var avatar = new jsgirls.Avatar();
   });
