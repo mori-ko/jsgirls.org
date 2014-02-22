@@ -130,15 +130,6 @@ image: "/assets/img/event/tokyo-201403.png"
           li
             .flag.mentor
               .flag__image.mentor__avatar
-                a(href="http://twitter.com/agektmr")
-                  img.frame(src='#{spacer}', data-gravatar-email='agektmr@gmail.com' width='68', height='68')
-              .flag__body.flag__body--middle.mentor__body
-                h3.delta 北村 英志
-                p
-                  a(href="http://twitter.com/agektmr") @agektmr
-          li
-            .flag.mentor
-              .flag__image.mentor__avatar
                 a(href="http://twitter.com/hokaccha")
                   img.frame(src='#{spacer}', data-gravatar-email='k.hokamura@gmail.com' width='68', height='68')
               .flag__body.flag__body--middle.mentor__body
@@ -154,6 +145,15 @@ image: "/assets/img/event/tokyo-201403.png"
                 h3.delta 中島 直博
                 p
                   a(href="http://twitter.com/nakajmg") @nakajmg
+          li
+            .flag.mentor
+              .flag__image.mentor__avatar
+                a(href="http://twitter.com/agektmr")
+                  img.frame(src='#{spacer}', data-gravatar-email='agektmr@gmail.com' width='68', height='68')
+              .flag__body.flag__body--middle.mentor__body
+                h3.delta 北村 英志
+                p
+                  a(href="http://twitter.com/agektmr") @agektmr
           li
             .flag.mentor
               .flag__image.mentor__avatar
@@ -193,6 +193,15 @@ image: "/assets/img/event/tokyo-201403.png"
           li
             .flag.mentor
               .flag__image.mentor__avatar
+                a(href="http://twitter.com/ktknest")
+                  img.frame(src='#{spacer}', data-gravatar-email='katou.kennichi@gmail.com' width='68', height='68')
+              .flag__body.flag__body--middle.mentor__body
+                h3.delta 加藤 賢一
+                p
+                  a(href="http://twitter.com/ktknest") @ktknest
+          li
+            .flag.mentor
+              .flag__image.mentor__avatar
                 a(href="http://twitter.com/ginpei_jp")
                   img.frame(src='#{spacer}', data-gravatar-email='ginpei@gmail.com' width='68', height='68')
               .flag__body.flag__body--middle.mentor__body
@@ -202,12 +211,12 @@ image: "/assets/img/event/tokyo-201403.png"
           li
             .flag.mentor
               .flag__image.mentor__avatar
-                a(href="http://twitter.com/ktknest")
-                  img.frame(src='#{spacer}', data-gravatar-email='katou.kennichi@gmail.com' width='68', height='68')
+                a(href="http://twitter.com/kyo_ago")
+                  img.frame(src='#{spacer}', data-gravatar-email='kyo@0-9.sakura.ne.jp' width='68', height='68')
               .flag__body.flag__body--middle.mentor__body
-                h3.delta 加藤 賢一
+                h3.delta 吾郷 協
                 p
-                  a(href="http://twitter.com/ktknest") @ktknest
+                  a(href="http://twitter.com/kyo_ago") @kyo_ago
 .section
   .grid
     .grid__cell.grid__cell--12
