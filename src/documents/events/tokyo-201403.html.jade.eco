@@ -5,7 +5,7 @@ place: "Tokyo, Japan"
 summary: "Google Chrome拡張機能をつくってJavaScriptを学ぼう！"
 layout: "event"
 isEvent: true
-image: "/img/event/tokyo-201403.png"
+image: "/assets/img/event/tokyo-201403.png"
 ---
 
 - var spacer = 'data:image/gif;base64,R0lGODlhAQABAIAAAP//////zCH5BAEHAAAALAAAAAABAAEAAAICRAEAOw==' 
@@ -238,13 +238,13 @@ image: "/img/event/tokyo-201403.png"
       h2.beta 協力
     .grid__cell.grid__cell--4
       a(href='http://www.gridoogle.co.jp', target='_blank')
-        img(src='/img/partner/google.jpg', width='100%')
+        img(src='/assets/img/partner/google.jpg', width='100%')
     .grid__cell.grid__cell--4
       a(href='http://www.cyberagent.co.jp', target='_blank')
-        img(src='/img/partner/cyberagent.jpg', width='100%')
+        img(src='/assets/img/partner/cyberagent.jpg', width='100%')
     .grid__cell.grid__cell--4
       a(href='http://www.pxgrid.com/', target='_blank')
-        img(src='/img/partner/pixelgrid.jpg', width='100%')
+        img(src='/assets/img/partner/pixelgrid.jpg', width='100%')
 
 script.
   document.addEventListener('DOMContentLoaded', function () {

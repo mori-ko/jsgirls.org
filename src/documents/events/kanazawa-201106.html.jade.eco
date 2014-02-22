@@ -5,7 +5,7 @@ place: "Kanazawa, Japan"
 summary: "もくもくJavaScript開発!"
 layout: "event"
 isEvent: true
-image: "/img/event/kanazawa-201106.jpg"
+image: "/assets/img/event/kanazawa-201106.jpg"
 ---
 
 - var spacer = 'data:image/gif;base64,R0lGODlhAQABAIAAAP//////zCH5BAEHAAAALAAAAAABAAEAAAICRAEAOw=='
@@ -131,7 +131,7 @@ image: "/img/event/kanazawa-201106.jpg"
       h2.beta 協力
     .grid__cell.grid__cell--4
       a(href='http://www.gridoogle.co.jp', target='_blank')
-        img(src='/img/partner/dmmlab.jpg', width='100%')
+        img(src='/assets/img/partner/dmmlab.jpg', width='100%')
 
 script.
   document.addEventListener('DOMContentLoaded', function () {

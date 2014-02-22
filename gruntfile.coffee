@@ -5,41 +5,41 @@ module.exports = (grunt) ->
     concat:
       css:
         src: [
-          'out/css/vendor/normalize.css',
-          'out/css/vendor/kite.css',
-          'out/css/style.css'
+          'out/assets/css/vendor/normalize.css',
+          'out/assets/css/vendor/kite.css',
+          'out/assets/css/style.css'
         ]
-        dest: 'out/css/app.css'
+        dest: 'out/assets/css/app.css'
       vendor:
         src: [
-          'out/js/vendor/ga.js',
-          'out/js/vendor/md5.js'
+          'out/assets/js/vendor/ga.js',
+          'out/assets/js/vendor/md5.js'
         ]
-        dest: 'out/js/vendor/vendor.js'
+        dest: 'out/assets/js/vendor/vendor.js'
       js:
         src: [
-          'out/js/namespace.js',
-          'out/js/map.js',
-          'out/js/avatar.js'
+          'out/assets/js/namespace.js',
+          'out/assets/js/map.js',
+          'out/assets/js/avatar.js'
         ]
-        dest: 'out/js/app.js'
+        dest: 'out/assets/js/app.js'
     csscomb:
       all:
         files:
-          'out/css/app.css': 'out/css/app.css'
+          'out/assets/css/app.css': 'out/assets/css/app.css'
     csso:
       all:
         files:
-          'out/css/app.min.css': 'out/css/app.css'
+          'out/assets/css/app.min.css': 'out/assets/css/app.css'
     uglify:
       vendor:
         files:
-          'out/js/vendor/vendor.min.js': 'out/js/vendor/vendor.js'
+          'out/assets/js/vendor/vendor.min.js': 'out/assets/js/vendor/vendor.js'
       js:
         files:
-          'out/js/app.min.js': 'out/js/app.js'
+          'out/assets/js/app.min.js': 'out/assets/js/app.js'
     jshint:
-      all: ['src/documents/js/*.js']
+      all: ['src/documents/assets/js/*.js']
     jsvalidate:
       options:
         globals: {}

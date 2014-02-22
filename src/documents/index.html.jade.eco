@@ -7,7 +7,7 @@ isPage: true
 .section
   .grid
     .grid__cell.grid__cell--center.grid__cell--4
-      img.img.img-fluid(src='/img/sai.png')
+      img.img.img-fluid(src='/assets/img/sai.png')
     .grid__cell.grid__cell--8
       h2.beta.
         JavaScriptを学ぶためのコミュニティ
