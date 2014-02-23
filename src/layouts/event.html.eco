@@ -8,6 +8,7 @@
         <%- @content %>
       </div>
     </div>
+    <%- @partial('widget') %>
     <%- @partial('footer') %>
     <%- @partial('script') %>
   </body>
