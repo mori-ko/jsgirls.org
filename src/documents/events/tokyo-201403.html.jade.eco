@@ -240,7 +240,7 @@ image: "/assets/img/event/tokyo-201403.png"
   .grid.grid--center
     .grid__cell.grid__cell--6
       p
-        a.button.button--primary.button--full イベントに参加する      
+        a.button.button--primary.button--full(href='https://docs.google.com/forms/d/1hZ1f_4nzrxPEivo0Z3d09fgHGDiO_Xw3RRWKE97zNdk/viewform', target='_blank') イベントに参加する      
 .section
   .grid
     .grid__cell.grid__cell--12
