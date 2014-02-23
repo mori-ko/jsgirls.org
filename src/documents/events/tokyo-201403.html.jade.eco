@@ -21,7 +21,7 @@ image: "/assets/img/event/tokyo-201403.png"
       p.
         JavaScriptのキホンを学ぶところから、簡単なプログラムをつくるところまでをこの一日でやります。午前はキホンを、午後のハンズオンではGoogle Chromeの拡張機能をつくるハンズオンワークショップをおこないます。
       p.text-right
-        a.button(href='#') イベントに参加する
+        a.button(href='https://docs.google.com/forms/d/1hZ1f_4nzrxPEivo0Z3d09fgHGDiO_Xw3RRWKE97zNdk/viewform', target='_blank') イベントに参加する
 
 .section
   .grid
