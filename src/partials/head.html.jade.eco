@@ -13,7 +13,9 @@ head
   meta(property='og:description', content='<%= @document.summary %>')
   <% end %>
   <% if @document.image: %>
-  meta(property='og:image', content='<%= @document.image %>')
+  meta(property='og:image', content='<%= @site.url %><%= @document.image %>')
+  <% else: %>
+  meta(property='og:image', content='<%= @site.url %>/assets/img/logo.png')
   <% end %>
   <!--[if lt IE 9]>
   script(src='http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js')
