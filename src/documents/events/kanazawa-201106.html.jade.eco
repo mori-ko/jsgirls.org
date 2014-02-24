@@ -130,7 +130,7 @@ image: "/assets/img/event/kanazawa-201106.jpg"
     .grid__cell.grid__cell--12
       h2.beta 協力
     .grid__cell.grid__cell--4
-      a(href='http://www.gridoogle.co.jp', target='_blank')
+      a(href='http://labo.dmm.com/', target='_blank')
         img(src='/assets/img/partner/dmmlab.jpg', width='100%')
 
 script.
