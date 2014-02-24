@@ -22,8 +22,6 @@ image: "/assets/img/event/tokyo-201403.png"
         JavaScriptのキホンを学ぶところから、簡単なプログラムをつくるところまでをこの一日でやります。午前はキホンを、午後のハンズオンではGoogle Chromeの拡張機能をつくるハンズオンワークショップをおこないます。
       p.text-right
         ハッシュタグ：<a href="https://twitter.com/search?q=%23jsgirls_tokyo">#jsgirls_tokyo</a></b>
-      p.text-right
-        a.button(href='https://docs.google.com/forms/d/1hZ1f_4nzrxPEivo0Z3d09fgHGDiO_Xw3RRWKE97zNdk/viewform', target='_blank') イベントに参加する
 
 .section
   .grid
@@ -242,13 +240,13 @@ image: "/assets/img/event/tokyo-201403.png"
   .grid.grid--center
     .grid__cell.grid__cell--6
       p
-        a.button.button--primary.button--full(href='https://docs.google.com/forms/d/1hZ1f_4nzrxPEivo0Z3d09fgHGDiO_Xw3RRWKE97zNdk/viewform', target='_blank') イベントに参加する      
+        div.button.button--primary.button--full.is-disabled 受付終了しました      
 .section
   .grid
     .grid__cell.grid__cell--12
       h2.beta 協力
     .grid__cell.grid__cell--4
-      a(href='http://www.google.co.jp', target='_blank')
+      a(href='https://developers.google.com/', target='_blank')
         img(src='/assets/img/partner/google.jpg', width='100%')
     .grid__cell.grid__cell--4
       a(href='http://www.cyberagent.co.jp', target='_blank')
