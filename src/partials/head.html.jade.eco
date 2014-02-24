@@ -6,6 +6,15 @@ head
   link(href='/favicon.ico', rel='icon')
   link(href='//fonts.googleapis.com/css?family=Yeseva+One', rel='stylesheet')
   link(href='/assets/css/app.min.css', rel='stylesheet')
+  meta(property='og:url', content='<%= @site.url %><%= @document.url %>')
+  meta(property='og:site_name', content='<%= @site.title %>')
+  meta(property='og:title', content='<%= if @document.title then "#{@document.title} | #{@site.title}" else @site.title %>')
+  <% if @document.summary: %>
+  meta(property='og:description', content='<%= @document.summary %>')
+  <% end %>
+  <% if @document.image: %>
+  meta(property='og:image', content='<%= @document.image %>')
+  <% end %>
   <!--[if lt IE 9]>
   script(src='http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js')
   <![endif]-->
