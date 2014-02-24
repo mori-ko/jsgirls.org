@@ -1,0 +1,264 @@
+---
+title: "JS Girls Tokyo #1"
+date: "2014/03/08"
+place: "Tokyo, Japan"
+summary: "Google Chrome拡張機能をつくってJavaScriptを学ぼう！"
+layout: "event"
+isEvent: true
+image: "/assets/img/event/tokyo-201403.png"
+---
+
+- var spacer = 'data:image/gif;base64,R0lGODlhAQABAIAAAP//////zCH5BAEHAAAALAAAAAABAAEAAAICRAEAOw==' 
+
+.section
+  .grid
+    .grid__cell.grid__cell--6
+      img(src='<%= @document.image %>', width='100%')
+    .grid__cell.grid__cell--6
+      h2.alpha <%= @document.title %>
+      p.
+        「JavaScriptをかけるようになりたい!」<br>「JavaScriptで何かをつくってみたい！」
+      p.
+        JavaScriptのキホンを学ぶところから、簡単なプログラムをつくるところまでをこの一日でやります。午前はキホンを、午後のハンズオンではGoogle Chromeの拡張機能をつくるハンズオンワークショップをおこないます。
+      p.text-right
+        ハッシュタグ：<a href="https://twitter.com/search?q=%23jsgirls_tokyo">#jsgirls_tokyo</a></b>
+      p.text-right
+        a.button(href='https://docs.google.com/forms/d/1hZ1f_4nzrxPEivo0Z3d09fgHGDiO_Xw3RRWKE97zNdk/viewform', target='_blank') イベントに参加する
+
+.section
+  .grid
+    .grid__cell.grid__cell--6
+      .section.aside
+        h2.beta <%= @moment(@document.date).format('YYYY/MM/DD(ddd)') %>
+        dl.timetable
+          dt.timetable__time.
+            9:30
+          dd.timetable__content
+            p.strong
+              開場
+            p
+              少し早い時間からはじまります。会場のあるビルの2Fには<a href="http://www.roppongihills.com/shops_restaurants/restaurants/cafe/209220004.html">スターバックスコーヒー</a>があるので、少し早めにきて朝食をとるのも良いかもしれません。
+          dt.timetable__time.
+            10:00
+          dd.timetable__content
+            p.strong
+              講義：はじめてのJavaScript
+            p.
+              <a href="http://twitter.com/tacamy">山田 敬美（@tacamy）</a>によるJavaScript初心者向けの講座です。彼女自身、マークアップエンジニアから、JavaScriptエンジニアへとステップアップした一人です。
+          dt.timetable__time.
+            11:00
+          dd.timetable__content
+            p.strong
+              ハンズオン：Google Chrome拡張機能をつくる
+            p
+              ランチの前に、<a href="http://twitter.com/1000ch">泉水 翔吾（@1000ch）</a>からの午後のハンズオンについての説明です。今回のお題であるGoogle Chrome拡張機能をつくるために必要な知識などを教えてくれます。 
+          dt.timetable__time.
+            12:30
+          dd.timetable__content
+            p.strong
+              ランチ
+            p
+              ランチは会場で用意しています。みんなでわいわいランチも楽しみましょう。
+          dt.timetable__time.
+            13:30
+          dd.timetable__content
+            p.strong
+              もくもく開発!
+            p
+              お腹が満たされたら、さっそく開発をはじめましょう。困ったときには会場にいるメンターがサポートしてくれるので、気軽に質問・相談してみてください。
+          dt.timetable__time.
+            19:00
+          dd.timetable__content
+            p.strong
+              懇親会・発表
+            p
+              長い時間の開発も終わり、懇親会で参加者やメンターと交流しましょう。また成果物をみんなの前で発表できる方は、ぜひ発表してみてください。発表、アウトプットがより成長につながります。
+          dt.timetable__time.
+            21:00
+          dd.timetable__content
+            p.strong
+              解散
+            p
+              一日かけて開発をおこなったイベントも終わり、おつかれさまでした。よければ参加の感想をTwitterやブログで報告してもらえると嬉しいです。
+
+    .grid__cell.grid__cell--6
+      .section
+        h2.beta.beta--highlight どんな人が参加できるの？
+        ul.list
+          li JavaScriptをもっと書けるようになりたい人
+          li どんな経験でも良いので、一度でもJavaScriptを書いたことがある人
+          li PCを持参できる人（会場では用意していません）
+      .section
+        h2.beta.beta--highlight よくある質問
+        dl.faq
+          dt.faq__q 参加費はかかりますか？
+          dd.faq__a 参加費は無料です。その他ランチ費用や懇親会費も無料です。
+          dt.faq__q 無線LANや電源はありますか？
+          dd.faq__a はい、いずれも用意されています。ただし電源に関しては数に限りがあるので、共有して使ってください
+          dt.faq__q 予習はした方がいいですか？
+          dd.faq__a
+            p 次の書籍やサイトを見て予習しておくと良いかもしれません。
+            ul.list
+              li
+                a(href='http://www.amazon.co.jp/dp/4774153761/') ノンプログラマのためのJavaScriptはじめの一歩
+              li
+                a(href='http://www.amazon.co.jp/dp/4844334220/') 開発者のためのChromeガイドブック
+              li
+                a(href='http://developer.chrome.com/extensions/index.html') What are extensions?
+              li
+                a(href='http://dev.screw-axis.com/doc/chrome_extensions/') Chrome Extensions API リファレンス
+
+      .section
+        h2.beta.beta--highlight メンター、チューター
+        ul.mentors
+          li
+            .flag.mentor
+              .flag__image.mentor__avatar
+                a(href="http://twitter.com/tacamy")
+                  img.frame(src='#{spacer}', data-gravatar-email='takami.yamada@gmail.com', width='68', height='68')
+              .flag__body.flag__body--middle.mentor__body
+                h3.delta 山田 敬美
+                p
+                  a(href="http://twitter.com/tacamy") @tacamy
+          li
+            .flag.mentor
+              .flag__image.mentor__avatar
+                a(href="http://twitter.com/1000ch")
+                  img.frame(src='#{spacer}', data-gravatar-email='shogo.sensui@gmail.com', width='68', height='68')
+              .flag__body.flag__body--middle.mentor__body
+                h3.delta 泉水 翔吾
+                p
+                  a(href="http://twitter.com/1000ch") @1000ch
+          li
+            .flag.mentor
+              .flag__image.mentor__avatar
+                a(href="http://twitter.com/hokaccha")
+                  img.frame(src='#{spacer}', data-gravatar-email='k.hokamura@gmail.com' width='68', height='68')
+              .flag__body.flag__body--middle.mentor__body
+                h3.delta 外村 和仁
+                p
+                  a(href="http://twitter.com/hokaccha") @hokaccha
+          li
+            .flag.mentor
+              .flag__image.mentor__avatar
+                a(href="http://twitter.com/nakajmg")
+                  img.frame(src='#{spacer}', data-gravatar-email='nakajima.jmg@gmail.com' width='68', height='68')
+              .flag__body.flag__body--middle.mentor__body
+                h3.delta 中島 直博
+                p
+                  a(href="http://twitter.com/nakajmg") @nakajmg
+          li
+            .flag.mentor
+              .flag__image.mentor__avatar
+                a(href="http://twitter.com/agektmr")
+                  img.frame(src='#{spacer}', data-gravatar-email='agektmr@gmail.com' width='68', height='68')
+              .flag__body.flag__body--middle.mentor__body
+                h3.delta 北村 英志
+                p
+                  a(href="http://twitter.com/agektmr") @agektmr
+          li
+            .flag.mentor
+              .flag__image.mentor__avatar
+                a(href="http://twitter.com/t32k")
+                  img.frame(src='#{spacer}', data-gravatar-email='ijok.ijok@gmail.com' width='68', height='68')
+              .flag__body.flag__body--middle.mentor__body
+                h3.delta 石本 光司
+                p
+                  a(href="http://twitter.com/t32k") @t32k
+          li
+            .flag.mentor
+              .flag__image.mentor__avatar
+                a(href="http://twitter.com/hiloki")
+                  img.frame(src='#{spacer}', data-gravatar-email='contact@inkdesign.jp', width='68', height='68')
+              .flag__body.flag__body--middle.mentor__body
+                h3.delta 谷 拓樹
+                p
+                  a(href="http://twitter.com/hiloki") @hiloki
+          li
+            .flag.mentor
+              .flag__image.mentor__avatar
+                a(href="http://twitter.com/pocotan001")
+                  img.frame(src='#{spacer}', data-gravatar-email='pocotan001@gmail.com', width='68', height='68')
+              .flag__body.flag__body--middle.mentor__body
+                h3.delta 水野 隼登
+                p
+                  a(href="http://twitter.com/pocotan001") @pocotan001
+          li
+            .flag.mentor
+              .flag__image.mentor__avatar
+                a(href="http://layzie.hatenablog.com/about")
+                  img.frame(src='#{spacer}', data-gravatar-email='saruko313@gmail.com', width='68', height='68')
+              .flag__body.flag__body--middle.mentor__body
+                h3.delta 平木 聡
+                p
+                  a(href="http://layzie.hatenablog.com/about") id:Layzie
+          li
+            .flag.mentor
+              .flag__image.mentor__avatar
+                a(href="http://twitter.com/ktknest")
+                  img.frame(src='#{spacer}', data-gravatar-email='katou.kennichi@gmail.com' width='68', height='68')
+              .flag__body.flag__body--middle.mentor__body
+                h3.delta 加藤 賢一
+                p
+                  a(href="http://twitter.com/ktknest") @ktknest
+          li
+            .flag.mentor
+              .flag__image.mentor__avatar
+                a(href="http://twitter.com/ginpei_jp")
+                  img.frame(src='#{spacer}', data-gravatar-email='ginpei@gmail.com' width='68', height='68')
+              .flag__body.flag__body--middle.mentor__body
+                h3.delta 高梨 ギンペイ
+                p
+                  a(href="http://twitter.com/ginpei_jp") @ginpei_jp
+          li
+            .flag.mentor
+              .flag__image.mentor__avatar
+                a(href="http://twitter.com/kyo_ago")
+                  img.frame(src='#{spacer}', data-gravatar-email='kyo@0-9.sakura.ne.jp' width='68', height='68')
+              .flag__body.flag__body--middle.mentor__body
+                h3.delta 吾郷 協
+                p
+                  a(href="http://twitter.com/kyo_ago") @kyo_ago
+.section
+  .grid
+    .grid__cell.grid__cell--12
+      h2.beta 開催場所
+    .grid__cell.grid__cell--6
+      div.map-canvas.frame#js-map-canvas(data-lat='35.6604239', data-lng='139.7292429', data-zoom='17', data-title='六本木ヒルズ森タワー')
+    .grid__cell.grid__cell--6
+      h2.gamma グーグル株式会社
+      p.
+        東京都港区六本木 6-10-1 六本木ヒルズ森タワー2F<br>
+        <small>2Fで受付をし、入場パスをもらって会場のフロアまで上がってください。</small>
+      h2.gamma アクセス
+      ul
+        li 東京メトロ 日比谷線「六本木駅」1C出口 徒歩0分（コンコースにて直結）
+        li 都営地下鉄 大江戸線「六本木駅」3出口 徒歩4分
+        li 都営地下鉄 大江戸線「麻布十番駅」7出口 徒歩5分
+        li 東京メトロ 南北線「麻布十番駅」4出口 徒歩8分
+        li 東京メトロ 千代田線「乃木坂」5出口 徒歩10分
+
+.section
+  .grid.grid--center
+    .grid__cell.grid__cell--6
+      p
+        a.button.button--primary.button--full(href='https://docs.google.com/forms/d/1hZ1f_4nzrxPEivo0Z3d09fgHGDiO_Xw3RRWKE97zNdk/viewform', target='_blank') イベントに参加する      
+.section
+  .grid
+    .grid__cell.grid__cell--12
+      h2.beta 協力
+    .grid__cell.grid__cell--4
+      a(href='http://www.gridoogle.co.jp', target='_blank')
+        img(src='/assets/img/partner/google.jpg', width='100%')
+    .grid__cell.grid__cell--4
+      a(href='http://www.cyberagent.co.jp', target='_blank')
+        img(src='/assets/img/partner/cyberagent.jpg', width='100%')
+    .grid__cell.grid__cell--4
+      a(href='http://www.pxgrid.com/', target='_blank')
+        img(src='/assets/img/partner/pixelgrid.jpg', width='100%')
+
+script.
+  document.addEventListener('DOMContentLoaded', function () {
+    var map = new jsgirls.Map('#js-map-canvas');
+    var avatar = new jsgirls.Avatar();
+  });

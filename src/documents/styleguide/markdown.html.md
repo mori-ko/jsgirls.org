@@ -1,10 +1,3 @@
----
-title: "JS Girls Markdown Styles"
-layout: "default"
----
-
-[Link to Style Guide](index.html)
-
 # h1
 
 ## h2
@@ -46,5 +39,3 @@ This is table.
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
-
-[Link to Style Guide](index.html)

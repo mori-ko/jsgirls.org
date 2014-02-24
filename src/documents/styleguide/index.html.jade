@@ -3,69 +3,92 @@ title: "JS Girls Style Guide"
 layout: "default"
 ---
 div.section
-  div.kite-g
-    div.kite-g__c.kite-g__c--12
+  div.grid
+    div.grid__cell.grid__cell--12
       h2.alpha Colors
 
-  ul.kite-g
-    li.kite-g__c.kite-g__c--center.kite-g__c--2
-      p(style="background-color: #EFDA5B") #EFDA5B
-    li.kite-g__c.kite-g__c--center.kite-g__c--2
-      p(style="background-color: #D8D8D8") #D8D8D8
-    li.kite-g__c.kite-g__c--center.kite-g__c--2
-      p(style="background-color: #000000; color: #FFFFFF") #000000
-    li.kite-g__c.kite-g__c--center.kite-g__c--2
-      p(style="background-color: #DB80BF") #DB80BF
-    li.kite-g__c.kite-g__c--center.kite-g__c--2
-      p(style="background-color: #3FCDDB") #3FCDDB
+  ul.grid
+    li.grid__cell.grid__cell--center.grid__cell--2
+      p(style="background-color: #EFDA5B")
+        $yellow<br>#EFDA5B
+    li.grid__cell.grid__cell--center.grid__cell--2
+      p(style="background-color: #D8D8D8")
+        $gray<br>#D8D8D8
+    li.grid__cell.grid__cell--center.grid__cell--2
+      p(style="background-color: #000000; color: #FFFFFF")
+        $black<br>#000000
+    li.grid__cell.grid__cell--center.grid__cell--2
+      p(style="background-color: #FF61AD")
+        $pink<br>#FF61AD
+    li.grid__cell.grid__cell--center.grid__cell--2
+      p(style="background-color: #4986B9")
+        $blue<br>#4986B9
+    li.grid__cell.grid__cell--center.grid__cell--2
+      p(style="background-color: #FF914D")
+        $orange<br>#FF914D
 
 div.section
-  div.kite-g
-    div.kite-g__c.kite-g__c--12
+  div.grid
+    div.grid__cell.grid__cell--12
+      h2.alpha Typography
+
+  div.grid
+    div.grid__cell.grid__cell--12
       h2.alpha Heading
-
-  div.kite-g
-    div.kite-g__c.kite-g__c--12
       h3.beta Sub-heading
-      h4.omega Mini-heading
+      h4.gamma Mini-heading
+
+  div.grid
+    div.grid__cell.grid__cell--12
+      p Lorem Ipsum is simply <strong>dummy text</strong> of the printing and typesetting industry. <a href="#">Lorem Ipsum</a> has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+      ul.list
+        li Lorem Ipsum
+        li Lorem Ipsum
+        li Lorem Ipsum
 
 div.section
-  div.kite-g
-    div.kite-g__c.kite-g__c--12
+  div.grid
+    div.grid__cell.grid__cell--12
       h2.alpha Grid System
 
-  div.kite-g
-    div.kite-g__c.kite-g__c--center.kite-g__c--4
+  div.grid
+    div.grid__cell.grid__cell--center.grid__cell--4
       p.frame 4
-    div.kite-g__c.kite-g__c--center.kite-g__c--4
+    div.grid__cell.grid__cell--center.grid__cell--4
       p.frame 4
-    div.kite-g__c.kite-g__c--center.kite-g__c--4
+    div.grid__cell.grid__cell--center.grid__cell--4
       p.frame 4
 
-  div.kite-g
-    div.kite-g__c.kite-g__c--center.kite-g__c--3
+  div.grid
+    div.grid__cell.grid__cell--center.grid__cell--3
       p.frame 3
-    div.kite-g__c.kite-g__c--center.kite-g__c--3
+    div.grid__cell.grid__cell--center.grid__cell--3
       p.frame 3
-    div.kite-g__c.kite-g__c--center.kite-g__c--3
+    div.grid__cell.grid__cell--center.grid__cell--3
       p.frame 3
-    div.kite-g__c.kite-g__c--center.kite-g__c--3
+    div.grid__cell.grid__cell--center.grid__cell--3
       p.frame 3
 
-  div.kite-g
-    div.kite-g__c.kite-g__c--center.kite-g__c--6
+  div.grid
+    div.grid__cell.grid__cell--center.grid__cell--3
+      p.frame 3
+    div.grid__cell.grid__cell--center.grid__cell--9
+      p.frame 9
+
+  div.grid
+    div.grid__cell.grid__cell--center.grid__cell--6
       p.frame 6
-    div.kite-g__c.kite-g__c--center.kite-g__c--6
+    div.grid__cell.grid__cell--center.grid__cell--6
       p.frame 6
 
 div.section
-  div.kite-g
-    div.kite-g__c.kite-g__c--12
+  div.grid
+    div.grid__cell.grid__cell--12
       h2.alpha Components
 
   div.section
-    div.kite-g
-      div.kite-g__c.kite-g__c--6
+    div.grid
+      div.grid__cell.grid__cell--6
         h3.beta Table
         table.table
           thead.table__head
@@ -75,27 +98,27 @@ div.section
           tbody
             tr
               th.table__title 9:30
-              td.table__cell 開場
+              td.table__cellell 開場
             tr
               th.table__title 10:00
-              td.table__cell はじめてのJavaScript（山田 敬美）
+              td.table__cellell はじめてのJavaScript（山田 敬美）
             tr
               th.table__title 11:00
-              td.table__cell ハンズオン（泉水 翔吾）
+              td.table__cellell ハンズオン（泉水 翔吾）
             tr
               th.table__title 12:30
-              td.table__cell ランチ
+              td.table__cellell ランチ
             tr
               th.table__title 13:30
-              td.table__cell もくもく開発!
+              td.table__cellell もくもく開発!
             tr
               th.table__title 19:00
-              td.table__cell 懇親会・発表
+              td.table__cellell 懇親会・発表
             tr
               th.table__title 21:00
-              td.table__cell 解散
+              td.table__cellell 解散
       
-      div.kite-g__c.kite-g__c--6
+      div.grid__cell.grid__cell--6
         h3.beta Media
         div.section
           div.media
@@ -112,15 +135,49 @@ div.section
               p Lorem Ipsum is simply dummy text of the printing and typesettingm Ipsum.
 
 div.section
-  div.kite-g
-    div.kite-g__c.kite-g__c--12
-      h2.alpha Materials
-  ul.kite-g
-    li.kite-g__c.kite-g__c--4
-      img(src='/img/sai.png')
-    li.kite-g__c.kite-g__c--4
-      img(src='/img/sai.png')
-    li.kite-g__c.kite-g__c--4
-      img(src='/img/sai.png')
+  div.grid
+    div.grid__cell.grid__cell--12
+      h2.alpha Buttons
+  ul.grid
+    li.grid__cell.grid__cell--center.grid__cell--4
+      a.button Default
+    li.grid__cell.grid__cell--center.grid__cell--4
+      a.button.button--primary Primary
+    li.grid__cell.grid__cell--center.grid__cell--4
+      a.button.button--secondary Secondary
+    li.grid__cell.grid__cell--center.grid__cell--4
+      a.button.is-disabled Disabled
+    li.grid__cell.grid__cell--center.grid__cell--4
+      a.button.button--primary.is-disabled Disabled
+    li.grid__cell.grid__cell--center.grid__cell--4
+      a.button.button--secondary.is-disabled Disabled
+div.section
+  div.grid.grid--center
+    div.grid__cell.grid__cell--center.grid__cell--8
+      a.button.button--primary.button--full 申し込み
+div.section
+  div.grid.grid--center
+    div.grid__cell.grid__cell--center.grid__cell--10
+      a.button.button--primary.button--full 申し込み
+div.section
+  div.grid.grid--center
+    div.grid__cell.grid__cell--center.grid__cell--12
+      a.button.button--primary.button--full 申し込み
 
-a(href='markdown.html') Link to Markdown Styles
+div.section
+  div.grid
+    div.grid__cell.grid__cell--12
+      h2.alpha Materials
+  ul.grid
+    li.grid__cell.grid__cell--center.grid__cell--4
+      img(src='/assets/img/sai.png')
+    li.grid__cell.grid__cell--center.grid__cell--4
+      img(src='/assets/img/octocat.png')
+
+div.section
+  div.grid
+    div.grid__cell.grid__cell--12
+      h2.alpha Markdown Style
+  div.grid
+    div.grid__cell.grid__cell--12
+      include markdown.html.md

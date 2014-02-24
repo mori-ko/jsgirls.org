@@ -5,4 +5,7 @@ head
   title <%= if @document.title then "#{@document.title} | #{@site.title}" else @site.title %>
   link(href='/favicon.ico', rel='icon')
   link(href='//fonts.googleapis.com/css?family=Yeseva+One', rel='stylesheet')
-  link(href='/css/app.css', rel='stylesheet')
+  link(href='/assets/css/app.min.css', rel='stylesheet')
+  <!--[if lt IE 9]>
+  script(src='http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js')
+  <![endif]-->

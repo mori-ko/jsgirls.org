@@ -1,0 +1,437 @@
+// Color
+$black = #000000
+$lightBlack = lighten($black,30%)
+$gray = #D8D8D8
+$lightGray = lighten($gray,75%)
+$yellow = #EFDA5B
+$paleYellow = lighten($yellow,30%)
+$goldYellow = darken($yellow,30%)
+$pink = #FF61AD
+// $blue = #61D9FF
+$blue = #4986B9
+$orange = #FF914D
+$type = 'Hiragino Kaku Gothic ProN', Helvetica, sans-serif
+$type-yeseva = 'Yeseva One', $type
+
+// Base
+html
+  -webkit-text-size-adjust 100%
+  background-color $black
+  font-family $type
+  color: $lightBlack
+  @media only screen and (max-width: 640px)
+    font-size 14px
+
+h1,h2,h3,h4,h5,h6,p,ul,dl,dt,dd
+  margin 0
+  margin-bottom 10px
+  padding 0
+  line-height 1.5
+
+ul
+  list-style none
+
+b,
+.bold
+  font-weight bold
+  color $black
+
+small,
+.small
+  font-size .75rem
+
+strong,
+.strong
+  color: $orange
+  font-weight bold
+
+img,
+.img
+  vertical-align top
+  @media only screen and (max-width: 640px)
+    max-width 100%
+.img--fluid
+  max-width: 100%
+
+hr,
+.hr
+  border-bottom 5px solid $yellow
+
+a
+  color $blue
+
+// Typography
+.type
+  font-family $type-yeseva
+
+.alpha
+  margin-bottom 20px
+  padding-bottom 10px
+  border-bottom 5px solid $yellow
+  font-size 2.2rem
+  font-family $type-yeseva
+  color $black
+  a
+    text-decoration none
+    color inherit
+    &:hover
+      color: $blue
+
+.beta
+  margin-bottom 10px
+  font-size 1.6rem
+  font-family $type-yeseva
+  color $black
+  a
+    text-decoration none
+    color inherit
+    &:hover
+      color: $blue
+.beta--headline
+  padding-bottom 10px
+  border-bottom 1px solid $gray
+.beta--highlight
+  color $goldYellow
+  font-weight normal
+
+.gamma
+  margin-bottom 10px
+  font-size 1.2rem
+  font-weight bold
+  color $black
+  a
+    text-decoration none
+    color inherit
+    &:hover
+      color: $blue
+
+.delta
+  margin-bottom 10px
+  font-size 1rem
+  font-weight bold
+  color $black
+  a
+    text-decoration none
+    color inherit
+    &:hover
+      color: $blue
+
+// Layout
+.the-hero
+  border-bottom 10px solid $paleYellow
+  background-color $yellow
+
+.the-header
+  position relative
+  border-bottom 5px solid $paleYellow
+  max-height 62px
+  padding-top 2rem
+  background-color $yellow
+  color: $black
+  a
+    text-decoration none
+    color inherit
+    &:hover
+      color: $blue
+  @media only screen and (max-width: 640px)
+    text-align center
+    max-height none
+    .site-name
+      display block
+      padding-top 10px
+    .site-banner
+      display none
+    .site-nav
+      margin-bottom 0
+
+.the-main
+  position: relative;
+  z-index: 1
+  padding-top 20px
+  padding-bottom 20px
+  background-color #fff
+
+.the-footer
+  line-height 88px
+  color #FFF
+  a
+    color inherit
+
+.l-container
+  margin-left auto
+  margin-right auto
+  max-width 980px
+
+.l-line
+  list-style none
+  margin-left 0
+  > li
+    display: inline
+
+// Component
+.tagline
+  font-size 4rem
+  font-family $type-yeseva
+  color: $black
+  @media only screen and (max-width: 640px)
+    font-size 2rem
+    > span
+      display block
+
+.logo
+  @media only screen and (max-width: 640px)
+    max-width: 150px
+    max-height: 150px
+
+.intro
+  // font-size: 1.2rem
+
+.aside
+  border-radius 5px
+  padding 10px
+  background-color $lightGray
+
+.site-name
+  line-height 1
+  font-size 3rem
+  font-family $type-yeseva
+
+.site-nav
+  line-height 3rem
+  font-size: 1.2rem
+  font-weight bold
+  > li
+    margin-right 5px
+    & + li:before
+      display inline
+      content "＊"
+      margin-right 10px
+      width: 1em
+      font-weight bold
+      font-size 0.8em
+
+.site-banner
+  position absolute
+  right 10px
+  bottom 10px
+
+.section
+  margin-bottom 30px
+
+.upcoming
+  position: relative
+  margin-bottom 20px
+.upcoming__thumbnail
+  overflow hidden
+  max-height 130px
+.upcoming__title
+  padding 10px
+  font-family $type-yeseva
+.upcoming__title--home
+  margin-bottom 0
+  padding-bottom 0
+  @media only screen and (max-width: 640px)
+    padding-top 0
+.upcoming__summary
+  padding 10px
+.upcoming__date
+  position absolute
+  top 10px
+  right -10px
+  padding 0.2em 0.5em
+  background-color $yellow
+  font-family $type-yeseva
+  color $black
+  &:after
+    display block
+    content ""
+    position absolute
+    right -10px
+    bottom -10px
+    border 10px solid $goldYellow
+    border-top-color transparent
+    border-bottom-color transparent
+    border-right-color transparent
+    width 0
+    height 0
+    z-index -1
+
+.media
+  overflow hidden // Clearfix
+.media__image
+  float left
+  margin-right 10px
+  > img
+    display block
+.media__image--rev
+  float right
+  margin-left 10px
+  margin-right auto
+.media__body
+  overflow hidden
+
+.flag
+  display table
+.flag__image
+  display table-cell
+  padding-right 10px
+  > img
+    display block
+.flag__image--rev
+  padding-left 10px
+  padding-right auto
+.flag__body
+  display table-cell
+.flag__body--middle
+  vertical-align middle
+.flag__body--bottom
+  vertical-align bottom
+
+.table
+  border-collapse collapse
+  width 100%
+  th,td
+    padding 0.5em 1em
+.table__head
+  border-bottom: 1px solid $gray
+.table__title
+  border-right: 1px solid $gray
+  font-weight bold
+  text-align right
+.table__cell--center
+  text-align center
+.table__cell--right
+  text-align right
+
+.faq__q
+  font-weight bold
+  &:before
+    display inline
+    margin-right 0.3em
+    content "Q."
+    font-size 1.2em
+    font-family $type-yeseva
+
+.timetable
+  overflow hidden
+.timetable__time
+  clear left
+  float left
+  width 16%
+  font-weight bold
+  @media only screen and (max-width: 640px)
+    float none
+    width 100%
+.timetable__content
+  margin-left 20%
+  margin-bottom 20px
+  @media only screen and (max-width: 640px)
+    margin-left 0
+    width 100%
+
+.button
+  // TODO: Separated font-size setting
+  display inline-block
+  border-radius 3px
+  border 1px solid $yellow
+  padding 0.5em 1em
+  background-color $yellow
+  font-weight bold
+  text-decoration none
+  color $black
+  &:hover
+    background-color mix($yellow,#FFF,80%)
+  &.is-disabled
+    border 1px solid $gray !important
+    background-color $gray !important
+    color $black !important
+.button--primary
+  font-size 1.6rem
+.button--secondary
+  border-color $orange
+  background-color $orange
+  color #FFF
+  &:hover
+    background-color mix($orange,#FFF,80%)
+.button--full
+  -webkit-box-sizing border-box
+  -moz-box-sizing border-box
+  box-sizing border-box
+  width 100%
+  text-align center
+
+.list
+  > li
+    margin-left 1.4em
+    text-indent -1.4em
+    &:before
+      display inline
+      content "＊"
+      margin-right 0.4em
+      width: 1em
+      font-weight bold
+
+.mentors
+  overflow hidden
+  > li
+    float left
+    margin-bottom 20px
+    width: 50%
+.mentor
+  @media only screen and (max-width: 640px)
+    width: 100%;
+    text-align: center;
+.mentor__avatar
+  @media only screen and (max-width: 640px)
+    display block
+    margin-bottom 10px
+    padding 0
+  img
+    border-radius 100%
+.mentor__body
+  @media only screen and (max-width: 640px)
+    display block
+  
+.frame
+  border 3px solid $gray
+  background-color #FFF
+  a:hover &
+    border 3px solid $blue
+    background-color #FFF
+
+.map-canvas
+  width 100%
+  height 320px
+
+.social-box
+  padding 20px 0
+  background-color $lightGray
+  .fb_iframe_widget,
+  .fb_iframe_widget iframe[style],
+  .fb_iframe_widget span
+      width 100% !important
+  .twitter-timeline
+      width 100% !important
+      height 300px !important
+
+.widget-box
+  padding 20px 0 10px
+  background-color $lightGray
+  li
+    float right
+    margin-right 10px
+
+.copyright
+  padding 1rem 0
+
+// Helper
+.mbs
+  margin-bottom 10px
+.mbm
+  margin-bottom 20px
+.mbl
+  margin-bottom 30px
+.text-left
+  text-align left
+.text-right
+  text-align right

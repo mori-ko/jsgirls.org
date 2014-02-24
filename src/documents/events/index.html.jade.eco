@@ -1,15 +1,38 @@
 ---
 title: "Event"
-layout: "event"
+layout: "default"
 isPage: true
 ---
 
-.container
-  div
-    h1.
-      Upcoming Events
-    ul
-    <% for page in @getCollection("events").toJSON(): %>
-      li(class='<%= if page.id is @document.id then 'active' else 'inactive' %>')
-        a(href='<%= page.url %>') <%= page.title %>
-    <% end %>
+div.section
+  div.grid
+    div.grid__cell.grid__cell--12
+      h2.alpha Upcoming Events
+  ul.grid.upcomings
+  <% for page in @getCollection("upcomingEvents").toJSON(): %>
+    li.grid__cell.grid__cell--4
+      div.upcoming
+        a(href='<%= page.url %>')
+          div.frame.upcoming__thumbnail
+            img(src='<%= page.image %>',width='100%')
+        h2.upcoming__title.gamma
+          a(href='<%= page.url %>') <%= page.title %>
+        p.upcoming__date <%= @moment(page.date).format('YYYY/MM/DD') %>
+  <% end %>
+
+div.section
+  div.grid
+    div.grid__cell.grid__cell--12
+      h2.alpha Past Events
+
+  ul.grid.upcomings
+  <% for page in @getCollection("pastEvents").toJSON(): %>
+    li.grid__cell.grid__cell--4
+      div.upcoming
+        a(href='<%= page.url %>')
+          div.frame.upcoming__thumbnail
+            img(src='<%= page.image %>',width='100%')
+        h2.upcoming__title.gamma
+          a(href='<%= page.url %>') <%= page.title %>
+        p.upcoming__date <%= @moment(page.date).format('YYYY/MM/DD') %>
+  <% end %>

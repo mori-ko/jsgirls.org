@@ -2,13 +2,13 @@
 <html>
   <%- @partial('head') %>
   <body>
-    <%- @partial('header') %>
+    <%- @partial('hero') %>
     <div class="the-main">
       <div class="l-container">
         <%- @content %>
       </div>
     </div>
-    <%- @partial('widget') %>
+    <%- @partial('social') %>
     <%- @partial('footer') %>
     <%- @partial('script') %>
   </body>
