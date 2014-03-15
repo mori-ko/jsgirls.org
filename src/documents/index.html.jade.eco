@@ -11,7 +11,7 @@ isPage: true
     .grid__cell.grid__cell--8
       h2.beta.
         JavaScriptを学ぶためのコミュニティ
-      div.intro
+      .intro
         p.
           Ajaxという言葉の登場以来、<b>JavaScriptは今日のWebにとっては欠かせない言語</b>となっています。今ではフロントエンドのみならずバックエンドでもJavaScriptは使われるようになりました。
         p
@@ -28,22 +28,38 @@ isPage: true
       ul
       <% for page in @getCollection("upcomingEvents").toJSON(): %>
         li.grid.upcomings
-          div.grid__cell.grid__cell--4
-            div.upcoming
+          .grid__cell.grid__cell--4
+            .upcoming
               a(href='<%= page.url %>')
-                div.frame.upcoming__thumbnail
+                .frame.upcoming__thumbnail
                   img(src='<%= page.image %>',width='100%')
               p.upcoming__date <%= @moment(page.date).format('YYYY/MM/DD') %>
-          div.grid__cell.grid__cell--8
+          .grid__cell.grid__cell--8
             h2.upcoming__title.upcoming__title--home.beta
               a(href='<%= page.url %>') <%= page.title %>
             p.upcoming__summary <%= page.summary %>  
       <% end %>
+.section
+  .grid
+    .grid__cell.grid__cell--12
+      h2.alpha Past Events
+
+  ul.grid.upcomings
+  <% for page in @getCollection("pastEvents").toJSON(): %>
+    li.grid__cell.grid__cell--4
+      .upcoming
+        a(href='<%= page.url %>')
+          .frame.upcoming__thumbnail
+            img(src='<%= page.image %>',width='100%')
+        h2.upcoming__title.gamma
+          a(href='<%= page.url %>') <%= page.title %>
+        p.upcoming__date <%= @moment(page.date).format('YYYY/MM/DD') %>
+  <% end %>
 
 //- .section
   .grid
     .grid__cell.grid__cell--12
-      div.aside
+      .aside
         .grid
           .grid__cell.grid__cell--middle.grid__cell--9
             h2.beta.
@@ -51,5 +67,5 @@ isPage: true
             p.
               JS Girlsは好きな地域で、好きなスタイルで開催することができます。
           .grid__cell.grid__cell--middle.grid__cell--3
-            div
+            
               a.button.button--secondary.button--full(href='/about/') くわしく知りたい
