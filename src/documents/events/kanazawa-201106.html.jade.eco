@@ -8,8 +8,6 @@ isEvent: true
 image: "/assets/img/event/kanazawa-201106.jpg"
 ---
 
-- var spacer = 'data:image/gif;base64,R0lGODlhAQABAIAAAP//////zCH5BAEHAAAALAAAAAABAAEAAAICRAEAOw=='
-
 .section
   .grid
     .grid__cell.grid__cell--6
@@ -136,5 +134,4 @@ image: "/assets/img/event/kanazawa-201106.jpg"
 script.
   document.addEventListener('DOMContentLoaded', function () {
     var map = new jsgirls.Map('#js-map-canvas');
-    var avatar = new jsgirls.Avatar();
   });
