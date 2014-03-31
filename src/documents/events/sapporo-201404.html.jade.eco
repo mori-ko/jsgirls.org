@@ -15,13 +15,13 @@ image: "/assets/img/event/sapporo-201404.png"
     .grid__cell.grid__cell--6
       h2.alpha <%= @document.title %>
       p.
-        金沢、東京に続き、次は札幌でJS Girlsが発足します！
+        東京に続き、次は札幌でJS Girlsが発足します！
         まずはJavaScriptで自分の考えたものを何か作ってみましょう！
         思い描いたものがカタチになったら絶対うれしい(^ ^)
       p.
         初回（4月26日）は、
-        JS Girl Sapporo 14人に対して、なんと講師陣は7人！
-        7人中5人は、東京からSapporo JS Girlsに会いに来てくれます。
+        JS Girls Sapporo 14人に対して、なんと講師陣は7人！
+        7人中5人は、東京からJS Girls Sapporoに会いに来てくれます。
         ひとりじゃ難しくて勉強を進められないと思っていた方も、
         作ろうと思ってもつまづいた時に聞ける人がいないと思っていた方も、
         この期に、札幌で一緒にJavaScriptはじめてみましょう！
@@ -99,13 +99,13 @@ image: "/assets/img/event/sapporo-201404.png"
             p 次の書籍やサイトを見て予習しておくと良いかもしれません。
             ul.list
               li
-                a(href='http://www.amazon.co.jp/dp/4774153761/') ノンプログラマのためのJavaScriptはじめの一歩
-              li
-                a(href='http://www.amazon.co.jp/dp/4844334220/') 開発者のためのChromeガイドブック
+                a(href='https://github.com/1000ch/chrome-extension-hands-on/wiki') Chrome Extension Hands-on
               li
                 a(href='http://developer.chrome.com/extensions/index.html') What are extensions?
               li
-                a(href='https://github.com/1000ch/chrome-extension-hands-on/wiki') Chrome Extension Hands-on
+                a(href='http://www.amazon.co.jp/dp/4844334220/') 開発者のためのChromeガイドブック
+              li
+                a(href='http://www.amazon.co.jp/dp/4774153761/') ノンプログラマのためのJavaScriptはじめの一歩
 
       .section
         h2.beta.beta--highlight メンター、チューター
