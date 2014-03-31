@@ -113,7 +113,7 @@ image: "/assets/img/event/tokyo-201403.png"
             .flag.mentor
               .flag__image.mentor__avatar
                 a(href="http://twitter.com/tacamy")
-                  img.frame(src='#{spacer}', data-gravatar-email='takami.yamada@gmail.com', width='68', height='68')
+                  img.frame(src='https://avatars0.githubusercontent.com/u/469904?s=200', width='68', height='68')
               .flag__body.flag__body--middle.mentor__body
                 h3.delta 山田 敬美
                 p
@@ -122,7 +122,7 @@ image: "/assets/img/event/tokyo-201403.png"
             .flag.mentor
               .flag__image.mentor__avatar
                 a(href="http://twitter.com/1000ch")
-                  img.frame(src='#{spacer}', data-gravatar-email='shogo.sensui@gmail.com', width='68', height='68')
+                  img.frame(src='https://avatars0.githubusercontent.com/u/1800018?s=200', width='68', height='68')
               .flag__body.flag__body--middle.mentor__body
                 h3.delta 泉水 翔吾
                 p
@@ -131,7 +131,7 @@ image: "/assets/img/event/tokyo-201403.png"
             .flag.mentor
               .flag__image.mentor__avatar
                 a(href="http://twitter.com/hokaccha")
-                  img.frame(src='#{spacer}', data-gravatar-email='k.hokamura@gmail.com' width='68', height='68')
+                  img.frame(src='https://avatars0.githubusercontent.com/u/39471?s=200' width='68', height='68')
               .flag__body.flag__body--middle.mentor__body
                 h3.delta 外村 和仁
                 p
@@ -140,7 +140,7 @@ image: "/assets/img/event/tokyo-201403.png"
             .flag.mentor
               .flag__image.mentor__avatar
                 a(href="http://twitter.com/nakajmg")
-                  img.frame(src='#{spacer}', data-gravatar-email='nakajima.jmg@gmail.com' width='68', height='68')
+                  img.frame(src='https://avatars0.githubusercontent.com/u/1995370?s=200' width='68', height='68')
               .flag__body.flag__body--middle.mentor__body
                 h3.delta 中島 直博
                 p
@@ -149,7 +149,7 @@ image: "/assets/img/event/tokyo-201403.png"
             .flag.mentor
               .flag__image.mentor__avatar
                 a(href="http://twitter.com/agektmr")
-                  img.frame(src='#{spacer}', data-gravatar-email='agektmr@gmail.com' width='68', height='68')
+                  img.frame(src='https://avatars0.githubusercontent.com/u/218144?s=200' width='68', height='68')
               .flag__body.flag__body--middle.mentor__body
                 h3.delta 北村 英志
                 p
@@ -158,7 +158,7 @@ image: "/assets/img/event/tokyo-201403.png"
             .flag.mentor
               .flag__image.mentor__avatar
                 a(href="http://twitter.com/t32k")
-                  img.frame(src='#{spacer}', data-gravatar-email='ijok.ijok@gmail.com' width='68', height='68')
+                  img.frame(src='https://avatars0.githubusercontent.com/u/86519?s=200' width='68', height='68')
               .flag__body.flag__body--middle.mentor__body
                 h3.delta 石本 光司
                 p
@@ -167,7 +167,7 @@ image: "/assets/img/event/tokyo-201403.png"
             .flag.mentor
               .flag__image.mentor__avatar
                 a(href="http://twitter.com/hiloki")
-                  img.frame(src='#{spacer}', data-gravatar-email='contact@inkdesign.jp', width='68', height='68')
+                  img.frame(src='https://avatars0.githubusercontent.com/u/445333?s=200', width='68', height='68')
               .flag__body.flag__body--middle.mentor__body
                 h3.delta 谷 拓樹
                 p
@@ -176,7 +176,7 @@ image: "/assets/img/event/tokyo-201403.png"
             .flag.mentor
               .flag__image.mentor__avatar
                 a(href="http://twitter.com/pocotan001")
-                  img.frame(src='#{spacer}', data-gravatar-email='pocotan001@gmail.com', width='68', height='68')
+                  img.frame(src='https://avatars0.githubusercontent.com/u/869065?s=200', width='68', height='68')
               .flag__body.flag__body--middle.mentor__body
                 h3.delta 水野 隼登
                 p
@@ -185,7 +185,7 @@ image: "/assets/img/event/tokyo-201403.png"
             .flag.mentor
               .flag__image.mentor__avatar
                 a(href="http://layzie.hatenablog.com/about")
-                  img.frame(src='#{spacer}', data-gravatar-email='saruko313@gmail.com', width='68', height='68')
+                  img.frame(src='https://avatars0.githubusercontent.com/u/844804?s=200', width='68', height='68')
               .flag__body.flag__body--middle.mentor__body
                 h3.delta 平木 聡
                 p
@@ -194,7 +194,7 @@ image: "/assets/img/event/tokyo-201403.png"
             .flag.mentor
               .flag__image.mentor__avatar
                 a(href="http://twitter.com/ktknest")
-                  img.frame(src='#{spacer}', data-gravatar-email='katou.kennichi@gmail.com' width='68', height='68')
+                  img.frame(src='https://avatars0.githubusercontent.com/u/1848647?s=200' width='68', height='68')
               .flag__body.flag__body--middle.mentor__body
                 h3.delta 加藤 賢一
                 p
@@ -203,7 +203,7 @@ image: "/assets/img/event/tokyo-201403.png"
             .flag.mentor
               .flag__image.mentor__avatar
                 a(href="http://twitter.com/ginpei_jp")
-                  img.frame(src='#{spacer}', data-gravatar-email='ginpei@gmail.com' width='68', height='68')
+                  img.frame(src='https://avatars0.githubusercontent.com/u/355808?s=200' width='68', height='68')
               .flag__body.flag__body--middle.mentor__body
                 h3.delta 高梨 ギンペイ
                 p
@@ -212,7 +212,7 @@ image: "/assets/img/event/tokyo-201403.png"
             .flag.mentor
               .flag__image.mentor__avatar
                 a(href="http://twitter.com/kyo_ago")
-                  img.frame(src='#{spacer}', data-gravatar-email='kyo@0-9.sakura.ne.jp' width='68', height='68')
+                  img.frame(src='https://avatars2.githubusercontent.com/u/67387?s=200' width='68', height='68')
               .flag__body.flag__body--middle.mentor__body
                 h3.delta 吾郷 協
                 p
