@@ -12,8 +12,7 @@ module.exports = (grunt) ->
         dest: 'out/assets/css/app.css'
       vendor:
         src: [
-          'out/assets/js/vendor/ga.js',
-          'out/assets/js/vendor/md5.js'
+          'out/assets/js/vendor/ga.js'
         ]
         dest: 'out/assets/js/vendor/vendor.js'
       js:
