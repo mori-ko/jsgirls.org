@@ -8,8 +8,6 @@ isEvent: true
 image: "/assets/img/event/sapporo-201404.png"
 ---
 
-- var spacer = 'data:image/gif;base64,R0lGODlhAQABAIAAAP//////zCH5BAEHAAAALAAAAAABAAEAAAICRAEAOw=='
-
 .section
   .grid
     .grid__cell.grid__cell--6
@@ -225,5 +223,4 @@ image: "/assets/img/event/sapporo-201404.png"
 script.
   document.addEventListener('DOMContentLoaded', function () {
     var map = new jsgirls.Map('#js-map-canvas');
-    var avatar = new jsgirls.Avatar();
   });
